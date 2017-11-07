@@ -20,6 +20,8 @@ class ViewController: UIViewController {
         self.navigationItem.title = "Demo"
         
         setupTableView()
+        
+        print("测试下是否需要输入密码")
     }
 
     func setupTableView() {

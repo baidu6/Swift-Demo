@@ -12,7 +12,7 @@ import SnapKit
 class ViewController: UIViewController {
     
     var tableView: BaseTableView!
-    var namesArray = ["CoreData", "Realm", "RxSwift", "SwiftForms", "AnimationNumbers"]
+    var namesArray = ["CoreData", "Realm", "RxSwift", "SwiftForms", "AnimationNumbers", "引用类型和值类型"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -94,6 +94,9 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         }else if indexPath.row == 4 {
             let animationNum = AnimationNumbersViewController()
             self.navigationController?.pushViewController(animationNum, animated: true)
+        }else if indexPath.row == 5 {
+            let vc = ClassStructViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
         }
     }
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3E789B5A286723032C301DC5 /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8D0367CB74A939EBACC8FE2 /* Pods_Demo.framework */; };
+		CB0CD8641FB2B2EB00901C0F /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0CD8631FB2B2EB00901C0F /* Consts.swift */; };
 		CB1292E41FB03FA700FF26E1 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1292E31FB03FA700FF26E1 /* MainTabBarViewController.swift */; };
 		CB1292E61FB042D000FF26E1 /* BaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1292E51FB042D000FF26E1 /* BaseTableView.swift */; };
 		CB2C52241FB15064004F5408 /* ClassStructViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2C52231FB15064004F5408 /* ClassStructViewController.swift */; };
@@ -47,6 +48,7 @@
 		814194BBC1CA0B32C59314A5 /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		A8D0367CB74A939EBACC8FE2 /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD51421C21D0665B7414AE60 /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
+		CB0CD8631FB2B2EB00901C0F /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
 		CB1292E31FB03FA700FF26E1 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		CB1292E51FB042D000FF26E1 /* BaseTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableView.swift; sourceTree = "<group>"; };
 		CB2C52231FB15064004F5408 /* ClassStructViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassStructViewController.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				CB5172771FA30DF0000433E7 /* Realm */,
 				CB51727B1FA30DF0000433E7 /* RxSwift */,
 				CB5172241FA2E143000433E7 /* AppDelegate.swift */,
+				CB0CD8631FB2B2EB00901C0F /* Consts.swift */,
 				CB1292E31FB03FA700FF26E1 /* MainTabBarViewController.swift */,
 				CB5172261FA2E143000433E7 /* ViewController.swift */,
 				CB1292E51FB042D000FF26E1 /* BaseTableView.swift */,
@@ -570,6 +573,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB5172821FA30ED7000433E7 /* RealmTestViewController.swift in Sources */,
+				CB0CD8641FB2B2EB00901C0F /* Consts.swift in Sources */,
 				CB5172801FA30EC9000433E7 /* CoreDataTestViewController.swift in Sources */,
 				CBF1E3741FA85BCD006EA6DA /* AnimationNumbersLabel.swift in Sources */,
 				CB1292E41FB03FA700FF26E1 /* MainTabBarViewController.swift in Sources */,

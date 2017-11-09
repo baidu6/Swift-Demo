@@ -56,7 +56,7 @@ class AnimationNumbersViewController: UIViewController {
     }
 
     func numberFormatTest() {
-        let number = NSNumber(value: 1234.5678)
+//        let number = NSNumber(value: 1234.5678)
         //四舍五入 1235
 //        let style1 = NumberFormatter.localizedString(from: number, number: .none)
 //        //小数形式，保留3位小数 1,234.568

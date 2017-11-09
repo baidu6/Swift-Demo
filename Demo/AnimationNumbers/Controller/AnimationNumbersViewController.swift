@@ -51,7 +51,33 @@ class AnimationNumbersViewController: UIViewController {
         
 //        action(Person())
 //        action(Teacher())
+        
 
+    }
+
+    func numberFormatTest() {
+        let number = NSNumber(value: 1234.5678)
+        //四舍五入 1235
+//        let style1 = NumberFormatter.localizedString(from: number, number: .none)
+//        //小数形式，保留3位小数 1,234.568
+//        let style2 = NumberFormatter.localizedString(from: number, number: .decimal)
+//        //当地货币形式，保留两位小数 $1,234.57
+//        let style3 = NumberFormatter.localizedString(from: number, number: .currency)
+//        //百分数形式，123,457%
+//        let style4 = NumberFormatter.localizedString(from: number, number: .percent)
+//        //科学计数  1.2345678E3
+//        let style5 = NumberFormatter.localizedString(from: number, number: .scientific)
+//        //朗读形式 one thousand two hundred thirty-four point five six seven eight
+//        let style6 = NumberFormatter.localizedString(from: number, number: .spellOut)
+//        //序数形式 1,235t
+//        let style7 = NumberFormatter.localizedString(from: number, number: .ordinal)
+//        //会计计数 $1,234.57
+//        let style8 = NumberFormatter.localizedString(from: number, number: .currencyAccounting)
+
+        let numberFormatter = NumberFormatter()
+        numberFormatter.positiveFormat = "###,000.0000"
+        let formatterNumberString = numberFormatter.string(from: NSNumber(value: 34.4563))
+        print(formatterNumberString!)//122,344.456
     }
     
     //泛型测试

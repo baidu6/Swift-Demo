@@ -45,13 +45,13 @@ class AnimationNumbersViewController: UIViewController {
         let formatter = NumberFormatter()
         formatter.numberStyle = .decimal
         formatter.positiveFormat = "###,##0.00"
-        animationLabel.numFormat = numberFormat
+        animationLabel.numFormat = formatter
 
         animationLabel.startAnimation(0, 10000, 3.0)
         
 //        action(Person())
 //        action(Teacher())
-        
+
     }
     
     //泛型测试

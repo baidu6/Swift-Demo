@@ -24,9 +24,8 @@ class AnimationNumbersViewController: UIViewController {
         self.navigationItem.title = "数字动画"
         
         animationLabel = AnimationNumbersLabel()
-        animationLabel.textAlignment = NSTextAlignment.center
-        animationLabel.textColor = UIColor.white
-        animationLabel.backgroundColor = UIColor.orange
+       
+   
         view.addSubview(animationLabel)
         if #available(iOS 11.0, *) {
             animationLabel.snp.makeConstraints({ (make) in
@@ -46,7 +45,9 @@ class AnimationNumbersViewController: UIViewController {
         let formatter = NumberFormatter()
         formatter.numberStyle = .decimal
         formatter.positiveFormat = "###,##0.00"
-        animationLabel.startAnimation(0, 100, 3.0)
+        animationLabel.numFormat = numberFormat
+
+        animationLabel.startAnimation(0, 10000, 3.0)
         
 //        action(Person())
 //        action(Teacher())

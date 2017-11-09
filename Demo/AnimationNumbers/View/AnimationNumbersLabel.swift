@@ -19,15 +19,20 @@ class AnimationNumbersLabel: UILabel {
     //结束数字
     fileprivate var endNum: NSNumber!
     
-    fileprivate var duration: TimeInterval!
+    fileprivate var duration: TimeInterval = 2.0
     
     fileprivate var startTime: TimeInterval!
     
     //显示文字格式
-    fileprivate var format: NSString = "%d"
+    var format: NSString = "%.f"
+    
+    var numFormat: NumberFormatter?
 
     override init(frame: CGRect) {
         super.init(frame: frame)
+        textAlignment = NSTextAlignment.center
+        textColor = UIColor.white
+        backgroundColor = UIColor.orange
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -64,11 +69,13 @@ class AnimationNumbersLabel: UILabel {
             
             //计算现在时刻的数字
             let currentNum = (endNum.doubleValue - startNum.doubleValue) * (displayLink.timestamp - startTime) / duration + startNum.doubleValue
-            print(currentNum)
-            self.text = NSString(format: self.format, currentNum) as String
-            
+            if let numFormat = numFormat {
+                self.text = numFormat.string(from: NSNumber(value: currentNum))
+            }else {
+                self.text = NSString(format: self.format, currentNum) as String
+            }
+        
         }
-    
     }
     
     fileprivate func invalidateDisplayLink() {

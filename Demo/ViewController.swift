@@ -12,7 +12,7 @@ import SnapKit
 class ViewController: UIViewController {
     
     var tableView: BaseTableView!
-    var namesArray = ["CoreData", "Realm", "RxSwift", "SwiftForms", "AnimationNumbers", "引用类型和值类型"]
+    var namesArray = ["CoreData", "Realm", "RxSwift", "SwiftForms", "AnimationNumbers", "引用类型和值类型","GCDTest"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -81,22 +81,32 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         
         if indexPath.row == 0 {
             let coreDataVC = CoreDataTestViewController()
+            coreDataVC.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(coreDataVC, animated: true)
         }else if indexPath.row == 1 {
             let realmVC = RealmTestViewController()
+            realmVC.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(realmVC, animated: true)
         }else if indexPath.row == 2 {
             let rxswiftVC = RxSwiftTestViewController()
+            rxswiftVC.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(rxswiftVC, animated: true)
         }else if indexPath.row == 3 {
             let forms = SwiftFormTestViewController()
+            forms.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(forms, animated: true)
         }else if indexPath.row == 4 {
             let animationNum = AnimationNumbersViewController()
+            animationNum.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(animationNum, animated: true)
         }else if indexPath.row == 5 {
             let vc = ClassStructViewController()
+            vc.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(vc, animated: true)
+        }else if indexPath.row == 6 {
+            let test = GCDTestViewController()
+            test.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(test, animated: true)
         }
     }
 }

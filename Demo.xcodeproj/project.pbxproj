@@ -23,6 +23,7 @@
 		CB5172821FA30ED7000433E7 /* RealmTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5172811FA30ED7000433E7 /* RealmTestViewController.swift */; };
 		CB5172841FA30EE4000433E7 /* RxSwiftTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5172831FA30EE4000433E7 /* RxSwiftTestViewController.swift */; };
 		CB51728B1FA313EC000433E7 /* SwiftFormTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB51728A1FA313EC000433E7 /* SwiftFormTestViewController.swift */; };
+		CB7C1B8B1FB42CE90034FCD6 /* GCDTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7C1B8A1FB42CE90034FCD6 /* GCDTestViewController.swift */; };
 		CBF1E3721FA85BB7006EA6DA /* AnimationNumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E3711FA85BB7006EA6DA /* AnimationNumbersViewController.swift */; };
 		CBF1E3741FA85BCD006EA6DA /* AnimationNumbersLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E3731FA85BCD006EA6DA /* AnimationNumbersLabel.swift */; };
 /* End PBXBuildFile section */
@@ -69,6 +70,7 @@
 		CB5172811FA30ED7000433E7 /* RealmTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmTestViewController.swift; sourceTree = "<group>"; };
 		CB5172831FA30EE4000433E7 /* RxSwiftTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftTestViewController.swift; sourceTree = "<group>"; };
 		CB51728A1FA313EC000433E7 /* SwiftFormTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftFormTestViewController.swift; sourceTree = "<group>"; };
+		CB7C1B8A1FB42CE90034FCD6 /* GCDTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDTestViewController.swift; sourceTree = "<group>"; };
 		CBF1E3711FA85BB7006EA6DA /* AnimationNumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationNumbersViewController.swift; sourceTree = "<group>"; };
 		CBF1E3731FA85BCD006EA6DA /* AnimationNumbersLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationNumbersLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -165,6 +167,7 @@
 		CB5172231FA2E143000433E7 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				CB7C1B861FB42CD20034FCD6 /* GCD */,
 				CB2C521F1FB1504C004F5408 /* ClassStruct */,
 				CBF1E36D1FA85BA3006EA6DA /* AnimationNumbers */,
 				CB5172861FA313AE000433E7 /* SwiftForms */,
@@ -324,6 +327,38 @@
 			sourceTree = "<group>";
 		};
 		CB5172891FA313AE000433E7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CB7C1B861FB42CD20034FCD6 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				CB7C1B871FB42CD20034FCD6 /* Controller */,
+				CB7C1B881FB42CD20034FCD6 /* Model */,
+				CB7C1B891FB42CD20034FCD6 /* View */,
+			);
+			path = GCD;
+			sourceTree = "<group>";
+		};
+		CB7C1B871FB42CD20034FCD6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CB7C1B8A1FB42CE90034FCD6 /* GCDTestViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CB7C1B881FB42CD20034FCD6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CB7C1B891FB42CD20034FCD6 /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -582,6 +617,7 @@
 				CB5172271FA2E143000433E7 /* ViewController.swift in Sources */,
 				CB5172251FA2E143000433E7 /* AppDelegate.swift in Sources */,
 				CB2C52241FB15064004F5408 /* ClassStructViewController.swift in Sources */,
+				CB7C1B8B1FB42CE90034FCD6 /* GCDTestViewController.swift in Sources */,
 				CB51728B1FA313EC000433E7 /* SwiftFormTestViewController.swift in Sources */,
 				CB5172841FA30EE4000433E7 /* RxSwiftTestViewController.swift in Sources */,
 			);

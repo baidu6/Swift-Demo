@@ -10,6 +10,8 @@
 		3E789B5A286723032C301DC5 /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8D0367CB74A939EBACC8FE2 /* Pods_Demo.framework */; };
 		CB0CD8641FB2B2EB00901C0F /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0CD8631FB2B2EB00901C0F /* Consts.swift */; };
 		CB0F3C311FB539ED00333FEF /* SetTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0F3C301FB539ED00333FEF /* SetTestViewController.swift */; };
+		CB0F3C381FB5A29800333FEF /* ChangeNickNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0F3C361FB5A29800333FEF /* ChangeNickNameViewController.swift */; };
+		CB0F3C391FB5A29800333FEF /* ChangeNickNameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB0F3C371FB5A29800333FEF /* ChangeNickNameViewController.xib */; };
 		CB1292E41FB03FA700FF26E1 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1292E31FB03FA700FF26E1 /* MainTabBarViewController.swift */; };
 		CB1292E61FB042D000FF26E1 /* BaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1292E51FB042D000FF26E1 /* BaseTableView.swift */; };
 		CB2C52241FB15064004F5408 /* ClassStructViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2C52231FB15064004F5408 /* ClassStructViewController.swift */; };
@@ -52,6 +54,8 @@
 		AD51421C21D0665B7414AE60 /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		CB0CD8631FB2B2EB00901C0F /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
 		CB0F3C301FB539ED00333FEF /* SetTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTestViewController.swift; sourceTree = "<group>"; };
+		CB0F3C361FB5A29800333FEF /* ChangeNickNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeNickNameViewController.swift; sourceTree = "<group>"; };
+		CB0F3C371FB5A29800333FEF /* ChangeNickNameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangeNickNameViewController.xib; sourceTree = "<group>"; };
 		CB1292E31FB03FA700FF26E1 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		CB1292E51FB042D000FF26E1 /* BaseTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableView.swift; sourceTree = "<group>"; };
 		CB2C52231FB15064004F5408 /* ClassStructViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassStructViewController.swift; sourceTree = "<group>"; };
@@ -318,6 +322,8 @@
 			isa = PBXGroup;
 			children = (
 				CB5172831FA30EE4000433E7 /* RxSwiftTestViewController.swift */,
+				CB0F3C361FB5A29800333FEF /* ChangeNickNameViewController.swift */,
+				CB0F3C371FB5A29800333FEF /* ChangeNickNameViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -551,6 +557,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB0F3C391FB5A29800333FEF /* ChangeNickNameViewController.xib in Resources */,
 				CB51722F1FA2E143000433E7 /* LaunchScreen.storyboard in Resources */,
 				CB51722C1FA2E143000433E7 /* Assets.xcassets in Resources */,
 				CB51722A1FA2E143000433E7 /* Main.storyboard in Resources */,
@@ -646,6 +653,7 @@
 				CB0CD8641FB2B2EB00901C0F /* Consts.swift in Sources */,
 				CB5172801FA30EC9000433E7 /* CoreDataTestViewController.swift in Sources */,
 				CB0F3C311FB539ED00333FEF /* SetTestViewController.swift in Sources */,
+				CB0F3C381FB5A29800333FEF /* ChangeNickNameViewController.swift in Sources */,
 				CBF1E3741FA85BCD006EA6DA /* AnimationNumbersLabel.swift in Sources */,
 				CB1292E41FB03FA700FF26E1 /* MainTabBarViewController.swift in Sources */,
 				CB1292E61FB042D000FF26E1 /* BaseTableView.swift in Sources */,

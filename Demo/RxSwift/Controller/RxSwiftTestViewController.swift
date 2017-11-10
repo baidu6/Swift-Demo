@@ -24,7 +24,6 @@ class RxSwiftTestViewController: UIViewController {
         view.backgroundColor = UIColor.white
         tableView = UITableView()
         view.addSubview(tableView)
-//        tableView.dataSource = self
         tableView.delegate = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cellID")
         tableView.snp.makeConstraints { (make) in
@@ -53,6 +52,8 @@ extension RxSwiftTestViewController:  UITableViewDelegate {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
          print("didSelectRowAt\(indexPath.row)")
+        let changeNick = ChangeNickNameViewController()
+        self.navigationController?.pushViewController(changeNick, animated: true)
     }
    
 }

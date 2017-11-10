@@ -98,8 +98,8 @@ class AnimationNumbersViewController: UIViewController {
                 "c": "cccc"
             ]
         ]
-        let model = Episode(reponse: datas)
-        print(model?.level, model?.title, model?.urls)
+//        let model = Episode(reponse: datas)
+//        print(model?.level, model?.title, model?.urls)
     }
 }
 

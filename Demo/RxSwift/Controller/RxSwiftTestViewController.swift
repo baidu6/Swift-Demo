@@ -14,6 +14,7 @@ class RxSwiftTestViewController: UIViewController {
     
     var tableView: UITableView!
     let disposeBag = DisposeBag()
+    var titlesArray: [String] = ["修改昵称", "UIPickerView", "APIWrapper"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,10 +31,11 @@ class RxSwiftTestViewController: UIViewController {
             make.edges.equalToSuperview()
         }
         
-        let items = Observable.just((0..<20)
+        let items = Observable.just((0..<titlesArray.count)
             .map{"\($0)"})
-        items.bind(to: tableView.rx.items(cellIdentifier: "cellID", cellType: UITableViewCell.self)) { (row, element, cell) in
-            cell.textLabel?.text = "当前是第\(row)行"
+        items.bind(to: tableView.rx.items(cellIdentifier: "cellID", cellType: UITableViewCell.self)) { [weak self](row, element, cell) in
+            cell.textLabel?.text = "当前是第\(row)行-----\(self?.titlesArray[row] ?? "")"
+            print(row, element, cell)
         }.disposed(by: disposeBag)
         
         tableView.rx.modelSelected(String.self)
@@ -52,8 +54,17 @@ extension RxSwiftTestViewController:  UITableViewDelegate {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
          print("didSelectRowAt\(indexPath.row)")
-        let changeNick = ChangeNickNameViewController()
-        self.navigationController?.pushViewController(changeNick, animated: true)
+        if indexPath.row == 0 { //修改密码
+            let changeNick = ChangeNickNameViewController()
+            self.navigationController?.pushViewController(changeNick, animated: true)
+        }else if indexPath.row == 1 { //UIPickerView
+            let simplePicker = SimplePickerViewController()
+            self.navigationController?.pushViewController(simplePicker, animated: true)
+        }else if indexPath.row == 2 {
+            let wrapper = APIWrapperViewController()
+            self.navigationController?.pushViewController(wrapper, animated: true)
+        }
+       
     }
    
 }

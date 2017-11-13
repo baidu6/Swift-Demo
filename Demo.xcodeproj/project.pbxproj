@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3E789B5A286723032C301DC5 /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8D0367CB74A939EBACC8FE2 /* Pods_Demo.framework */; };
 		CB0CD8641FB2B2EB00901C0F /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0CD8631FB2B2EB00901C0F /* Consts.swift */; };
+		CB0D283B1FB9394F000D572A /* FunTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0D283A1FB9394F000D572A /* FunTestViewController.swift */; };
 		CB0F3C311FB539ED00333FEF /* SetTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0F3C301FB539ED00333FEF /* SetTestViewController.swift */; };
 		CB0F3C381FB5A29800333FEF /* ChangeNickNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0F3C361FB5A29800333FEF /* ChangeNickNameViewController.swift */; };
 		CB0F3C391FB5A29800333FEF /* ChangeNickNameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB0F3C371FB5A29800333FEF /* ChangeNickNameViewController.xib */; };
@@ -53,6 +54,7 @@
 		A8D0367CB74A939EBACC8FE2 /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD51421C21D0665B7414AE60 /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		CB0CD8631FB2B2EB00901C0F /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
+		CB0D283A1FB9394F000D572A /* FunTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunTestViewController.swift; sourceTree = "<group>"; };
 		CB0F3C301FB539ED00333FEF /* SetTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTestViewController.swift; sourceTree = "<group>"; };
 		CB0F3C361FB5A29800333FEF /* ChangeNickNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeNickNameViewController.swift; sourceTree = "<group>"; };
 		CB0F3C371FB5A29800333FEF /* ChangeNickNameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangeNickNameViewController.xib; sourceTree = "<group>"; };
@@ -114,6 +116,30 @@
 				AD51421C21D0665B7414AE60 /* Pods-Demo.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		CB0D28371FB93934000D572A /* Func(函数) */ = {
+			isa = PBXGroup;
+			children = (
+				CB0D28381FB93934000D572A /* Controller */,
+				CB0D28391FB93934000D572A /* View */,
+			);
+			path = "Func(函数)";
+			sourceTree = "<group>";
+		};
+		CB0D28381FB93934000D572A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CB0D283A1FB9394F000D572A /* FunTestViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CB0D28391FB93934000D572A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		CB0F3C2C1FB539DE00333FEF /* Set(集合) */ = {
@@ -205,6 +231,7 @@
 		CB5172231FA2E143000433E7 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				CB0D28371FB93934000D572A /* Func(函数) */,
 				CB0F3C2C1FB539DE00333FEF /* Set(集合) */,
 				CB7C1B861FB42CD20034FCD6 /* GCD */,
 				CB2C521F1FB1504C004F5408 /* ClassStruct */,
@@ -663,6 +690,7 @@
 				CB2C52241FB15064004F5408 /* ClassStructViewController.swift in Sources */,
 				CB7C1B8B1FB42CE90034FCD6 /* GCDTestViewController.swift in Sources */,
 				CB51728B1FA313EC000433E7 /* SwiftFormTestViewController.swift in Sources */,
+				CB0D283B1FB9394F000D572A /* FunTestViewController.swift in Sources */,
 				CB5172841FA30EE4000433E7 /* RxSwiftTestViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

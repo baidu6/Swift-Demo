@@ -14,7 +14,7 @@ class RxSwiftTestViewController: UIViewController {
     
     var tableView: UITableView!
     let disposeBag = DisposeBag()
-    var titlesArray: [String] = ["修改昵称", "UIPickerView", "APIWrapper"]
+    var titlesArray: [String] = ["修改昵称", "UIPickerView", "APIWrapper", "泊学"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,8 +63,10 @@ extension RxSwiftTestViewController:  UITableViewDelegate {
         }else if indexPath.row == 2 {
             let wrapper = APIWrapperViewController()
             self.navigationController?.pushViewController(wrapper, animated: true)
+        }else if indexPath.row == 3 {
+            let step = StepByStepViewController()
+            self.navigationController?.pushViewController(step, animated: true)
         }
-       
     }
    
 }

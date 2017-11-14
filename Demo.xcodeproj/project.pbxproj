@@ -31,6 +31,10 @@
 		CB5172821FA30ED7000433E7 /* RealmTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5172811FA30ED7000433E7 /* RealmTestViewController.swift */; };
 		CB5172841FA30EE4000433E7 /* RxSwiftTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5172831FA30EE4000433E7 /* RxSwiftTestViewController.swift */; };
 		CB51728B1FA313EC000433E7 /* SwiftFormTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB51728A1FA313EC000433E7 /* SwiftFormTestViewController.swift */; };
+		CB67FB3B1FBA7D2200B5DD0A /* StepByStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB67FB3A1FBA7D2200B5DD0A /* StepByStepViewController.swift */; };
+		CB67FB3D1FBA95F900B5DD0A /* StepByStepViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB67FB3C1FBA95F900B5DD0A /* StepByStepViewController.xib */; };
+		CB67FB401FBAC28D00B5DD0A /* TodoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB67FB3E1FBAC28D00B5DD0A /* TodoDetailViewController.swift */; };
+		CB67FB411FBAC28D00B5DD0A /* TodoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB67FB3F1FBAC28D00B5DD0A /* TodoDetailViewController.xib */; };
 		CB7C1B8B1FB42CE90034FCD6 /* GCDTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7C1B8A1FB42CE90034FCD6 /* GCDTestViewController.swift */; };
 		CBF1E3721FA85BB7006EA6DA /* AnimationNumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E3711FA85BB7006EA6DA /* AnimationNumbersViewController.swift */; };
 		CBF1E3741FA85BCD006EA6DA /* AnimationNumbersLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E3731FA85BCD006EA6DA /* AnimationNumbersLabel.swift */; };
@@ -86,6 +90,10 @@
 		CB5172811FA30ED7000433E7 /* RealmTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmTestViewController.swift; sourceTree = "<group>"; };
 		CB5172831FA30EE4000433E7 /* RxSwiftTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftTestViewController.swift; sourceTree = "<group>"; };
 		CB51728A1FA313EC000433E7 /* SwiftFormTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftFormTestViewController.swift; sourceTree = "<group>"; };
+		CB67FB3A1FBA7D2200B5DD0A /* StepByStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepByStepViewController.swift; sourceTree = "<group>"; };
+		CB67FB3C1FBA95F900B5DD0A /* StepByStepViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StepByStepViewController.xib; sourceTree = "<group>"; };
+		CB67FB3E1FBAC28D00B5DD0A /* TodoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailViewController.swift; sourceTree = "<group>"; };
+		CB67FB3F1FBAC28D00B5DD0A /* TodoDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodoDetailViewController.xib; sourceTree = "<group>"; };
 		CB7C1B8A1FB42CE90034FCD6 /* GCDTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDTestViewController.swift; sourceTree = "<group>"; };
 		CBF1E3711FA85BB7006EA6DA /* AnimationNumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationNumbersViewController.swift; sourceTree = "<group>"; };
 		CBF1E3731FA85BCD006EA6DA /* AnimationNumbersLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationNumbersLabel.swift; sourceTree = "<group>"; };
@@ -363,6 +371,10 @@
 				CB0D283E1FB96E68000D572A /* SimplePickerViewController.xib */,
 				CB0D28411FB98090000D572A /* APIWrapperViewController.swift */,
 				CB0D28421FB98090000D572A /* APIWrapperViewController.xib */,
+				CB67FB3A1FBA7D2200B5DD0A /* StepByStepViewController.swift */,
+				CB67FB3C1FBA95F900B5DD0A /* StepByStepViewController.xib */,
+				CB67FB3E1FBAC28D00B5DD0A /* TodoDetailViewController.swift */,
+				CB67FB3F1FBAC28D00B5DD0A /* TodoDetailViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -601,6 +613,8 @@
 				CB51722F1FA2E143000433E7 /* LaunchScreen.storyboard in Resources */,
 				CB0D28441FB98090000D572A /* APIWrapperViewController.xib in Resources */,
 				CB51722C1FA2E143000433E7 /* Assets.xcassets in Resources */,
+				CB67FB411FBAC28D00B5DD0A /* TodoDetailViewController.xib in Resources */,
+				CB67FB3D1FBA95F900B5DD0A /* StepByStepViewController.xib in Resources */,
 				CB51722A1FA2E143000433E7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -691,11 +705,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB5172821FA30ED7000433E7 /* RealmTestViewController.swift in Sources */,
+				CB67FB401FBAC28D00B5DD0A /* TodoDetailViewController.swift in Sources */,
 				CB0CD8641FB2B2EB00901C0F /* Consts.swift in Sources */,
 				CB5172801FA30EC9000433E7 /* CoreDataTestViewController.swift in Sources */,
 				CB0F3C311FB539ED00333FEF /* SetTestViewController.swift in Sources */,
 				CB0F3C381FB5A29800333FEF /* ChangeNickNameViewController.swift in Sources */,
 				CBF1E3741FA85BCD006EA6DA /* AnimationNumbersLabel.swift in Sources */,
+				CB67FB3B1FBA7D2200B5DD0A /* StepByStepViewController.swift in Sources */,
 				CB0D283F1FB96E68000D572A /* SimplePickerViewController.swift in Sources */,
 				CB1292E41FB03FA700FF26E1 /* MainTabBarViewController.swift in Sources */,
 				CB1292E61FB042D000FF26E1 /* BaseTableView.swift in Sources */,

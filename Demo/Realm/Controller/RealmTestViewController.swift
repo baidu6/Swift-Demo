@@ -19,7 +19,14 @@ class RealmTestViewController: UIViewController {
         view.backgroundColor = UIColor.white
         
         let realm = try! Realm()
+        print(realm.configuration)
+
+        let p = realm.objects(Person.self)
+        print(p.count)
+        let d = realm.objects(Dog.self)
+        print(d.count)
         
+        return
 
         
         let myDog = Dog()
@@ -50,11 +57,11 @@ class RealmTestViewController: UIViewController {
 //        }
         
         //通过键值编码修改属性
-        try! realm.write {
-            myDog.setValue("xiao li zi", forKeyPath: "name")
-        }
-        print(myDog.name)
-        return
+//        try! realm.write {
+//            myDog.setValue("xiao li zi", forKeyPath: "name")
+//        }
+//        print(myDog.name)
+//        return
         
         
         //查
@@ -114,6 +121,14 @@ class RealmTestViewController: UIViewController {
         //数据库迁移（在appDelegate里面实现）
         
         
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let realm = try! Realm()
+        let p = realm.objects(Person.self)
+        print(p.count)
+        let d = realm.objects(Dog.self)
+        print(d.count)
     }
 
 }

@@ -38,6 +38,8 @@
 		CB7C1B8B1FB42CE90034FCD6 /* GCDTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7C1B8A1FB42CE90034FCD6 /* GCDTestViewController.swift */; };
 		CBF1E3721FA85BB7006EA6DA /* AnimationNumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E3711FA85BB7006EA6DA /* AnimationNumbersViewController.swift */; };
 		CBF1E3741FA85BCD006EA6DA /* AnimationNumbersLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E3731FA85BCD006EA6DA /* AnimationNumbersLabel.swift */; };
+		CBF71A461FCE9CBE00052290 /* TouchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF71A451FCE9CBE00052290 /* TouchTableViewController.swift */; };
+		CBF71A481FCE9CCA00052290 /* TouchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF71A471FCE9CCA00052290 /* TouchDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +99,8 @@
 		CB7C1B8A1FB42CE90034FCD6 /* GCDTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDTestViewController.swift; sourceTree = "<group>"; };
 		CBF1E3711FA85BB7006EA6DA /* AnimationNumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationNumbersViewController.swift; sourceTree = "<group>"; };
 		CBF1E3731FA85BCD006EA6DA /* AnimationNumbersLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationNumbersLabel.swift; sourceTree = "<group>"; };
+		CBF71A451FCE9CBE00052290 /* TouchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchTableViewController.swift; sourceTree = "<group>"; };
+		CBF71A471FCE9CCA00052290 /* TouchDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,6 +251,7 @@
 		CB5172231FA2E143000433E7 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				CBF71A401FCE9BAC00052290 /* 3DTouch(TableView) */,
 				CB0D28371FB93934000D572A /* Func(函数) */,
 				CB0F3C2C1FB539DE00333FEF /* Set(集合) */,
 				CB7C1B861FB42CD20034FCD6 /* GCD */,
@@ -490,6 +495,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		CBF71A401FCE9BAC00052290 /* 3DTouch(TableView) */ = {
+			isa = PBXGroup;
+			children = (
+				CBF71A451FCE9CBE00052290 /* TouchTableViewController.swift */,
+				CBF71A471FCE9CCA00052290 /* TouchDetailViewController.swift */,
+			);
+			path = "3DTouch(TableView)";
+			sourceTree = "<group>";
+		};
 		DC4596C386DC10353EE30A4F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -711,6 +725,7 @@
 				CB0F3C311FB539ED00333FEF /* SetTestViewController.swift in Sources */,
 				CB0F3C381FB5A29800333FEF /* ChangeNickNameViewController.swift in Sources */,
 				CBF1E3741FA85BCD006EA6DA /* AnimationNumbersLabel.swift in Sources */,
+				CBF71A461FCE9CBE00052290 /* TouchTableViewController.swift in Sources */,
 				CB67FB3B1FBA7D2200B5DD0A /* StepByStepViewController.swift in Sources */,
 				CB0D283F1FB96E68000D572A /* SimplePickerViewController.swift in Sources */,
 				CB1292E41FB03FA700FF26E1 /* MainTabBarViewController.swift in Sources */,
@@ -722,6 +737,7 @@
 				CB7C1B8B1FB42CE90034FCD6 /* GCDTestViewController.swift in Sources */,
 				CB51728B1FA313EC000433E7 /* SwiftFormTestViewController.swift in Sources */,
 				CB0D28431FB98090000D572A /* APIWrapperViewController.swift in Sources */,
+				CBF71A481FCE9CCA00052290 /* TouchDetailViewController.swift in Sources */,
 				CB0D283B1FB9394F000D572A /* FunTestViewController.swift in Sources */,
 				CB5172841FA30EE4000433E7 /* RxSwiftTestViewController.swift in Sources */,
 			);

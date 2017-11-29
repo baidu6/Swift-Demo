@@ -12,7 +12,7 @@ import SnapKit
 class ViewController: UIViewController {
     
     var tableView: BaseTableView!
-    var namesArray = ["CoreData", "Realm", "RxSwift", "SwiftForms", "AnimationNumbers", "引用类型和值类型","GCDTest", "Set(集合)Test", "函数闭包练习"]
+    var namesArray = ["CoreData", "Realm", "RxSwift", "SwiftForms", "AnimationNumbers", "引用类型和值类型","GCDTest", "Set(集合)Test", "函数闭包练习", "3DTouch(UITableView)"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -115,6 +115,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             let funcVC = FunTestViewController()
             funcVC.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(funcVC, animated: true)
+        }else if indexPath.row == 9 {
+            let touchVC = TouchTableViewController()
+            touchVC.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(touchVC, animated: true)
         }
     }
 }

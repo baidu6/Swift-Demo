@@ -36,6 +36,9 @@
 		CB67FB401FBAC28D00B5DD0A /* TodoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB67FB3E1FBAC28D00B5DD0A /* TodoDetailViewController.swift */; };
 		CB67FB411FBAC28D00B5DD0A /* TodoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB67FB3F1FBAC28D00B5DD0A /* TodoDetailViewController.xib */; };
 		CB7C1B8B1FB42CE90034FCD6 /* GCDTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7C1B8A1FB42CE90034FCD6 /* GCDTestViewController.swift */; };
+		CBE64A031FCF98A000986421 /* PreviewLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE64A021FCF98A000986421 /* PreviewLoadingViewController.swift */; };
+		CBE64A051FCF98F300986421 /* UIView+PreviewLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE64A041FCF98F300986421 /* UIView+PreviewLoading.swift */; };
+		CBE64A071FCF99FC00986421 /* PreviewLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE64A061FCF99FC00986421 /* PreviewLoadingView.swift */; };
 		CBF1E3721FA85BB7006EA6DA /* AnimationNumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E3711FA85BB7006EA6DA /* AnimationNumbersViewController.swift */; };
 		CBF1E3741FA85BCD006EA6DA /* AnimationNumbersLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E3731FA85BCD006EA6DA /* AnimationNumbersLabel.swift */; };
 		CBF71A461FCE9CBE00052290 /* TouchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF71A451FCE9CBE00052290 /* TouchTableViewController.swift */; };
@@ -97,6 +100,9 @@
 		CB67FB3E1FBAC28D00B5DD0A /* TodoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailViewController.swift; sourceTree = "<group>"; };
 		CB67FB3F1FBAC28D00B5DD0A /* TodoDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodoDetailViewController.xib; sourceTree = "<group>"; };
 		CB7C1B8A1FB42CE90034FCD6 /* GCDTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDTestViewController.swift; sourceTree = "<group>"; };
+		CBE64A021FCF98A000986421 /* PreviewLoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewLoadingViewController.swift; sourceTree = "<group>"; };
+		CBE64A041FCF98F300986421 /* UIView+PreviewLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+PreviewLoading.swift"; sourceTree = "<group>"; };
+		CBE64A061FCF99FC00986421 /* PreviewLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewLoadingView.swift; sourceTree = "<group>"; };
 		CBF1E3711FA85BB7006EA6DA /* AnimationNumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationNumbersViewController.swift; sourceTree = "<group>"; };
 		CBF1E3731FA85BCD006EA6DA /* AnimationNumbersLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationNumbersLabel.swift; sourceTree = "<group>"; };
 		CBF71A451FCE9CBE00052290 /* TouchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchTableViewController.swift; sourceTree = "<group>"; };
@@ -251,6 +257,7 @@
 		CB5172231FA2E143000433E7 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				CBE64A011FCF987500986421 /* UI预加载 */,
 				CBF71A401FCE9BAC00052290 /* 3DTouch(TableView) */,
 				CB0D28371FB93934000D572A /* Func(函数) */,
 				CB0F3C2C1FB539DE00333FEF /* Set(集合) */,
@@ -460,6 +467,16 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		CBE64A011FCF987500986421 /* UI预加载 */ = {
+			isa = PBXGroup;
+			children = (
+				CBE64A021FCF98A000986421 /* PreviewLoadingViewController.swift */,
+				CBE64A041FCF98F300986421 /* UIView+PreviewLoading.swift */,
+				CBE64A061FCF99FC00986421 /* PreviewLoadingView.swift */,
+			);
+			path = "UI预加载";
 			sourceTree = "<group>";
 		};
 		CBF1E36D1FA85BA3006EA6DA /* AnimationNumbers */ = {
@@ -730,11 +747,14 @@
 				CB0D283F1FB96E68000D572A /* SimplePickerViewController.swift in Sources */,
 				CB1292E41FB03FA700FF26E1 /* MainTabBarViewController.swift in Sources */,
 				CB1292E61FB042D000FF26E1 /* BaseTableView.swift in Sources */,
+				CBE64A071FCF99FC00986421 /* PreviewLoadingView.swift in Sources */,
 				CBF1E3721FA85BB7006EA6DA /* AnimationNumbersViewController.swift in Sources */,
 				CB5172271FA2E143000433E7 /* ViewController.swift in Sources */,
 				CB5172251FA2E143000433E7 /* AppDelegate.swift in Sources */,
 				CB2C52241FB15064004F5408 /* ClassStructViewController.swift in Sources */,
+				CBE64A031FCF98A000986421 /* PreviewLoadingViewController.swift in Sources */,
 				CB7C1B8B1FB42CE90034FCD6 /* GCDTestViewController.swift in Sources */,
+				CBE64A051FCF98F300986421 /* UIView+PreviewLoading.swift in Sources */,
 				CB51728B1FA313EC000433E7 /* SwiftFormTestViewController.swift in Sources */,
 				CB0D28431FB98090000D572A /* APIWrapperViewController.swift in Sources */,
 				CBF71A481FCE9CCA00052290 /* TouchDetailViewController.swift in Sources */,

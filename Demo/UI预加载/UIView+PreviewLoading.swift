@@ -8,17 +8,7 @@
 
 import UIKit
 
-var ContainerViewKey = "Container"
 extension UIView {
-    
-    weak var containerView: UIView? {
-        get {
-            return objc_getAssociatedObject(self, &ContainerViewKey) as? UIView
-        }
-        set(view) {
-            objc_setAssociatedObject(self, &ContainerViewKey, view, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-        }
-    }
     
     func startPreviewLoading() {
         layer.masksToBounds = true
@@ -49,25 +39,6 @@ extension UIView {
         
         animate()
         
-    }
-    
-    func stopPreviewLoading() {
-        clear()
-    }
-    
-    func setupContainerView() {
-        clear()
-        containerView = UIView(frame: self.bounds)
-        containerView?.backgroundColor = UIColor.white
-        addSubview(containerView!)
-        bringSubview(toFront: containerView!)
-        
-    }
-    
-    func clear() {
-        if let containerView = containerView {
-            containerView.removeFromSuperview()
-        }
     }
 }
 

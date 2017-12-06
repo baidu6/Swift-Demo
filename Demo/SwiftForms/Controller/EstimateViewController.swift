@@ -8,12 +8,20 @@
 
 import UIKit
 import SwiftForms
+enum Type: Int{
+    case BuildNumber
+    case UnitNumber
+    case RoomNumber
+}
 
 class EstimateViewController: FormViewController {
     
     var field1: UITextField!
     var field2: UITextField!
     var field3: UITextField!
+    
+    
+    var cell1: EstimateCell!
 
     var second: Bool = false
 
@@ -36,18 +44,34 @@ class EstimateViewController: FormViewController {
     }
     
     @objc func test() {
-        let cell1 = self.tableView.cellForRow(at: IndexPath(row: 0, section: 1)) as! FormTextFieldCell
-        field1 = cell1.textField
-        field1.delegate = self
+        cell1 = self.tableView.cellForRow(at: IndexPath(row: 0, section: 1)) as! EstimateCell
+        cell1.textFieldDidBegin = {
+            if self.form.sections[1].footerView == nil {
+                self.form.sections[1].footerView = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 200))
+            }else {
+                self.form.sections[1].footerView = nil
+            }
         
-        let cell2 = self.tableView.cellForRow(at: IndexPath(row: 0, section: 2)) as! FormTextFieldCell
-        field2 = cell2.textField
-        field2.delegate = self
+            self.tableView.reloadSections(IndexSet(integer: 1), with: .fade)
+            
+//            self.tableView.reloadRows(at: [IndexPath(row: 0, section: 1)], with: UITableViewRowAnimation.automatic)
+            
+//            self.tableView.reloadData()
+        }
+
         
-        
-        let cell3 = self.tableView.cellForRow(at: IndexPath(row: 0, section: 3)) as! FormTextFieldCell
-        field3 = cell3.textField
-        field3.delegate = self
+//        let cell2 = self.tableView.cellForRow(at: IndexPath(row: 0, section: 2)) as! EstimateCell
+//        cell2.textFieldDidBegin = {
+//            self.form.sections[2].footerView = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 200))
+//            self.tableView.reloadSections(IndexSet(integer: 2), with: .automatic)
+//        }
+//        
+//        
+//        let cell3 = self.tableView.cellForRow(at: IndexPath(row: 0, section: 3)) as! EstimateCell
+//        cell3.textFieldDidBegin = {
+//            self.form.sections[3].footerView = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 200))
+//            self.tableView.reloadSections(IndexSet(integer: 3), with: .automatic)
+//        }
     }
     
     func setupForm() {        
@@ -62,20 +86,24 @@ class EstimateViewController: FormViewController {
         
         
         //第二组内容
-        let section2 = defaultSectionDescriptor(headerTitle: nil, footerTitle: nil, headerHeight: 10, footerHeight: 0)
+        let section2 = defaultSectionDescriptor(headerTitle: nil, footerTitle: nil, headerHeight: 10)
         section2.footerView = nil
-        row = FormRowDescriptor(tag: "louhao", type: .text, title: "楼号")
-        defaultRowAppearance(row, placeholder: "请输入活选择楼(幢)号")
+        row = FormRowDescriptor(tag: "louhao", type: .unknown, title: "楼号")
+        row.configuration.cell.cellClass = EstimateCell.self
+        
         section2.rows.append(row)
         
 
-        let section3 = defaultSectionDescriptor(headerTitle: nil, footerTitle: nil, headerHeight: 0, footerHeight: 0)
-        row = FormRowDescriptor(tag: "danyuan", type: .text, title: "单元号")
+        let section3 = defaultSectionDescriptor(headerTitle: nil, footerTitle: nil, headerHeight: 0)
+        row = FormRowDescriptor(tag: "danyuan", type: .unknown, title: "单元号")
         defaultRowAppearance(row, placeholder: "请输入或选择单元号")
+        row.configuration.cell.cellClass = EstimateCell.self
+
         section3.rows.append(row)
 
-        let section4 = defaultSectionDescriptor(headerTitle: nil, footerTitle: nil, headerHeight: 0, footerHeight: 0)
-        row = FormRowDescriptor(tag: "fanghao", type: .text, title: "房号")
+        let section4 = defaultSectionDescriptor(headerTitle: nil, footerTitle: nil, headerHeight: 0)
+        row = FormRowDescriptor(tag: "fanghao", type: .unknown, title: "房号")
+        row.configuration.cell.cellClass = EstimateCell.self
         defaultRowAppearance(row, placeholder: "请输入或选择房号")
         section4.rows.append(row)
         
@@ -100,10 +128,11 @@ class EstimateViewController: FormViewController {
         print(tableView.visibleCells)
     }
     
-    func defaultSectionDescriptor(headerTitle: String?, footerTitle: String?, headerHeight: CGFloat = 10, footerHeight: CGFloat = 0) -> FormSectionDescriptor {
+    func defaultSectionDescriptor(headerTitle: String?, footerTitle: String?, headerHeight: CGFloat = 10) -> FormSectionDescriptor {
         let section = FormSectionDescriptor(headerTitle: headerTitle, footerTitle: footerTitle)
         section.headerViewHeight = headerHeight
-        section.footerViewHeight = footerHeight
+        section.footerView = nil
+        section.footerViewHeight = 0
         return section
     }
     
@@ -120,31 +149,4 @@ class EstimateViewController: FormViewController {
 
 }
 
-extension EstimateViewController: UITextFieldDelegate {
-    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        print("textFieldShouldBeginEditing")
-        if textField == field1 {
-            if self.form.sections[1].footerView == nil {
-                self.form.sections[1].footerView = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 200))
-                self.tableView.reloadSections(IndexSet(integer: 1), with: .automatic)
-            }else {
-                self.form.sections[1].footerView = nil
-                self.tableView.reloadSections(IndexSet(integer: 1), with: .automatic)
-            }
-        }else if textField == field2 {
-            if self.form.sections[2].footerView == nil {
-                self.form.sections[2].footerView = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 200))
-                self.tableView.reloadSections(IndexSet(integer: 2), with: .automatic)
-            }else {
-                self.form.sections[2].footerView = nil
-                self.tableView.reloadSections(IndexSet(integer: 2), with: .automatic)
-            }
-        }
-        
-        return true
-    }
-    
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        print("textFieldDidBeginEditing")
-    }
-}
+

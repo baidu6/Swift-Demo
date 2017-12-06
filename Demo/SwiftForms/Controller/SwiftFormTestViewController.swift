@@ -36,7 +36,13 @@ class SwiftFormTestViewController: FormViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Estimate", style: .plain, target: self, action: #selector(estimate))
         setupForm()
+    }
+    
+    @objc func estimate() {
+        let estimate = EstimateViewController()
+        self.navigationController?.pushViewController(estimate, animated: true)
     }
     
     func setupForm() {

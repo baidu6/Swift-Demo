@@ -36,6 +36,8 @@ open class FormViewController : UITableViewController {
             FormViewController.defaultCellClasses[.slider] = FormSliderCell.self
             FormViewController.defaultCellClasses[.multipleSelector] = FormSelectorCell.self
             FormViewController.defaultCellClasses[.multilineText] = FormTextViewCell.self
+//            FormViewController.defaultCellClasses[.estimate] = EstimateCell.self
+
         }()
     
     // MARK: Class variables
@@ -211,7 +213,7 @@ open class FormViewController : UITableViewController {
         return rowDescriptor
     }
     
-    fileprivate func formBaseCellClassFromRowDescriptor(_ rowDescriptor: FormRowDescriptor) -> FormBaseCell.Type! {
+    open func formBaseCellClassFromRowDescriptor(_ rowDescriptor: FormRowDescriptor) -> FormBaseCell.Type! {
         
         var formBaseCellClass: FormBaseCell.Type
         

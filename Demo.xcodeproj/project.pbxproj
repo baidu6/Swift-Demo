@@ -39,6 +39,8 @@
 		CBE64A031FCF98A000986421 /* PreviewLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE64A021FCF98A000986421 /* PreviewLoadingViewController.swift */; };
 		CBE64A051FCF98F300986421 /* UIView+PreviewLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE64A041FCF98F300986421 /* UIView+PreviewLoading.swift */; };
 		CBE64A071FCF99FC00986421 /* PreviewLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE64A061FCF99FC00986421 /* PreviewLoadingView.swift */; };
+		CBEF165D1FD7C0F70073C1A6 /* EstimateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEF165C1FD7C0F70073C1A6 /* EstimateViewController.swift */; };
+		CBEF16711FD7ECA30073C1A6 /* EstimateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEF16701FD7ECA30073C1A6 /* EstimateCell.swift */; };
 		CBF1E3721FA85BB7006EA6DA /* AnimationNumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E3711FA85BB7006EA6DA /* AnimationNumbersViewController.swift */; };
 		CBF1E3741FA85BCD006EA6DA /* AnimationNumbersLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E3731FA85BCD006EA6DA /* AnimationNumbersLabel.swift */; };
 		CBF71A461FCE9CBE00052290 /* TouchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF71A451FCE9CBE00052290 /* TouchTableViewController.swift */; };
@@ -103,6 +105,8 @@
 		CBE64A021FCF98A000986421 /* PreviewLoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewLoadingViewController.swift; sourceTree = "<group>"; };
 		CBE64A041FCF98F300986421 /* UIView+PreviewLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+PreviewLoading.swift"; sourceTree = "<group>"; };
 		CBE64A061FCF99FC00986421 /* PreviewLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewLoadingView.swift; sourceTree = "<group>"; };
+		CBEF165C1FD7C0F70073C1A6 /* EstimateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimateViewController.swift; sourceTree = "<group>"; };
+		CBEF16701FD7ECA30073C1A6 /* EstimateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EstimateCell.swift; sourceTree = "<group>"; };
 		CBF1E3711FA85BB7006EA6DA /* AnimationNumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationNumbersViewController.swift; sourceTree = "<group>"; };
 		CBF1E3731FA85BCD006EA6DA /* AnimationNumbersLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationNumbersLabel.swift; sourceTree = "<group>"; };
 		CBF71A451FCE9CBE00052290 /* TouchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchTableViewController.swift; sourceTree = "<group>"; };
@@ -419,6 +423,8 @@
 			isa = PBXGroup;
 			children = (
 				CB51728A1FA313EC000433E7 /* SwiftFormTestViewController.swift */,
+				CBEF165C1FD7C0F70073C1A6 /* EstimateViewController.swift */,
+				CBEF16701FD7ECA30073C1A6 /* EstimateCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -742,6 +748,7 @@
 				CB0F3C311FB539ED00333FEF /* SetTestViewController.swift in Sources */,
 				CB0F3C381FB5A29800333FEF /* ChangeNickNameViewController.swift in Sources */,
 				CBF1E3741FA85BCD006EA6DA /* AnimationNumbersLabel.swift in Sources */,
+				CBEF16711FD7ECA30073C1A6 /* EstimateCell.swift in Sources */,
 				CBF71A461FCE9CBE00052290 /* TouchTableViewController.swift in Sources */,
 				CB67FB3B1FBA7D2200B5DD0A /* StepByStepViewController.swift in Sources */,
 				CB0D283F1FB96E68000D572A /* SimplePickerViewController.swift in Sources */,
@@ -759,6 +766,7 @@
 				CB0D28431FB98090000D572A /* APIWrapperViewController.swift in Sources */,
 				CBF71A481FCE9CCA00052290 /* TouchDetailViewController.swift in Sources */,
 				CB0D283B1FB9394F000D572A /* FunTestViewController.swift in Sources */,
+				CBEF165D1FD7C0F70073C1A6 /* EstimateViewController.swift in Sources */,
 				CB5172841FA30EE4000433E7 /* RxSwiftTestViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

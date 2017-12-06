@@ -12,6 +12,7 @@
 		CB0F3C311FB539ED00333FEF /* SetTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0F3C301FB539ED00333FEF /* SetTestViewController.swift */; };
 		CB1292E41FB03FA700FF26E1 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1292E31FB03FA700FF26E1 /* MainTabBarViewController.swift */; };
 		CB1292E61FB042D000FF26E1 /* BaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1292E51FB042D000FF26E1 /* BaseTableView.swift */; };
+		CB2A59451FB7F976003287F0 /* NewFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2A59441FB7F976003287F0 /* NewFeatureViewController.swift */; };
 		CB2C52241FB15064004F5408 /* ClassStructViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2C52231FB15064004F5408 /* ClassStructViewController.swift */; };
 		CB5172251FA2E143000433E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5172241FA2E143000433E7 /* AppDelegate.swift */; };
 		CB5172271FA2E143000433E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5172261FA2E143000433E7 /* ViewController.swift */; };
@@ -54,6 +55,7 @@
 		CB0F3C301FB539ED00333FEF /* SetTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTestViewController.swift; sourceTree = "<group>"; };
 		CB1292E31FB03FA700FF26E1 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		CB1292E51FB042D000FF26E1 /* BaseTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableView.swift; sourceTree = "<group>"; };
+		CB2A59441FB7F976003287F0 /* NewFeatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFeatureViewController.swift; sourceTree = "<group>"; };
 		CB2C52231FB15064004F5408 /* ClassStructViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassStructViewController.swift; sourceTree = "<group>"; };
 		CB5172211FA2E143000433E7 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5172241FA2E143000433E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +146,30 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		CB2A59411FB7F93A003287F0 /* Swift4(New Feature) */ = {
+			isa = PBXGroup;
+			children = (
+				CB2A59421FB7F93A003287F0 /* Controller */,
+				CB2A59431FB7F93A003287F0 /* View */,
+			);
+			path = "Swift4(New Feature)";
+			sourceTree = "<group>";
+		};
+		CB2A59421FB7F93A003287F0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CB2A59441FB7F976003287F0 /* NewFeatureViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CB2A59431FB7F93A003287F0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		CB2C521F1FB1504C004F5408 /* ClassStruct */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +227,7 @@
 		CB5172231FA2E143000433E7 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				CB2A59411FB7F93A003287F0 /* Swift4(New Feature) */,
 				CB0F3C2C1FB539DE00333FEF /* Set(集合) */,
 				CB7C1B861FB42CD20034FCD6 /* GCD */,
 				CB2C521F1FB1504C004F5408 /* ClassStruct */,
@@ -655,6 +682,7 @@
 				CB2C52241FB15064004F5408 /* ClassStructViewController.swift in Sources */,
 				CB7C1B8B1FB42CE90034FCD6 /* GCDTestViewController.swift in Sources */,
 				CB51728B1FA313EC000433E7 /* SwiftFormTestViewController.swift in Sources */,
+				CB2A59451FB7F976003287F0 /* NewFeatureViewController.swift in Sources */,
 				CB5172841FA30EE4000433E7 /* RxSwiftTestViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

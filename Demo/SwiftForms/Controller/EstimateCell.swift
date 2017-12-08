@@ -9,28 +9,32 @@
 import UIKit
 import SwiftForms
 
+
+enum Type: Int{
+    case BuildNumber
+    case UnitNumber
+    case RoomNumber
+}
+
 typealias SimpleCallBack = () -> Void
 
 open class EstimateCell: FormTextFieldCell {
     
-    var textFieldDidBegin: SimpleCallBack?
-  
+    var fieldDidBegin: SimpleCallBack?
+
     open override func configure() {
         super.configure()
         
         textField.textAlignment = .right
         textField.font = UIFont.systemFont(ofSize: 16)
         textField.delegate = self
-        
-        textField.backgroundColor = UIColor.red
+
     }
 
 }
 
 extension EstimateCell: UITextFieldDelegate {
     public func textFieldDidBeginEditing(_ textField: UITextField) {
-        
-        print("textFieldDidBeginEditing")
-        textFieldDidBegin?()
+        self.fieldDidBegin?()
     }
 }

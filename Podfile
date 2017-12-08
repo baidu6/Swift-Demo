@@ -8,7 +8,7 @@ use_frameworks!
 	pod ‘RxSwift’
 	pod ‘RxCocoa’
 	pod ‘Realm’
-    pod 'SwiftForms'
+    pod 'SwiftForms', '~> 1.8.1'
     pod 'SnapKit'
     pod 'RealmSwift'
     

@@ -8,11 +8,8 @@
 
 import UIKit
 import SwiftForms
-enum Type: Int{
-    case BuildNumber
-    case UnitNumber
-    case RoomNumber
-}
+
+typealias EstimateType = (section:Int, expand:Bool)
 
 class EstimateViewController: FormViewController {
     
@@ -20,58 +17,49 @@ class EstimateViewController: FormViewController {
     var field2: UITextField!
     var field3: UITextField!
     
-    
+    var open = false
+    var type: EstimateType = (0, false)
+
     var cell1: EstimateCell!
 
     var second: Bool = false
+    
+    var footer: UIView = UIView()
+    
+    var resultArray: [ResultTableView] = [ResultTableView]()
+    
+    fileprivate var resultTableView1: ResultTableView!
+    fileprivate var resultTableView2: ResultTableView!
+    fileprivate var resultTableView3: ResultTableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
         setupForm()
-    
+
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        print("viewDidAppear")
-        
-    }
+ 
     
     func setupUI() {
        self.navigationItem.title = "Estimate"
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Test", style: .plain, target: self, action: #selector(test))
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "test", style: .plain, target: self, action: #selector(test))
+        footer.backgroundColor = UIColor.orange
+        
+        
+        resultTableView1 = ResultTableView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 200), style: .plain)
+        resultTableView2 = ResultTableView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 200), style: .plain)
+        resultTableView3 = ResultTableView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 200), style: .plain)
+        
+        resultArray.append(resultTableView1)
+        resultArray.append(resultTableView2)
+        resultArray.append(resultTableView3)
+
+        
     }
     
     @objc func test() {
-        cell1 = self.tableView.cellForRow(at: IndexPath(row: 0, section: 1)) as! EstimateCell
-        cell1.textFieldDidBegin = {
-            if self.form.sections[1].footerView == nil {
-                self.form.sections[1].footerView = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 200))
-            }else {
-                self.form.sections[1].footerView = nil
-            }
-        
-            self.tableView.reloadSections(IndexSet(integer: 1), with: .fade)
-            
-//            self.tableView.reloadRows(at: [IndexPath(row: 0, section: 1)], with: UITableViewRowAnimation.automatic)
-            
-//            self.tableView.reloadData()
-        }
-
-        
-//        let cell2 = self.tableView.cellForRow(at: IndexPath(row: 0, section: 2)) as! EstimateCell
-//        cell2.textFieldDidBegin = {
-//            self.form.sections[2].footerView = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 200))
-//            self.tableView.reloadSections(IndexSet(integer: 2), with: .automatic)
-//        }
-//        
-//        
-//        let cell3 = self.tableView.cellForRow(at: IndexPath(row: 0, section: 3)) as! EstimateCell
-//        cell3.textFieldDidBegin = {
-//            self.form.sections[3].footerView = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 200))
-//            self.tableView.reloadSections(IndexSet(integer: 3), with: .automatic)
-//        }
+        let result1 = resultArray[0]
+        result1.datas = ["哈哈哈哈哈", "嘿嘿嘿嘿"]
     }
     
     func setupForm() {        
@@ -90,7 +78,6 @@ class EstimateViewController: FormViewController {
         section2.footerView = nil
         row = FormRowDescriptor(tag: "louhao", type: .unknown, title: "楼号")
         row.configuration.cell.cellClass = EstimateCell.self
-        
         section2.rows.append(row)
         
 
@@ -98,8 +85,8 @@ class EstimateViewController: FormViewController {
         row = FormRowDescriptor(tag: "danyuan", type: .unknown, title: "单元号")
         defaultRowAppearance(row, placeholder: "请输入或选择单元号")
         row.configuration.cell.cellClass = EstimateCell.self
-
         section3.rows.append(row)
+        
 
         let section4 = defaultSectionDescriptor(headerTitle: nil, footerTitle: nil, headerHeight: 0)
         row = FormRowDescriptor(tag: "fanghao", type: .unknown, title: "房号")
@@ -123,16 +110,14 @@ class EstimateViewController: FormViewController {
         
         form.sections = [section1, section2, section3, section4, section5]
         self.form = form
-        
-        
-        print(tableView.visibleCells)
+
     }
     
     func defaultSectionDescriptor(headerTitle: String?, footerTitle: String?, headerHeight: CGFloat = 10) -> FormSectionDescriptor {
         let section = FormSectionDescriptor(headerTitle: headerTitle, footerTitle: footerTitle)
         section.headerViewHeight = headerHeight
-        section.footerView = nil
-        section.footerViewHeight = 0
+//        section.footerView = nil
+//        section.footerViewHeight = 0
         return section
     }
     
@@ -147,6 +132,48 @@ class EstimateViewController: FormViewController {
     }
     
 
+}
+
+extension EstimateViewController {
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+       
+        if cell.isKind(of: EstimateCell.classForCoder()) {
+            let cell = cell as! EstimateCell
+      
+            cell.fieldDidBegin = {
+                if self.type.expand == false {
+                    self.type = (indexPath.section, true)
+                }else {
+                    self.type = (indexPath.section, true)
+                }
+                
+                self.tableView.beginUpdates()
+                self.tableView.endUpdates()
+            }
+        }
+    }
+    
+    
+    override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        
+        if section == 1 || section == 2 || section == 3 {
+//            let result = ResultTableView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 200), style: .plain)
+//            return result
+            let result = resultArray[section - 1]
+            print(result)
+//            result.datas = ["上一组：：：\(section - 1)", "所在组：：：\(section)"]
+            return resultArray[section - 1]
+        }
+        return nil
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+            if section == self.type.section {
+                return self.type.expand ? 200 : 0
+            }
+        return 0
+    }
+    
 }
 
 

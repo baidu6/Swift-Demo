@@ -20,6 +20,8 @@
 		CB1292E41FB03FA700FF26E1 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1292E31FB03FA700FF26E1 /* MainTabBarViewController.swift */; };
 		CB1292E61FB042D000FF26E1 /* BaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1292E51FB042D000FF26E1 /* BaseTableView.swift */; };
 		CB2C52241FB15064004F5408 /* ClassStructViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2C52231FB15064004F5408 /* ClassStructViewController.swift */; };
+		CB3748EA1FDA59D800BE0418 /* EstimateDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3748E91FDA59D800BE0418 /* EstimateDetailCell.swift */; };
+		CB3748EC1FDA7E4E00BE0418 /* ResultTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3748EB1FDA7E4E00BE0418 /* ResultTableView.swift */; };
 		CB5172251FA2E143000433E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5172241FA2E143000433E7 /* AppDelegate.swift */; };
 		CB5172271FA2E143000433E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5172261FA2E143000433E7 /* ViewController.swift */; };
 		CB51722A1FA2E143000433E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5172281FA2E143000433E7 /* Main.storyboard */; };
@@ -80,6 +82,8 @@
 		CB1292E31FB03FA700FF26E1 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		CB1292E51FB042D000FF26E1 /* BaseTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableView.swift; sourceTree = "<group>"; };
 		CB2C52231FB15064004F5408 /* ClassStructViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassStructViewController.swift; sourceTree = "<group>"; };
+		CB3748E91FDA59D800BE0418 /* EstimateDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimateDetailCell.swift; sourceTree = "<group>"; };
+		CB3748EB1FDA7E4E00BE0418 /* ResultTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTableView.swift; sourceTree = "<group>"; };
 		CB5172211FA2E143000433E7 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5172241FA2E143000433E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB5172261FA2E143000433E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -425,6 +429,8 @@
 				CB51728A1FA313EC000433E7 /* SwiftFormTestViewController.swift */,
 				CBEF165C1FD7C0F70073C1A6 /* EstimateViewController.swift */,
 				CBEF16701FD7ECA30073C1A6 /* EstimateCell.swift */,
+				CB3748E91FDA59D800BE0418 /* EstimateDetailCell.swift */,
+				CB3748EB1FDA7E4E00BE0418 /* ResultTableView.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -754,11 +760,13 @@
 				CB0D283F1FB96E68000D572A /* SimplePickerViewController.swift in Sources */,
 				CB1292E41FB03FA700FF26E1 /* MainTabBarViewController.swift in Sources */,
 				CB1292E61FB042D000FF26E1 /* BaseTableView.swift in Sources */,
+				CB3748EC1FDA7E4E00BE0418 /* ResultTableView.swift in Sources */,
 				CBE64A071FCF99FC00986421 /* PreviewLoadingView.swift in Sources */,
 				CBF1E3721FA85BB7006EA6DA /* AnimationNumbersViewController.swift in Sources */,
 				CB5172271FA2E143000433E7 /* ViewController.swift in Sources */,
 				CB5172251FA2E143000433E7 /* AppDelegate.swift in Sources */,
 				CB2C52241FB15064004F5408 /* ClassStructViewController.swift in Sources */,
+				CB3748EA1FDA59D800BE0418 /* EstimateDetailCell.swift in Sources */,
 				CBE64A031FCF98A000986421 /* PreviewLoadingViewController.swift in Sources */,
 				CB7C1B8B1FB42CE90034FCD6 /* GCDTestViewController.swift in Sources */,
 				CBE64A051FCF98F300986421 /* UIView+PreviewLoading.swift in Sources */,

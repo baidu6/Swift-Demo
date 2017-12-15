@@ -1,17 +1,18 @@
-platform :ios, ‘9.0’
+platform :ios, '9.0'
 inhibit_all_warnings!
 
-target :’Demo’ do
+target :'Demo' do
 use_frameworks!
 
-	pod ‘SnapKit’
-	pod ‘RxSwift’
-	pod ‘RxCocoa’
-	pod ‘Realm’
+	pod 'SnapKit'
+	pod 'RxSwift'
+	pod 'RxCocoa'
+	pod 'Realm'
     pod 'SwiftForms', '~> 1.8.1'
     pod 'SnapKit'
     pod 'RealmSwift'
-    
+    pod 'JXPhotoBrowser', '~> 0.4.1'
+
     
     post_install do |installer|
         installer.pods_project.targets.each do |target|

@@ -108,6 +108,16 @@ class EstimateViewController: FormViewController {
         defaultRowAppearance(row, placeholder: "请输入总层数")
         section5.rows.append(row)
         
+        var isHangzhou = true
+        if isHangzhou {
+            row = FormRowDescriptor(tag: "type", type: .text, title: "房屋类型")
+            row.configuration.cell.appearance = ["titleLabel.textAlignment": NSTextAlignment.left as AnyObject]
+            section5.rows.append(row)
+            
+            row = FormRowDescriptor(tag: "jignguan", type: .button, title: "景观")
+            section5.rows.append(row)
+        }
+        
         form.sections = [section1, section2, section3, section4, section5]
         self.form = form
 

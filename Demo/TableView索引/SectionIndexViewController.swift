@@ -19,7 +19,6 @@ class SectionIndexViewController: UIViewController {
         view.backgroundColor = UIColor.white
         setupUI()
         
-        print("哈哈哈哈哈哈哈哈哈哈哈")
     }
 
     func setupUI() {

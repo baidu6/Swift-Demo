@@ -12,8 +12,7 @@ import SnapKit
 
 typealias  DictionaryDefault = Dictionary<String, Any>
 
-let ScreenWidth = UIScreen.main.bounds.size.width
-let ScreenHeight = UIScreen.main.bounds.size.height
+
 
 class ViewController: UIViewController {
     

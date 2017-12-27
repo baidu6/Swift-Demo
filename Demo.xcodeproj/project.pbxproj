@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3E789B5A286723032C301DC5 /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8D0367CB74A939EBACC8FE2 /* Pods_Demo.framework */; };
-		CB016C221FF24A130004E571 /* CustomIndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB016C211FF24A130004E571 /* CustomIndexView.swift */; };
 		CB016C241FF24B5A0004E571 /* UITableView+IndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB016C231FF24B5A0004E571 /* UITableView+IndexView.swift */; };
 		CB06C72D1FF098860028D999 /* SectionIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB06C72C1FF098860028D999 /* SectionIndexViewController.swift */; };
 		CB0CD8641FB2B2EB00901C0F /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0CD8631FB2B2EB00901C0F /* Consts.swift */; };
@@ -73,7 +72,6 @@
 		814194BBC1CA0B32C59314A5 /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		A8D0367CB74A939EBACC8FE2 /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD51421C21D0665B7414AE60 /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
-		CB016C211FF24A130004E571 /* CustomIndexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomIndexView.swift; sourceTree = "<group>"; };
 		CB016C231FF24B5A0004E571 /* UITableView+IndexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+IndexView.swift"; sourceTree = "<group>"; };
 		CB06C72C1FF098860028D999 /* SectionIndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionIndexViewController.swift; sourceTree = "<group>"; };
 		CB0CD8631FB2B2EB00901C0F /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
@@ -162,7 +160,6 @@
 			isa = PBXGroup;
 			children = (
 				CB06C72C1FF098860028D999 /* SectionIndexViewController.swift */,
-				CB016C211FF24A130004E571 /* CustomIndexView.swift */,
 				CB016C231FF24B5A0004E571 /* UITableView+IndexView.swift */,
 			);
 			path = "TableView索引";
@@ -784,7 +781,6 @@
 				CB5172271FA2E143000433E7 /* ViewController.swift in Sources */,
 				CB5172251FA2E143000433E7 /* AppDelegate.swift in Sources */,
 				CB2C52241FB15064004F5408 /* ClassStructViewController.swift in Sources */,
-				CB016C221FF24A130004E571 /* CustomIndexView.swift in Sources */,
 				CB016C241FF24B5A0004E571 /* UITableView+IndexView.swift in Sources */,
 				CB3748EA1FDA59D800BE0418 /* EstimateDetailCell.swift in Sources */,
 				CBE64A031FCF98A000986421 /* PreviewLoadingViewController.swift in Sources */,

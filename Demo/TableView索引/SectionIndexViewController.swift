@@ -19,11 +19,7 @@ class SectionIndexViewController: UIViewController {
         view.backgroundColor = UIColor.white
         setupUI()
         
-//        if (self.tableView.dataSource?.responds(to: #selector(sectionIndexTitles(for:))))! {
-//            self.tableView.showCustomIndexView()
-//            self.tableView.indexView?.reloadSectionDatas(datas: titlesArray)
-//        }
-     
+        tableView.customIndexView(indexTitles: titlesArray)
     }
 
     func setupUI() {
@@ -36,8 +32,6 @@ class SectionIndexViewController: UIViewController {
         tableView.snp.makeConstraints { (make) in
             make.edges.equalToSuperview()
         }
-        
-        
         
     }
     
@@ -60,24 +54,11 @@ extension SectionIndexViewController: UITableViewDelegate, UITableViewDataSource
         return cell!
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.showCustomIndexView()
-        tableView.indexView?.reloadSectionDatas(datas: titlesArray)
 
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return titlesArray[section]
     }
 
-//    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-//        return titlesArray[section]
-//    }
-//
-//    func sectionIndexTitles(for tableView: UITableView) -> [String]? {
-//        return titlesArray
-//    }
-//
-//    func tableView(_ tableView: UITableView, sectionForSectionIndexTitle title: String, at index: Int) -> Int {
-//        return index
-//    }
-    
 }
 
 

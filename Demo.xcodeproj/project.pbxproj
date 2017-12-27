@@ -19,6 +19,7 @@
 		CB0F3C311FB539ED00333FEF /* SetTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0F3C301FB539ED00333FEF /* SetTestViewController.swift */; };
 		CB0F3C381FB5A29800333FEF /* ChangeNickNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0F3C361FB5A29800333FEF /* ChangeNickNameViewController.swift */; };
 		CB0F3C391FB5A29800333FEF /* ChangeNickNameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB0F3C371FB5A29800333FEF /* ChangeNickNameViewController.xib */; };
+		CB10D5C41FF3996000BAC2DF /* KeyBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB10D5C31FF3996000BAC2DF /* KeyBoardViewController.swift */; };
 		CB1292E41FB03FA700FF26E1 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1292E31FB03FA700FF26E1 /* MainTabBarViewController.swift */; };
 		CB1292E61FB042D000FF26E1 /* BaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1292E51FB042D000FF26E1 /* BaseTableView.swift */; };
 		CB2C52241FB15064004F5408 /* ClassStructViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2C52231FB15064004F5408 /* ClassStructViewController.swift */; };
@@ -83,6 +84,7 @@
 		CB0F3C301FB539ED00333FEF /* SetTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTestViewController.swift; sourceTree = "<group>"; };
 		CB0F3C361FB5A29800333FEF /* ChangeNickNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeNickNameViewController.swift; sourceTree = "<group>"; };
 		CB0F3C371FB5A29800333FEF /* ChangeNickNameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangeNickNameViewController.xib; sourceTree = "<group>"; };
+		CB10D5C31FF3996000BAC2DF /* KeyBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoardViewController.swift; sourceTree = "<group>"; };
 		CB1292E31FB03FA700FF26E1 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		CB1292E51FB042D000FF26E1 /* BaseTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableView.swift; sourceTree = "<group>"; };
 		CB2C52231FB15064004F5408 /* ClassStructViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassStructViewController.swift; sourceTree = "<group>"; };
@@ -221,6 +223,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		CB10D5C21FF3994D00BAC2DF /* KeyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				CB10D5C31FF3996000BAC2DF /* KeyBoardViewController.swift */,
+			);
+			path = KeyBoard;
+			sourceTree = "<group>";
+		};
 		CB2C521F1FB1504C004F5408 /* ClassStruct */ = {
 			isa = PBXGroup;
 			children = (
@@ -278,6 +288,7 @@
 		CB5172231FA2E143000433E7 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				CB10D5C21FF3994D00BAC2DF /* KeyBoard */,
 				CB06C72B1FF098730028D999 /* TableView索引 */,
 				CBE64A011FCF987500986421 /* UI预加载 */,
 				CBF71A401FCE9BAC00052290 /* 3DTouch(TableView) */,
@@ -768,6 +779,7 @@
 				CB0F3C311FB539ED00333FEF /* SetTestViewController.swift in Sources */,
 				CB0F3C381FB5A29800333FEF /* ChangeNickNameViewController.swift in Sources */,
 				CBF1E3741FA85BCD006EA6DA /* AnimationNumbersLabel.swift in Sources */,
+				CB10D5C41FF3996000BAC2DF /* KeyBoardViewController.swift in Sources */,
 				CBEF16711FD7ECA30073C1A6 /* EstimateCell.swift in Sources */,
 				CB06C72D1FF098860028D999 /* SectionIndexViewController.swift in Sources */,
 				CBF71A461FCE9CBE00052290 /* TouchTableViewController.swift in Sources */,

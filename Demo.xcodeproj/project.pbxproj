@@ -19,6 +19,7 @@
 		CB0F3C311FB539ED00333FEF /* SetTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0F3C301FB539ED00333FEF /* SetTestViewController.swift */; };
 		CB0F3C381FB5A29800333FEF /* ChangeNickNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0F3C361FB5A29800333FEF /* ChangeNickNameViewController.swift */; };
 		CB0F3C391FB5A29800333FEF /* ChangeNickNameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB0F3C371FB5A29800333FEF /* ChangeNickNameViewController.xib */; };
+		CB1092661FF483FF00DC6961 /* GradientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1092651FF483FF00DC6961 /* GradientViewController.swift */; };
 		CB10D5C41FF3996000BAC2DF /* KeyBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB10D5C31FF3996000BAC2DF /* KeyBoardViewController.swift */; };
 		CB1292E41FB03FA700FF26E1 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1292E31FB03FA700FF26E1 /* MainTabBarViewController.swift */; };
 		CB1292E61FB042D000FF26E1 /* BaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1292E51FB042D000FF26E1 /* BaseTableView.swift */; };
@@ -84,6 +85,7 @@
 		CB0F3C301FB539ED00333FEF /* SetTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTestViewController.swift; sourceTree = "<group>"; };
 		CB0F3C361FB5A29800333FEF /* ChangeNickNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeNickNameViewController.swift; sourceTree = "<group>"; };
 		CB0F3C371FB5A29800333FEF /* ChangeNickNameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangeNickNameViewController.xib; sourceTree = "<group>"; };
+		CB1092651FF483FF00DC6961 /* GradientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientViewController.swift; sourceTree = "<group>"; };
 		CB10D5C31FF3996000BAC2DF /* KeyBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoardViewController.swift; sourceTree = "<group>"; };
 		CB1292E31FB03FA700FF26E1 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		CB1292E51FB042D000FF26E1 /* BaseTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableView.swift; sourceTree = "<group>"; };
@@ -223,6 +225,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		CB1092641FF483F400DC6961 /* GradientLayer */ = {
+			isa = PBXGroup;
+			children = (
+				CB1092651FF483FF00DC6961 /* GradientViewController.swift */,
+			);
+			path = GradientLayer;
+			sourceTree = "<group>";
+		};
 		CB10D5C21FF3994D00BAC2DF /* KeyBoard */ = {
 			isa = PBXGroup;
 			children = (
@@ -288,6 +298,7 @@
 		CB5172231FA2E143000433E7 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				CB1092641FF483F400DC6961 /* GradientLayer */,
 				CB10D5C21FF3994D00BAC2DF /* KeyBoard */,
 				CB06C72B1FF098730028D999 /* TableView索引 */,
 				CBE64A011FCF987500986421 /* UI预加载 */,
@@ -795,6 +806,7 @@
 				CB2C52241FB15064004F5408 /* ClassStructViewController.swift in Sources */,
 				CB016C241FF24B5A0004E571 /* UITableView+IndexView.swift in Sources */,
 				CB3748EA1FDA59D800BE0418 /* EstimateDetailCell.swift in Sources */,
+				CB1092661FF483FF00DC6961 /* GradientViewController.swift in Sources */,
 				CBE64A031FCF98A000986421 /* PreviewLoadingViewController.swift in Sources */,
 				CB7C1B8B1FB42CE90034FCD6 /* GCDTestViewController.swift in Sources */,
 				CBE64A051FCF98F300986421 /* UIView+PreviewLoading.swift in Sources */,

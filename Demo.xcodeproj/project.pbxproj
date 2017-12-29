@@ -24,6 +24,12 @@
 		CB1292E41FB03FA700FF26E1 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1292E31FB03FA700FF26E1 /* MainTabBarViewController.swift */; };
 		CB1292E61FB042D000FF26E1 /* BaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1292E51FB042D000FF26E1 /* BaseTableView.swift */; };
 		CB1B1A231FF5E94900BEF65B /* TableViewEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1B1A221FF5E94900BEF65B /* TableViewEditViewController.swift */; };
+		CB1B1A261FF614B800BEF65B /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1B1A251FF614B800BEF65B /* AnimationViewController.swift */; };
+		CB1B1A281FF6157B00BEF65B /* BasicAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1B1A271FF6157B00BEF65B /* BasicAnimationViewController.swift */; };
+		CB1B1A2A1FF61D7B00BEF65B /* KeyframeAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1B1A291FF61D7B00BEF65B /* KeyframeAnimationViewController.swift */; };
+		CB1B1A2C1FF6239600BEF65B /* GroupAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1B1A2B1FF6239600BEF65B /* GroupAnimationViewController.swift */; };
+		CB1B1A2E1FF6338800BEF65B /* TransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1B1A2D1FF6338800BEF65B /* TransitionViewController.swift */; };
+		CB1B1A301FF63FC700BEF65B /* CombineCaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1B1A2F1FF63FC700BEF65B /* CombineCaseViewController.swift */; };
 		CB2C52241FB15064004F5408 /* ClassStructViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2C52231FB15064004F5408 /* ClassStructViewController.swift */; };
 		CB3748EA1FDA59D800BE0418 /* EstimateDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3748E91FDA59D800BE0418 /* EstimateDetailCell.swift */; };
 		CB3748EC1FDA7E4E00BE0418 /* ResultTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3748EB1FDA7E4E00BE0418 /* ResultTableView.swift */; };
@@ -91,6 +97,12 @@
 		CB1292E31FB03FA700FF26E1 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		CB1292E51FB042D000FF26E1 /* BaseTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableView.swift; sourceTree = "<group>"; };
 		CB1B1A221FF5E94900BEF65B /* TableViewEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewEditViewController.swift; sourceTree = "<group>"; };
+		CB1B1A251FF614B800BEF65B /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
+		CB1B1A271FF6157B00BEF65B /* BasicAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicAnimationViewController.swift; sourceTree = "<group>"; };
+		CB1B1A291FF61D7B00BEF65B /* KeyframeAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyframeAnimationViewController.swift; sourceTree = "<group>"; };
+		CB1B1A2B1FF6239600BEF65B /* GroupAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupAnimationViewController.swift; sourceTree = "<group>"; };
+		CB1B1A2D1FF6338800BEF65B /* TransitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionViewController.swift; sourceTree = "<group>"; };
+		CB1B1A2F1FF63FC700BEF65B /* CombineCaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineCaseViewController.swift; sourceTree = "<group>"; };
 		CB2C52231FB15064004F5408 /* ClassStructViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassStructViewController.swift; sourceTree = "<group>"; };
 		CB3748E91FDA59D800BE0418 /* EstimateDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimateDetailCell.swift; sourceTree = "<group>"; };
 		CB3748EB1FDA7E4E00BE0418 /* ResultTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTableView.swift; sourceTree = "<group>"; };
@@ -251,6 +263,19 @@
 			path = "TableViewCell左滑";
 			sourceTree = "<group>";
 		};
+		CB1B1A241FF6149D00BEF65B /* 动画（Animation） */ = {
+			isa = PBXGroup;
+			children = (
+				CB1B1A251FF614B800BEF65B /* AnimationViewController.swift */,
+				CB1B1A271FF6157B00BEF65B /* BasicAnimationViewController.swift */,
+				CB1B1A291FF61D7B00BEF65B /* KeyframeAnimationViewController.swift */,
+				CB1B1A2B1FF6239600BEF65B /* GroupAnimationViewController.swift */,
+				CB1B1A2D1FF6338800BEF65B /* TransitionViewController.swift */,
+				CB1B1A2F1FF63FC700BEF65B /* CombineCaseViewController.swift */,
+			);
+			path = "动画（Animation）";
+			sourceTree = "<group>";
+		};
 		CB2C521F1FB1504C004F5408 /* ClassStruct */ = {
 			isa = PBXGroup;
 			children = (
@@ -308,6 +333,7 @@
 		CB5172231FA2E143000433E7 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				CB1B1A241FF6149D00BEF65B /* 动画（Animation） */,
 				CB1B1A211FF5E93700BEF65B /* TableViewCell左滑 */,
 				CB1092641FF483F400DC6961 /* GradientLayer */,
 				CB10D5C21FF3994D00BAC2DF /* KeyBoard */,
@@ -802,12 +828,15 @@
 			files = (
 				CB5172821FA30ED7000433E7 /* RealmTestViewController.swift in Sources */,
 				CB67FB401FBAC28D00B5DD0A /* TodoDetailViewController.swift in Sources */,
+				CB1B1A261FF614B800BEF65B /* AnimationViewController.swift in Sources */,
 				CB0CD8641FB2B2EB00901C0F /* Consts.swift in Sources */,
 				CB5172801FA30EC9000433E7 /* CoreDataTestViewController.swift in Sources */,
+				CB1B1A2A1FF61D7B00BEF65B /* KeyframeAnimationViewController.swift in Sources */,
 				CB0F3C311FB539ED00333FEF /* SetTestViewController.swift in Sources */,
 				CB0F3C381FB5A29800333FEF /* ChangeNickNameViewController.swift in Sources */,
 				CBF1E3741FA85BCD006EA6DA /* AnimationNumbersLabel.swift in Sources */,
 				CB10D5C41FF3996000BAC2DF /* KeyBoardViewController.swift in Sources */,
+				CB1B1A301FF63FC700BEF65B /* CombineCaseViewController.swift in Sources */,
 				CBEF16711FD7ECA30073C1A6 /* EstimateCell.swift in Sources */,
 				CB06C72D1FF098860028D999 /* SectionIndexViewController.swift in Sources */,
 				CBF71A461FCE9CBE00052290 /* TouchTableViewController.swift in Sources */,
@@ -819,9 +848,11 @@
 				CBE64A071FCF99FC00986421 /* PreviewLoadingView.swift in Sources */,
 				CBF1E3721FA85BB7006EA6DA /* AnimationNumbersViewController.swift in Sources */,
 				CB5172271FA2E143000433E7 /* ViewController.swift in Sources */,
+				CB1B1A2C1FF6239600BEF65B /* GroupAnimationViewController.swift in Sources */,
 				CB5172251FA2E143000433E7 /* AppDelegate.swift in Sources */,
 				CB2C52241FB15064004F5408 /* ClassStructViewController.swift in Sources */,
 				CB016C241FF24B5A0004E571 /* UITableView+IndexView.swift in Sources */,
+				CB1B1A2E1FF6338800BEF65B /* TransitionViewController.swift in Sources */,
 				CB3748EA1FDA59D800BE0418 /* EstimateDetailCell.swift in Sources */,
 				CB1092661FF483FF00DC6961 /* GradientViewController.swift in Sources */,
 				CBE64A031FCF98A000986421 /* PreviewLoadingViewController.swift in Sources */,
@@ -829,6 +860,7 @@
 				CBE64A051FCF98F300986421 /* UIView+PreviewLoading.swift in Sources */,
 				CB51728B1FA313EC000433E7 /* SwiftFormTestViewController.swift in Sources */,
 				CB0D28431FB98090000D572A /* APIWrapperViewController.swift in Sources */,
+				CB1B1A281FF6157B00BEF65B /* BasicAnimationViewController.swift in Sources */,
 				CBF71A481FCE9CCA00052290 /* TouchDetailViewController.swift in Sources */,
 				CB0D283B1FB9394F000D572A /* FunTestViewController.swift in Sources */,
 				CBEF165D1FD7C0F70073C1A6 /* EstimateViewController.swift in Sources */,

@@ -52,21 +52,23 @@ extension TableViewEditViewController: UITableViewDelegate, UITableViewDataSourc
 }
 
 //MARK:- SwipeTableViewCellDelegate
+
 extension TableViewEditViewController: SwipeTableViewCellDelegate {
     
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath, for orientation: SwipeActionsOrientation) -> [SwipeAction]? {
         let action1 = SwipeAction(style: .default, title: "Delete") { (_, _) in
             print("Delete")
         }
+        action1.transitionDelegate = ScaleTransition.default
         action1.textColor = UIColor.red
         action1.backgroundColor = UIColor.orange
         return [action1]
     }
-
+    
     func tableView(_ tableView: UITableView, editActionsOptionsForRowAt indexPath: IndexPath, for orientation: SwipeActionsOrientation) -> SwipeTableOptions {
         var options = SwipeTableOptions()
         options.expansionStyle = .selection
-        options.transitionStyle = .border
+        options.transitionStyle = .reveal
         return options
     }
 }

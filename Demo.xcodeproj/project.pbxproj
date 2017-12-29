@@ -23,6 +23,7 @@
 		CB10D5C41FF3996000BAC2DF /* KeyBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB10D5C31FF3996000BAC2DF /* KeyBoardViewController.swift */; };
 		CB1292E41FB03FA700FF26E1 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1292E31FB03FA700FF26E1 /* MainTabBarViewController.swift */; };
 		CB1292E61FB042D000FF26E1 /* BaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1292E51FB042D000FF26E1 /* BaseTableView.swift */; };
+		CB1B1A231FF5E94900BEF65B /* TableViewEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1B1A221FF5E94900BEF65B /* TableViewEditViewController.swift */; };
 		CB2C52241FB15064004F5408 /* ClassStructViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2C52231FB15064004F5408 /* ClassStructViewController.swift */; };
 		CB3748EA1FDA59D800BE0418 /* EstimateDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3748E91FDA59D800BE0418 /* EstimateDetailCell.swift */; };
 		CB3748EC1FDA7E4E00BE0418 /* ResultTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3748EB1FDA7E4E00BE0418 /* ResultTableView.swift */; };
@@ -89,6 +90,7 @@
 		CB10D5C31FF3996000BAC2DF /* KeyBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoardViewController.swift; sourceTree = "<group>"; };
 		CB1292E31FB03FA700FF26E1 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		CB1292E51FB042D000FF26E1 /* BaseTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableView.swift; sourceTree = "<group>"; };
+		CB1B1A221FF5E94900BEF65B /* TableViewEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewEditViewController.swift; sourceTree = "<group>"; };
 		CB2C52231FB15064004F5408 /* ClassStructViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassStructViewController.swift; sourceTree = "<group>"; };
 		CB3748E91FDA59D800BE0418 /* EstimateDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimateDetailCell.swift; sourceTree = "<group>"; };
 		CB3748EB1FDA7E4E00BE0418 /* ResultTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTableView.swift; sourceTree = "<group>"; };
@@ -241,6 +243,14 @@
 			path = KeyBoard;
 			sourceTree = "<group>";
 		};
+		CB1B1A211FF5E93700BEF65B /* TableViewCell左滑 */ = {
+			isa = PBXGroup;
+			children = (
+				CB1B1A221FF5E94900BEF65B /* TableViewEditViewController.swift */,
+			);
+			path = "TableViewCell左滑";
+			sourceTree = "<group>";
+		};
 		CB2C521F1FB1504C004F5408 /* ClassStruct */ = {
 			isa = PBXGroup;
 			children = (
@@ -298,6 +308,7 @@
 		CB5172231FA2E143000433E7 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				CB1B1A211FF5E93700BEF65B /* TableViewCell左滑 */,
 				CB1092641FF483F400DC6961 /* GradientLayer */,
 				CB10D5C21FF3994D00BAC2DF /* KeyBoard */,
 				CB06C72B1FF098730028D999 /* TableView索引 */,
@@ -740,21 +751,27 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Demo/Pods-Demo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JXPhotoBrowser/JXPhotoBrowser.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftForms/SwiftForms.framework",
+				"${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JXPhotoBrowser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftForms.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeCellKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -815,6 +832,7 @@
 				CBF71A481FCE9CCA00052290 /* TouchDetailViewController.swift in Sources */,
 				CB0D283B1FB9394F000D572A /* FunTestViewController.swift in Sources */,
 				CBEF165D1FD7C0F70073C1A6 /* EstimateViewController.swift in Sources */,
+				CB1B1A231FF5E94900BEF65B /* TableViewEditViewController.swift in Sources */,
 				CB5172841FA30EE4000433E7 /* RxSwiftTestViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

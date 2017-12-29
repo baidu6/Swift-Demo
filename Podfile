@@ -12,6 +12,7 @@ use_frameworks!
     pod 'SnapKit'
     pod 'RealmSwift'
     pod 'JXPhotoBrowser', '~> 0.4.1'
+    pod 'SwipeCellKit'
 
     
     post_install do |installer|

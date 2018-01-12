@@ -10,6 +10,7 @@
 		3E789B5A286723032C301DC5 /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8D0367CB74A939EBACC8FE2 /* Pods_Demo.framework */; };
 		CB016C241FF24B5A0004E571 /* UITableView+IndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB016C231FF24B5A0004E571 /* UITableView+IndexView.swift */; };
 		CB06C72D1FF098860028D999 /* SectionIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB06C72C1FF098860028D999 /* SectionIndexViewController.swift */; };
+		CB08B8FF1FFB29CF00F84209 /* BubbleMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB08B8FE1FFB29CF00F84209 /* BubbleMenuView.swift */; };
 		CB0CD8641FB2B2EB00901C0F /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0CD8631FB2B2EB00901C0F /* Consts.swift */; };
 		CB0D283B1FB9394F000D572A /* FunTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0D283A1FB9394F000D572A /* FunTestViewController.swift */; };
 		CB0D283F1FB96E68000D572A /* SimplePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0D283D1FB96E68000D572A /* SimplePickerViewController.swift */; };
@@ -83,6 +84,7 @@
 		AD51421C21D0665B7414AE60 /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		CB016C231FF24B5A0004E571 /* UITableView+IndexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+IndexView.swift"; sourceTree = "<group>"; };
 		CB06C72C1FF098860028D999 /* SectionIndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionIndexViewController.swift; sourceTree = "<group>"; };
+		CB08B8FE1FFB29CF00F84209 /* BubbleMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleMenuView.swift; sourceTree = "<group>"; };
 		CB0CD8631FB2B2EB00901C0F /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
 		CB0D283A1FB9394F000D572A /* FunTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunTestViewController.swift; sourceTree = "<group>"; };
 		CB0D283D1FB96E68000D572A /* SimplePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePickerViewController.swift; sourceTree = "<group>"; };
@@ -272,6 +274,7 @@
 				CB1B1A2B1FF6239600BEF65B /* GroupAnimationViewController.swift */,
 				CB1B1A2D1FF6338800BEF65B /* TransitionViewController.swift */,
 				CB1B1A2F1FF63FC700BEF65B /* CombineCaseViewController.swift */,
+				CB08B8FE1FFB29CF00F84209 /* BubbleMenuView.swift */,
 			);
 			path = "动画（Animation）";
 			sourceTree = "<group>";
@@ -826,6 +829,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB08B8FF1FFB29CF00F84209 /* BubbleMenuView.swift in Sources */,
 				CB5172821FA30ED7000433E7 /* RealmTestViewController.swift in Sources */,
 				CB67FB401FBAC28D00B5DD0A /* TodoDetailViewController.swift in Sources */,
 				CB1B1A261FF614B800BEF65B /* AnimationViewController.swift in Sources */,

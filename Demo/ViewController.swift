@@ -25,6 +25,7 @@ class ViewController: UIViewController {
         self.navigationItem.title = "Demo"
         
         setupTableView()
+        
     }
 
     func setupTableView() {

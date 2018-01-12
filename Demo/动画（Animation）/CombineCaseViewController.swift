@@ -11,6 +11,8 @@ import UIKit
 class CombineCaseViewController: UIViewController {
     
     private var toolBar: UIToolbar!
+    
+    fileprivate var menuView: BubbleMenuView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +27,7 @@ class CombineCaseViewController: UIViewController {
         
         let pathItem = UIBarButtonItem(title: "Path", style: .plain, target: self, action: #selector(pathAnimation))
         
-        let dingItem = UIBarButtonItem(title: "钉钉", style: .plain, target: self, action: #selector(dingAnimation))
+        let dingItem = UIBarButtonItem(title: "钉钉Tap", style: .plain, target: self, action: #selector(dingAnimation))
         
         let likeItem = UIBarButtonItem(title: "点赞", style: .plain, target: self, action: #selector(likeAnimation))
         
@@ -38,7 +40,11 @@ class CombineCaseViewController: UIViewController {
     }
     
     @objc func dingAnimation() {
-        
+        guard menuView == nil else {
+            return
+        }
+        menuView = BubbleMenuView(frame: CGRect(x: 200, y: 300, width: 40, height: 40), direction: .right)
+        view.addSubview(menuView)
     }
     
     @objc func likeAnimation() {

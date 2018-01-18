@@ -16,12 +16,12 @@ class MainTabBarViewController: UITabBarController {
         //home
         let home = ViewController()
         home.title = "Home"
-        self.addChildViewController(UINavigationController(rootViewController: home))
+        self.addChildViewController(MainNavigationController(rootViewController: home))
         
         //profile
         let profile = UITableViewController()
         profile.title = "Profile"
-        self.addChildViewController(UINavigationController(rootViewController: profile))
+        self.addChildViewController(MainNavigationController(rootViewController: profile))
         
         setupTabBarItem()
     }

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+            <title>Demo</title>
+            <meta name="viewport" content="width=device-width, initial-scal=1,minmum-scale=1, maximum-scale=1,user-scaleable=no"/>
+            <style type="text/css">
+                .btn-base {
+                    display: block;
+                    height: 50px;
+                    line-height: 50px;
+                    margin: 10px auto;
+                    color: #fff;
+                    background: #8bc53f;
+                    border-radius: 10px;
+                    text-align: center;
+                    text-decoration: none;
+                    font-size: 15px;
+                }
+            .content {
+                text-align: left;
+                font-size: 15px;
+                margin-bottom: 40px;
+            }
+            </style>
+            
+            <script type="text/javaScript">
+                var name = "wangyun"
+                var age = 24
+                var job = "IOS开发"
+                function clickMe() {
+                    //window.location.href = "wy://clickMe?name=" + name + "&age=" + age;
+                    window.location.href = "wy://clickMe?{\"name\": \"wangyun\", \"age\": \"24\", \"other\": {\"project\": \"Math\", \"star\": \"More\"}}";
+                }
+            
+                function ShowMessageFromWKWebViewClick() {
+                    window.webkit.messageHandlers.ShowMessageFromWKWebView.postMessage({"name": "wangyun", "age": 24, "job": "IOS开发"});
+                }
+            
+                function showAlert() {
+                    alert("哈哈哈哈哈哈哈哈哈")
+                }
+            
+            </script>
+    
+            </head>
+    <body>
+        <div>
+            <div class="btn-base" onclick="WebViewJavascriptBridge.wxPay('T12175937528')">
+                js调用App的微信支付方法wxPay()
+            </div>
+            <div class="content" >演示最基本的调用及参数传递</div>
+        </div>
+        
+        <div>
+            <div class="btn-base" onclick="WebViewJavascriptBridge.wxShare({'name': 'Rose', 'age': 20, 'hobby': 'Game'})">js调用APP的微信分享方法wxShare()</div>
+            <div class="content">演示字典参数的使用</div>
+        </div>
+        
+        <div>
+            <div class="btn-base" onclick="WebViewJavascriptBridge.showDialog('Hello', '今天是个好日子，新心想的事儿都能成！')">js调用APP弹出对话框方法showDialog()</div>
+            <div class="content">演示传递多个参数的使用，注意js调用时的方法名</div>
+            </div>
+            
+            <div>
+                <div class="btn-base" onclick="WebViewJavascriptBridge.callHandler('jsHandlerFunc')">js调用APP的方法后 APP再调用js函数执行回调</div>
+                <div id="js-content">APP调用js回调函数啦，我是Rose</div>
+            </div>
+            
+            <div>
+                <div class="btn-base" onclick="ShowMessageFromWKWebViewClick()">WKWebView注入JS</div>
+            </div>
+            
+            <div>
+                <div class="btn-base" onclick="showAlert()">IOS(WKWebView)调用JS</div>
+            </div>
+            
+            <div>
+                <button type=button onclick="clickMe()">Click me!</button><br/>
+                <a href="wy://clickMeAgain">点我哦！</a>
+            </div>
+            
+            <p id="param">这是一个段落</p>
+            
+            <script type="text/javascript">
+                
+                function jsHandlerFunc(argument) {
+                    document.getElementById('js-content').innerHTML = "App调用js回调函数啦， 我是" + argument['name'];
+                }
+            
+            </script>
+            
+            </body>
+</html>
+

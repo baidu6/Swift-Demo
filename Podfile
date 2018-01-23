@@ -13,6 +13,7 @@ use_frameworks!
     pod 'RealmSwift'
     pod 'JXPhotoBrowser', '~> 0.4.1'
     pod 'SwipeCellKit'
+    pod 'RAMAnimatedTabBarController'
 
     
     post_install do |installer|

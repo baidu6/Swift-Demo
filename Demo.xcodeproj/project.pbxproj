@@ -56,6 +56,7 @@
 		CB67FB401FBAC28D00B5DD0A /* TodoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB67FB3E1FBAC28D00B5DD0A /* TodoDetailViewController.swift */; };
 		CB67FB411FBAC28D00B5DD0A /* TodoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB67FB3F1FBAC28D00B5DD0A /* TodoDetailViewController.xib */; };
 		CB7C1B8B1FB42CE90034FCD6 /* GCDTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7C1B8A1FB42CE90034FCD6 /* GCDTestViewController.swift */; };
+		CBA0849820171F14004CC1FE /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA0849720171F14004CC1FE /* String+Extension.swift */; };
 		CBE64A031FCF98A000986421 /* PreviewLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE64A021FCF98A000986421 /* PreviewLoadingViewController.swift */; };
 		CBE64A051FCF98F300986421 /* UIView+PreviewLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE64A041FCF98F300986421 /* UIView+PreviewLoading.swift */; };
 		CBE64A071FCF99FC00986421 /* PreviewLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE64A061FCF99FC00986421 /* PreviewLoadingView.swift */; };
@@ -142,6 +143,7 @@
 		CB67FB3E1FBAC28D00B5DD0A /* TodoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailViewController.swift; sourceTree = "<group>"; };
 		CB67FB3F1FBAC28D00B5DD0A /* TodoDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodoDetailViewController.xib; sourceTree = "<group>"; };
 		CB7C1B8A1FB42CE90034FCD6 /* GCDTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDTestViewController.swift; sourceTree = "<group>"; };
+		CBA0849720171F14004CC1FE /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		CBE64A021FCF98A000986421 /* PreviewLoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewLoadingViewController.swift; sourceTree = "<group>"; };
 		CBE64A041FCF98F300986421 /* UIView+PreviewLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+PreviewLoading.swift"; sourceTree = "<group>"; };
 		CBE64A061FCF99FC00986421 /* PreviewLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewLoadingView.swift; sourceTree = "<group>"; };
@@ -360,6 +362,7 @@
 		CB5172231FA2E143000433E7 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				CBA0849620171F01004CC1FE /* Category */,
 				CB29BE2C200D937100F8A78D /* JS交互 */,
 				CB1B1A241FF6149D00BEF65B /* 动画（Animation） */,
 				CB1B1A211FF5E93700BEF65B /* TableViewCell左滑 */,
@@ -581,6 +584,14 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		CBA0849620171F01004CC1FE /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				CBA0849720171F14004CC1FE /* String+Extension.swift */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		CBE64A011FCF987500986421 /* UI预加载 */ = {
@@ -897,6 +908,7 @@
 				CB51728B1FA313EC000433E7 /* SwiftFormTestViewController.swift in Sources */,
 				CB0D28431FB98090000D572A /* APIWrapperViewController.swift in Sources */,
 				CB1B1A281FF6157B00BEF65B /* BasicAnimationViewController.swift in Sources */,
+				CBA0849820171F14004CC1FE /* String+Extension.swift in Sources */,
 				CBF71A481FCE9CCA00052290 /* TouchDetailViewController.swift in Sources */,
 				CB36C62E20089B5F00FE6CAA /* ExpandMenuView.swift in Sources */,
 				CB0D283B1FB9394F000D572A /* FunTestViewController.swift in Sources */,

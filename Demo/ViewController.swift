@@ -26,6 +26,9 @@ class ViewController: UIViewController {
         
         setupTableView()
         
+        let testString = "HELLO"
+        let range = Range(NSRange(location: 0, length: 2), in: testString)
+        print(testString.subString(range: range!))
     }
 
     func setupTableView() {

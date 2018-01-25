@@ -33,9 +33,13 @@
 		CB1B1A301FF63FC700BEF65B /* CombineCaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1B1A2F1FF63FC700BEF65B /* CombineCaseViewController.swift */; };
 		CB1E41BE200F308000F80BD1 /* JSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1E41BD200F308000F80BD1 /* JSViewController.swift */; };
 		CB1E41C0200F314900F80BD1 /* WKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1E41BF200F314900F80BD1 /* WKWebViewController.swift */; };
+		CB24E30320196910008A1857 /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB24E30220196910008A1857 /* CustomAlertViewController.swift */; };
+		CB24E307201984EF008A1857 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB24E306201984EF008A1857 /* UIView+Extension.swift */; };
+		CB24E3092019BAB8008A1857 /* CommunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB24E3082019BAB8008A1857 /* CommunityView.swift */; };
 		CB29BE2E200D938200F8A78D /* UIWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB29BE2D200D938200F8A78D /* UIWebViewController.swift */; };
 		CB29BE30200D9E9300F8A78D /* demo.html in Resources */ = {isa = PBXBuildFile; fileRef = CB29BE2F200D9E9300F8A78D /* demo.html */; };
 		CB2C52241FB15064004F5408 /* ClassStructViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2C52231FB15064004F5408 /* ClassStructViewController.swift */; };
+		CB32786B20188F8D0013CDD2 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB32786A20188F8D0013CDD2 /* CustomAlertView.swift */; };
 		CB36C62E20089B5F00FE6CAA /* ExpandMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB36C62D20089B5F00FE6CAA /* ExpandMenuView.swift */; };
 		CB3748EA1FDA59D800BE0418 /* EstimateDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3748E91FDA59D800BE0418 /* EstimateDetailCell.swift */; };
 		CB3748EC1FDA7E4E00BE0418 /* ResultTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3748EB1FDA7E4E00BE0418 /* ResultTableView.swift */; };
@@ -114,9 +118,13 @@
 		CB1B1A2F1FF63FC700BEF65B /* CombineCaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineCaseViewController.swift; sourceTree = "<group>"; };
 		CB1E41BD200F308000F80BD1 /* JSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSViewController.swift; sourceTree = "<group>"; };
 		CB1E41BF200F314900F80BD1 /* WKWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewController.swift; sourceTree = "<group>"; };
+		CB24E30220196910008A1857 /* CustomAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertViewController.swift; sourceTree = "<group>"; };
+		CB24E306201984EF008A1857 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		CB24E3082019BAB8008A1857 /* CommunityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityView.swift; sourceTree = "<group>"; };
 		CB29BE2D200D938200F8A78D /* UIWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWebViewController.swift; sourceTree = "<group>"; };
 		CB29BE2F200D9E9300F8A78D /* demo.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = demo.html; sourceTree = "<group>"; };
 		CB2C52231FB15064004F5408 /* ClassStructViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassStructViewController.swift; sourceTree = "<group>"; };
+		CB32786A20188F8D0013CDD2 /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
 		CB36C62D20089B5F00FE6CAA /* ExpandMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandMenuView.swift; sourceTree = "<group>"; };
 		CB3748E91FDA59D800BE0418 /* EstimateDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimateDetailCell.swift; sourceTree = "<group>"; };
 		CB3748EB1FDA7E4E00BE0418 /* ResultTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTableView.swift; sourceTree = "<group>"; };
@@ -337,6 +345,16 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		CB32786920188F820013CDD2 /* DownMenuView */ = {
+			isa = PBXGroup;
+			children = (
+				CB32786A20188F8D0013CDD2 /* CustomAlertView.swift */,
+				CB24E30220196910008A1857 /* CustomAlertViewController.swift */,
+				CB24E3082019BAB8008A1857 /* CommunityView.swift */,
+			);
+			path = DownMenuView;
+			sourceTree = "<group>";
+		};
 		CB5172181FA2E143000433E7 = {
 			isa = PBXGroup;
 			children = (
@@ -362,6 +380,7 @@
 		CB5172231FA2E143000433E7 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				CB32786920188F820013CDD2 /* DownMenuView */,
 				CBA0849620171F01004CC1FE /* Category */,
 				CB29BE2C200D937100F8A78D /* JS交互 */,
 				CB1B1A241FF6149D00BEF65B /* 动画（Animation） */,
@@ -590,6 +609,7 @@
 			isa = PBXGroup;
 			children = (
 				CBA0849720171F14004CC1FE /* String+Extension.swift */,
+				CB24E306201984EF008A1857 /* UIView+Extension.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -880,6 +900,7 @@
 				CB0F3C311FB539ED00333FEF /* SetTestViewController.swift in Sources */,
 				CB0F3C381FB5A29800333FEF /* ChangeNickNameViewController.swift in Sources */,
 				CBF1E3741FA85BCD006EA6DA /* AnimationNumbersLabel.swift in Sources */,
+				CB24E30320196910008A1857 /* CustomAlertViewController.swift in Sources */,
 				CB1E41C0200F314900F80BD1 /* WKWebViewController.swift in Sources */,
 				CB10D5C41FF3996000BAC2DF /* KeyBoardViewController.swift in Sources */,
 				CB1B1A301FF63FC700BEF65B /* CombineCaseViewController.swift in Sources */,
@@ -890,11 +911,14 @@
 				CB0D283F1FB96E68000D572A /* SimplePickerViewController.swift in Sources */,
 				CB1292E41FB03FA700FF26E1 /* MainTabBarViewController.swift in Sources */,
 				CB1292E61FB042D000FF26E1 /* BaseTableView.swift in Sources */,
+				CB32786B20188F8D0013CDD2 /* CustomAlertView.swift in Sources */,
 				CB3748EC1FDA7E4E00BE0418 /* ResultTableView.swift in Sources */,
+				CB24E307201984EF008A1857 /* UIView+Extension.swift in Sources */,
 				CBE64A071FCF99FC00986421 /* PreviewLoadingView.swift in Sources */,
 				CBF1E3721FA85BB7006EA6DA /* AnimationNumbersViewController.swift in Sources */,
 				CB5172271FA2E143000433E7 /* ViewController.swift in Sources */,
 				CB1B1A2C1FF6239600BEF65B /* GroupAnimationViewController.swift in Sources */,
+				CB24E3092019BAB8008A1857 /* CommunityView.swift in Sources */,
 				CB5172251FA2E143000433E7 /* AppDelegate.swift in Sources */,
 				CB2C52241FB15064004F5408 /* ClassStructViewController.swift in Sources */,
 				CB016C241FF24B5A0004E571 /* UITableView+IndexView.swift in Sources */,

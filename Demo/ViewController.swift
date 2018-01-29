@@ -17,7 +17,7 @@ typealias  DictionaryDefault = Dictionary<String, Any>
 class ViewController: UIViewController {
     
     var tableView: BaseTableView!
-    var namesArray = ["CoreData", "Realm", "RxSwift", "SwiftForms", "AnimationNumbers", "引用类型和值类型","GCDTest", "Set(集合)Test", "函数闭包练习", "3DTouch(UITableView)", "UI预加载动画", "自定义TableView索引", "KeyBoard", "Gradient(渐变)", "TableView左边滑动", "动画", "JS交互", "下拉菜单"]
+    var namesArray = ["CoreData", "Realm", "RxSwift", "SwiftForms", "AnimationNumbers", "引用类型和值类型","GCDTest", "Set(集合)Test", "函数闭包练习", "3DTouch(UITableView)", "UI预加载动画", "自定义TableView索引", "KeyBoard", "Gradient(渐变)", "TableView左边滑动", "动画", "JS交互", "下拉菜单", "加载gif动画"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,9 +26,9 @@ class ViewController: UIViewController {
         
         setupTableView()
         
-        let testString = "HELLO"
-        let range = Range(NSRange(location: 0, length: 2), in: testString)
-        print(testString.subString(range: range!))
+//        let testString = "HELLO"
+//        let range = Range(NSRange(location: 0, length: 2), in: testString)
+//        print(testString.subString(range: range!))
     }
 
     func setupTableView() {
@@ -136,6 +136,9 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             self.navigationController?.pushViewController(vc, animated: true)
         }else if indexPath.row == 17 {
             let vc = CustomAlertViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        }else if indexPath.row == 18 {
+            let vc = GifTestViewController()
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }

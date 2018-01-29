@@ -44,6 +44,8 @@
 		CB3748EA1FDA59D800BE0418 /* EstimateDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3748E91FDA59D800BE0418 /* EstimateDetailCell.swift */; };
 		CB3748EC1FDA7E4E00BE0418 /* ResultTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3748EB1FDA7E4E00BE0418 /* ResultTableView.swift */; };
 		CB393454200C85C6000FB67E /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB393453200C85C6000FB67E /* MainNavigationController.swift */; };
+		CB4CA01E201EB9BB0046B62F /* GifTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4CA01D201EB9BB0046B62F /* GifTestViewController.swift */; };
+		CB4CA020201EBA2F0046B62F /* gif01.gif in Resources */ = {isa = PBXBuildFile; fileRef = CB4CA01F201EBA2F0046B62F /* gif01.gif */; };
 		CB5172251FA2E143000433E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5172241FA2E143000433E7 /* AppDelegate.swift */; };
 		CB5172271FA2E143000433E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5172261FA2E143000433E7 /* ViewController.swift */; };
 		CB51722A1FA2E143000433E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5172281FA2E143000433E7 /* Main.storyboard */; };
@@ -129,6 +131,8 @@
 		CB3748E91FDA59D800BE0418 /* EstimateDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimateDetailCell.swift; sourceTree = "<group>"; };
 		CB3748EB1FDA7E4E00BE0418 /* ResultTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTableView.swift; sourceTree = "<group>"; };
 		CB393453200C85C6000FB67E /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		CB4CA01D201EB9BB0046B62F /* GifTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifTestViewController.swift; sourceTree = "<group>"; };
+		CB4CA01F201EBA2F0046B62F /* gif01.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif01.gif; sourceTree = "<group>"; };
 		CB5172211FA2E143000433E7 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5172241FA2E143000433E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB5172261FA2E143000433E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -355,6 +359,15 @@
 			path = DownMenuView;
 			sourceTree = "<group>";
 		};
+		CB4CA01C201EB9AD0046B62F /* 加载Gif */ = {
+			isa = PBXGroup;
+			children = (
+				CB4CA01F201EBA2F0046B62F /* gif01.gif */,
+				CB4CA01D201EB9BB0046B62F /* GifTestViewController.swift */,
+			);
+			path = "加载Gif";
+			sourceTree = "<group>";
+		};
 		CB5172181FA2E143000433E7 = {
 			isa = PBXGroup;
 			children = (
@@ -380,6 +393,7 @@
 		CB5172231FA2E143000433E7 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				CB4CA01C201EB9AD0046B62F /* 加载Gif */,
 				CB32786920188F820013CDD2 /* DownMenuView */,
 				CBA0849620171F01004CC1FE /* Category */,
 				CB29BE2C200D937100F8A78D /* JS交互 */,
@@ -788,6 +802,7 @@
 				CB0D28401FB96E68000D572A /* SimplePickerViewController.xib in Resources */,
 				CB51722F1FA2E143000433E7 /* LaunchScreen.storyboard in Resources */,
 				CB0D28441FB98090000D572A /* APIWrapperViewController.xib in Resources */,
+				CB4CA020201EBA2F0046B62F /* gif01.gif in Resources */,
 				CB51722C1FA2E143000433E7 /* Assets.xcassets in Resources */,
 				CB67FB411FBAC28D00B5DD0A /* TodoDetailViewController.xib in Resources */,
 				CB67FB3D1FBA95F900B5DD0A /* StepByStepViewController.xib in Resources */,
@@ -936,6 +951,7 @@
 				CBF71A481FCE9CCA00052290 /* TouchDetailViewController.swift in Sources */,
 				CB36C62E20089B5F00FE6CAA /* ExpandMenuView.swift in Sources */,
 				CB0D283B1FB9394F000D572A /* FunTestViewController.swift in Sources */,
+				CB4CA01E201EB9BB0046B62F /* GifTestViewController.swift in Sources */,
 				CBEF165D1FD7C0F70073C1A6 /* EstimateViewController.swift in Sources */,
 				CB1B1A231FF5E94900BEF65B /* TableViewEditViewController.swift in Sources */,
 				CB5172841FA30EE4000433E7 /* RxSwiftTestViewController.swift in Sources */,

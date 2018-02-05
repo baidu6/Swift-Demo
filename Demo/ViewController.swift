@@ -17,11 +17,11 @@ typealias  DictionaryDefault = Dictionary<String, Any>
 class ViewController: UIViewController {
     
     var tableView: BaseTableView!
-    var namesArray = ["CoreData", "Realm", "RxSwift", "SwiftForms", "AnimationNumbers", "引用类型和值类型","GCDTest", "Set(集合)Test", "函数闭包练习", "3DTouch(UITableView)", "UI预加载动画", "自定义TableView索引", "KeyBoard", "Gradient(渐变)", "TableView左边滑动", "动画", "JS交互", "下拉菜单", "加载gif动画"]
+    var namesArray = ["CoreData", "Realm", "RxSwift", "SwiftForms", "AnimationNumbers", "引用类型和值类型","GCDTest", "Set(集合)Test", "函数闭包练习", "3DTouch(UITableView)", "UI预加载动画", "自定义TableView索引", "KeyBoard", "Gradient(渐变)", "TableView左边滑动", "动画", "JS交互", "下拉菜单", "加载gif动画", "Presented"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.white
+        view.backgroundColor = UIColor.clear
         self.navigationItem.title = "Demo"
         
         setupTableView()
@@ -29,10 +29,12 @@ class ViewController: UIViewController {
 //        let testString = "HELLO"
 //        let range = Range(NSRange(location: 0, length: 2), in: testString)
 //        print(testString.subString(range: range!))
+        test()
+        
     }
 
     func setupTableView() {
-        tableView = BaseTableView()
+        tableView = BaseTableView(frame: CGRect(x: 0, y: 64, width: ScreenWidth, height: ScreenHeight - 49 - 64))
         tableView.estimatedRowHeight = ScreenHeight
 //        tableView.register(UITableViewCellText.self, forCellReuseIdentifier: "DemoCellID")
         tableView.register(UITableViewCellDetail.self, forCellReuseIdentifier: "DemoCellID")
@@ -51,18 +53,26 @@ class ViewController: UIViewController {
 //            })
 //        }
         
-        tableView.snp.makeConstraints { (make) in
-            make.edges.equalToSuperview()
-        }
-        
-        let footerView = UIView(frame: CGRect(x: (view.frame.size.width - 200) * 0.5, y: 30, width: 200, height: 50))
+        let footerView = UIView(frame: CGRect(x: (view.frame.size.width - 200) * 0.5, y: 30, width: ScreenWidth, height: 70))
         let path = UIBezierPath(roundedRect: footerView.bounds, byRoundingCorners: [UIRectCorner.topLeft, UIRectCorner.topRight], cornerRadii: CGSize(width: 5, height: 5))
         let layer = CAShapeLayer()
         layer.path = path.cgPath
         footerView.layer.mask = layer
-        footerView.backgroundColor = UIColor.red
+        let button = UIButton(type: .custom)
+        button.backgroundColor = UIColor.orange
+        button.frame = CGRect(x: 0, y: 20, width: 200, height: 40)
+        button.setTitle("Present", for: .normal)
+        button.setTitleColor(UIColor.white, for: .normal)
+        button.addTarget(self, action: #selector(buttonClick), for: .touchUpInside)
+        footerView.addSubview(button)
         tableView.tableFooterView = footerView
         
+    }
+    
+    @objc func buttonClick() {
+        let sheetVC = CustomSheetViewController()
+        sheetVC.title = "请选择"
+        self.present(sheetVC, animated: true, completion: nil)
     }
 
 }
@@ -140,10 +150,13 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         }else if indexPath.row == 18 {
             let vc = GifTestViewController()
             self.navigationController?.pushViewController(vc, animated: true)
+        }else if indexPath.row == 19 {
+            let vc = PresentTestViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
         }
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableViewAutomaticDimension
+        return 60
     }
 }
 
@@ -278,4 +291,233 @@ extension UIView {
         return view
     }
 }
+
+struct Vector2D {
+    var x = 0
+    var y = 0
+    
+    static func +(left: Vector2D, right: Vector2D) -> Vector2D {
+        return Vector2D(x: left.x + right.x, y: left.y + right.y)
+    }
+}
+extension ViewController {
+    func doWork(block: @escaping () -> ()) {
+        print("doWork")
+        DispatchQueue.main.async {
+            block()
+        }
+    }
+    
+    func test() {
+        doWork {
+            print("work")
+        }
+        
+        let v1 = Vector2D(x: 1, y: 2)
+        let v2 = Vector2D(x: 3, y: 4)
+        let v3 = v1 + v2
+        print(v3)
+        
+        let p: P = "fdfd"
+        p.name = "zhagnsan"
+        
+        var array = [1, 2, 3, 4, 5, 6]
+        print(array[[0, 2, 4]])
+        array[[0, 2, 4]] = [11, 33, 55]
+        print(array)
+        
+        let mixed = [IntOrString.IntValue(10), IntOrString.StringValue("A")]
+        for value in mixed {
+            switch value {
+            case let .IntValue(i):
+                print(i * 2)
+            case let .StringValue(s):
+                print(s)
+            case .noneType:
+                print("none")
+            }
+        }
+        
+        let name = ["zhangsan", "lisi", "wangwu", "zhaoliu"]
+        name.forEach {
+            switch $0 {
+            case let x where x.hasPrefix("z"):
+                print("ZZZ")
+            default:
+                print("HEHE")
+            }
+        }
+        
+        let num: [Int?] = [99, 88, nil]
+        let n = num.flatMap {$0}
+        for score in n where score > 60 {
+            print("及格")
+        }
+
+        
+        let obj = Class()
+        let nameresult = name.lastWith(where: {$0.hasPrefix("z")})
+        print(nameresult)
+        
+        doworkAsync {
+            print("222")
+        }
+    }
+    
+    func doworkAsync(block: @escaping ()->()){
+        print("111")
+
+        UIView.animate(withDuration: 2, animations: {
+            
+        }) { (_) in
+            block()
+        }
+    
+        print("333")
+    }
+}
+
+extension Sequence where Element: Hashable {
+    func lastWith(where predicate: (Element) -> Bool) -> Element? {
+        for element in self.reversed() where predicate(element) {
+            return element
+        }
+        return nil
+    }
+    
+    func unique() -> [Element] {
+        var result: Set<Element> = []
+        return filter({ element in
+            if result.contains(element) {
+                return false
+            }else {
+                result.insert(element)
+                return true
+            }
+        })
+    }
+}
+
+class MyyClass: NSObject {
+    @objc dynamic var date = Date()
+}
+private var myContext = 0
+class Class: NSObject {
+    var myObject: MyyClass!
+    var observation: NSKeyValueObservation!
+    
+    override init() {
+        super.init()
+        myObject = MyyClass()
+        print("初始化myClass，当前日期是\(myObject.date)")
+//        myObject.addObserver(self, forKeyPath: "date", options: .new, context: &myContext)
+        
+        observation = myObject.observe(\MyyClass.date, options: [.new]) { (_, change) in
+            if let newDate = change.newValue {
+                print("发生变化\(newDate)")
+            }
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2.0) {
+            self.myObject.date = Date()
+        }
+        
+    }
+    
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        if let change = change, context == &myContext {
+            if let newDate = change[.newKey] as? Date {
+                print("MyyClass 日期发生变化\(newDate)")
+            }
+        }
+    }
+}
+
+
+enum IntOrString {
+    case IntValue(Int)
+    case StringValue(String)
+    case noneType
+}
+
+class P: ExpressibleByStringLiteral {
+    var name: String {
+        willSet {
+            print(newValue)
+        }
+        
+        didSet {
+           print(oldValue)
+        }
+    }
+    init(name value: String) {
+        self.name = value
+    }
+    required convenience init(stringLiteral value: String) {
+        self.init(name: value)
+    }
+    
+    required convenience init(unicodeScalarLiteral value: String) {
+        self.init(name: value)
+    }
+    
+    required convenience init(extendedGraphemeClusterLiteral value: String) {
+        self.init(name: value)
+    }
+}
+
+//MARK:- 取出数组中指定位置的值或者给数组中指定位置赋值
+extension Array {
+    subscript(input: [Int]) -> ArraySlice<Element> {
+        get {
+            var result = ArraySlice<Element>()
+            for i in input {
+                result.append(self[i])
+            }
+            return result
+        }
+        
+        set {
+            for(index, i) in input.enumerated() {
+                self[i] = newValue[index]
+            }
+        }
+    }
+}
+
+class Cat {
+    var name: String
+    init() {
+        name = "Cat"
+    }
+}
+
+class Tiger: Cat {
+    let age: Int
+    override init() {
+        age = 10
+        super.init()
+    }
+}
+
+protocol A1 {
+    func method1() -> String
+}
+
+extension A1 {
+    func method1() -> String {
+        return ""
+    }
+    func method2() -> Int {
+        return 1
+    }
+}
+
+struct B1: A1 {
+    func method1() -> String {
+        return "H"
+    }
+}
+
+
 

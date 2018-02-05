@@ -9,6 +9,19 @@
 import UIKit
 extension UIView {
     
+    //MARK: -设置锚点
+    var anchorPoint: CGPoint {
+        get {
+            return self.layer.anchorPoint
+        }
+        set(value) {
+            let size = self.frame.size
+            let origin = self.frame.origin
+            self.layer.anchorPoint = value
+            self.center = CGPoint(x: size.width * value.x + origin.x, y: size.height * value.y + origin.y)
+        }
+    }
+    
     var x: CGFloat {
         set(value) {
             var frame = self.frame

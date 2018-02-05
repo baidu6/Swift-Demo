@@ -13,6 +13,8 @@ class MainTabBarViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tabBar.backgroundColor = UIColor.white
 
         //home
         let home = ViewController()

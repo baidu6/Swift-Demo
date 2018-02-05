@@ -13,6 +13,7 @@ class MainNavigationController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationBar.barTintColor = UIColor.orange
     }
 
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
@@ -24,5 +25,9 @@ class MainNavigationController: UINavigationController {
 
     @objc func back() {
         navigationController?.popViewController(animated: true)
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
     }
 }

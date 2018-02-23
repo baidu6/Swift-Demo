@@ -48,6 +48,7 @@
 		CB3B627C20219E9A00D283B6 /* CustomBasetAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3B627B20219E9A00D283B6 /* CustomBasetAlertViewController.swift */; };
 		CB3B627E20219EDE00D283B6 /* PresentTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3B627D20219EDE00D283B6 /* PresentTestViewController.swift */; };
 		CB3B62822021A83500D283B6 /* CustomSpreadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3B62812021A83500D283B6 /* CustomSpreadViewController.swift */; };
+		CB45F3FA20317451005D438F /* AnimationCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB45F3F920317451005D438F /* AnimationCellViewController.swift */; };
 		CB4CA01E201EB9BB0046B62F /* GifTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4CA01D201EB9BB0046B62F /* GifTestViewController.swift */; };
 		CB4CA020201EBA2F0046B62F /* gif01.gif in Resources */ = {isa = PBXBuildFile; fileRef = CB4CA01F201EBA2F0046B62F /* gif01.gif */; };
 		CB4CA025201ECE4A0046B62F /* CustomPresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4CA024201ECE4A0046B62F /* CustomPresentViewController.swift */; };
@@ -142,6 +143,7 @@
 		CB3B627B20219E9A00D283B6 /* CustomBasetAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBasetAlertViewController.swift; sourceTree = "<group>"; };
 		CB3B627D20219EDE00D283B6 /* PresentTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentTestViewController.swift; sourceTree = "<group>"; };
 		CB3B62812021A83500D283B6 /* CustomSpreadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSpreadViewController.swift; sourceTree = "<group>"; };
+		CB45F3F920317451005D438F /* AnimationCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationCellViewController.swift; sourceTree = "<group>"; };
 		CB4CA01D201EB9BB0046B62F /* GifTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifTestViewController.swift; sourceTree = "<group>"; };
 		CB4CA01F201EBA2F0046B62F /* gif01.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif01.gif; sourceTree = "<group>"; };
 		CB4CA024201ECE4A0046B62F /* CustomPresentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPresentViewController.swift; sourceTree = "<group>"; };
@@ -373,6 +375,14 @@
 			path = DownMenuView;
 			sourceTree = "<group>";
 		};
+		CB45F3F820317440005D438F /* AnimationCell */ = {
+			isa = PBXGroup;
+			children = (
+				CB45F3F920317451005D438F /* AnimationCellViewController.swift */,
+			);
+			path = AnimationCell;
+			sourceTree = "<group>";
+		};
 		CB4CA01C201EB9AD0046B62F /* 加载Gif */ = {
 			isa = PBXGroup;
 			children = (
@@ -421,6 +431,7 @@
 		CB5172231FA2E143000433E7 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				CB45F3F820317440005D438F /* AnimationCell */,
 				CB4CA021201ECCDB0046B62F /* Present */,
 				CB4CA01C201EB9AD0046B62F /* 加载Gif */,
 				CB32786920188F820013CDD2 /* DownMenuView */,
@@ -958,6 +969,7 @@
 				CB67FB3B1FBA7D2200B5DD0A /* StepByStepViewController.swift in Sources */,
 				CB0D283F1FB96E68000D572A /* SimplePickerViewController.swift in Sources */,
 				CB1292E41FB03FA700FF26E1 /* MainTabBarViewController.swift in Sources */,
+				CB45F3FA20317451005D438F /* AnimationCellViewController.swift in Sources */,
 				CB1292E61FB042D000FF26E1 /* BaseTableView.swift in Sources */,
 				CB3B62822021A83500D283B6 /* CustomSpreadViewController.swift in Sources */,
 				CB32786B20188F8D0013CDD2 /* CustomAlertView.swift in Sources */,
@@ -1160,6 +1172,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KQ55JKK8UE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Demo/RxSwift",
+				);
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangyun.Demo;
@@ -1176,6 +1192,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KQ55JKK8UE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Demo/RxSwift",
+				);
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangyun.Demo;

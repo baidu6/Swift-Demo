@@ -17,7 +17,7 @@ typealias  DictionaryDefault = Dictionary<String, Any>
 class ViewController: UIViewController {
     
     var tableView: BaseTableView!
-    var namesArray = ["CoreData", "Realm", "RxSwift", "SwiftForms", "AnimationNumbers", "引用类型和值类型","GCDTest", "Set(集合)Test", "函数闭包练习", "3DTouch(UITableView)", "UI预加载动画", "自定义TableView索引", "KeyBoard", "Gradient(渐变)", "TableView左边滑动", "动画", "JS交互", "下拉菜单", "加载gif动画", "Presented"]
+    var namesArray = ["CoreData", "Realm", "RxSwift", "SwiftForms", "AnimationNumbers", "引用类型和值类型","GCDTest", "Set(集合)Test", "函数闭包练习", "3DTouch(UITableView)", "UI预加载动画", "自定义TableView索引", "KeyBoard", "Gradient(渐变)", "TableView左边滑动", "动画", "JS交互", "下拉菜单", "加载gif动画", "Presented", "给Cell添加动画"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -152,6 +152,9 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             self.navigationController?.pushViewController(vc, animated: true)
         }else if indexPath.row == 19 {
             let vc = PresentTestViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        }else if indexPath.row == 20 {
+            let vc = AnimationCellViewController()
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }

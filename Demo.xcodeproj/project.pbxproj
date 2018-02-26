@@ -22,6 +22,7 @@
 		CB0F3C391FB5A29800333FEF /* ChangeNickNameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB0F3C371FB5A29800333FEF /* ChangeNickNameViewController.xib */; };
 		CB1092661FF483FF00DC6961 /* GradientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1092651FF483FF00DC6961 /* GradientViewController.swift */; };
 		CB10D5C41FF3996000BAC2DF /* KeyBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB10D5C31FF3996000BAC2DF /* KeyBoardViewController.swift */; };
+		CB11EB162043A23800CD3839 /* CustomStringConvertibleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB11EB152043A23800CD3839 /* CustomStringConvertibleController.swift */; };
 		CB1292E41FB03FA700FF26E1 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1292E31FB03FA700FF26E1 /* MainTabBarViewController.swift */; };
 		CB1292E61FB042D000FF26E1 /* BaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1292E51FB042D000FF26E1 /* BaseTableView.swift */; };
 		CB1B1A231FF5E94900BEF65B /* TableViewEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1B1A221FF5E94900BEF65B /* TableViewEditViewController.swift */; };
@@ -117,6 +118,7 @@
 		CB0F3C371FB5A29800333FEF /* ChangeNickNameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangeNickNameViewController.xib; sourceTree = "<group>"; };
 		CB1092651FF483FF00DC6961 /* GradientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientViewController.swift; sourceTree = "<group>"; };
 		CB10D5C31FF3996000BAC2DF /* KeyBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoardViewController.swift; sourceTree = "<group>"; };
+		CB11EB152043A23800CD3839 /* CustomStringConvertibleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStringConvertibleController.swift; sourceTree = "<group>"; };
 		CB1292E31FB03FA700FF26E1 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		CB1292E51FB042D000FF26E1 /* BaseTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableView.swift; sourceTree = "<group>"; };
 		CB1B1A221FF5E94900BEF65B /* TableViewEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewEditViewController.swift; sourceTree = "<group>"; };
@@ -299,6 +301,14 @@
 			path = KeyBoard;
 			sourceTree = "<group>";
 		};
+		CB11EB142043A22600CD3839 /* CustomStringConvertible协议 */ = {
+			isa = PBXGroup;
+			children = (
+				CB11EB152043A23800CD3839 /* CustomStringConvertibleController.swift */,
+			);
+			path = "CustomStringConvertible协议";
+			sourceTree = "<group>";
+		};
 		CB1B1A211FF5E93700BEF65B /* TableViewCell左滑 */ = {
 			isa = PBXGroup;
 			children = (
@@ -431,6 +441,7 @@
 		CB5172231FA2E143000433E7 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				CB11EB142043A22600CD3839 /* CustomStringConvertible协议 */,
 				CB45F3F820317440005D438F /* AnimationCell */,
 				CB4CA021201ECCDB0046B62F /* Present */,
 				CB4CA01C201EB9AD0046B62F /* 加载Gif */,
@@ -945,6 +956,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB08B8FF1FFB29CF00F84209 /* BubbleMenuView.swift in Sources */,
+				CB11EB162043A23800CD3839 /* CustomStringConvertibleController.swift in Sources */,
 				CB26775420200CD4007A0F21 /* CustomSheetViewController.swift in Sources */,
 				CB5172821FA30ED7000433E7 /* RealmTestViewController.swift in Sources */,
 				CB67FB401FBAC28D00B5DD0A /* TodoDetailViewController.swift in Sources */,

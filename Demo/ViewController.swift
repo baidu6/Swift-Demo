@@ -17,7 +17,7 @@ typealias  DictionaryDefault = Dictionary<String, Any>
 class ViewController: UIViewController {
     
     var tableView: BaseTableView!
-    var namesArray = ["CoreData", "Realm", "RxSwift", "SwiftForms", "AnimationNumbers", "引用类型和值类型","GCDTest", "Set(集合)Test", "函数闭包练习", "3DTouch(UITableView)", "UI预加载动画", "自定义TableView索引", "KeyBoard", "Gradient(渐变)", "TableView左边滑动", "动画", "JS交互", "下拉菜单", "加载gif动画", "Presented", "给Cell添加动画", "CustomStringConvertible协议"]
+    var namesArray = ["CoreData", "Realm", "RxSwift", "SwiftForms", "AnimationNumbers", "引用类型和值类型","GCDTest", "Set(集合)Test", "函数闭包练习", "3DTouch(UITableView)", "UI预加载动画", "自定义TableView索引", "KeyBoard", "Gradient(渐变)", "TableView左边滑动", "动画", "JS交互", "下拉菜单", "加载gif动画", "Presented", "给Cell添加动画", "CustomStringConvertible协议", "Swift必备tips", "下拉刷新"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -158,7 +158,12 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             self.navigationController?.pushViewController(vc, animated: true)
         }else if indexPath.row == 21 {
             let vc = CustomStringConvertibleController()
-            print(vc)
+            self.navigationController?.pushViewController(vc, animated: true)
+        }else if indexPath.row == 22 {
+            let vc = SwiftTipsTestViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        }else if indexPath.row == 23 {
+            let vc = RefreshViewController()
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }
@@ -470,25 +475,6 @@ class P: ExpressibleByStringLiteral {
     
     required convenience init(extendedGraphemeClusterLiteral value: String) {
         self.init(name: value)
-    }
-}
-
-//MARK:- 取出数组中指定位置的值或者给数组中指定位置赋值
-extension Array {
-    subscript(input: [Int]) -> ArraySlice<Element> {
-        get {
-            var result = ArraySlice<Element>()
-            for i in input {
-                result.append(self[i])
-            }
-            return result
-        }
-        
-        set {
-            for(index, i) in input.enumerated() {
-                self[i] = newValue[index]
-            }
-        }
     }
 }
 

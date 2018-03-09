@@ -333,7 +333,7 @@ class RefreshFooterViewBase: RefreshBaseView {
             onContentSizeChanged()
         }
     }
-    
+
     func onContentSizeChanged() {
         
     }

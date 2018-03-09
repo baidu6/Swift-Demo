@@ -330,7 +330,7 @@ class RefreshFooterViewBase: RefreshBaseView {
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         super.observeValue(forKeyPath: keyPath, of: object, change: change, context: context)
         if keyPath == ContentOffset {
-            
+            onContentSizeChanged()
         }
     }
 }

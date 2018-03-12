@@ -19,6 +19,15 @@ extension UIScrollView {
         }
     }
     
+    weak var refreshFooter: RefreshBaseView? {
+        get {
+            return objc_getAssociatedObject(self, &ParamKeyRefreshFooter) as? RefreshBaseView
+        }
+        set(view) {
+            objc_setAssociatedObject(self, &ParamKeyRefreshFooter, view, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+        }
+    }
+    
     @discardableResult
     func addRefreshHeader(frame: CGRect, headerType: RefreshHeaderViewType = .normal, callback: SimpleCallBack?) -> RefreshHeaderViewBase {
         let header = RefreshBaseView.createHeaderView(frame: frame, headerType: headerType, callback: callback)
@@ -40,6 +49,22 @@ extension UIScrollView {
         self.refreshHeader?.beginRefresh()
     }
     
+    @discardableResult
+    func addRefreshFooter(callBack: SimpleCallBack?) -> RefreshFooterViewBase {
+        let footer = RefreshBaseView.createFooterView(callBack: callBack)
+        self.refreshFooter = footer
+        self.addSubview(footer)
+        return footer
+    }
+    
+    func removeRefreshFooter(){
+        self.refreshFooter?.removeFromSuperview()
+    }
+    
+    func endRefreshFooter() {
+        self.refreshFooter?.endRefresh()
+    }
+ 
     func endRefresh() {
         self.refreshHeader?.endRefresh()
     }

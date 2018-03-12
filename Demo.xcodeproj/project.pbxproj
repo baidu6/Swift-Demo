@@ -65,6 +65,7 @@
 		CB5172821FA30ED7000433E7 /* RealmTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5172811FA30ED7000433E7 /* RealmTestViewController.swift */; };
 		CB5172841FA30EE4000433E7 /* RxSwiftTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5172831FA30EE4000433E7 /* RxSwiftTestViewController.swift */; };
 		CB51728B1FA313EC000433E7 /* SwiftFormTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB51728A1FA313EC000433E7 /* SwiftFormTestViewController.swift */; };
+		CB587D502056199400AA4ADB /* RefreshFooterViewDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB587D4F2056199400AA4ADB /* RefreshFooterViewDefault.swift */; };
 		CB67FB3B1FBA7D2200B5DD0A /* StepByStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB67FB3A1FBA7D2200B5DD0A /* StepByStepViewController.swift */; };
 		CB67FB3D1FBA95F900B5DD0A /* StepByStepViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB67FB3C1FBA95F900B5DD0A /* StepByStepViewController.xib */; };
 		CB67FB401FBAC28D00B5DD0A /* TodoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB67FB3E1FBAC28D00B5DD0A /* TodoDetailViewController.swift */; };
@@ -174,6 +175,7 @@
 		CB5172811FA30ED7000433E7 /* RealmTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmTestViewController.swift; sourceTree = "<group>"; };
 		CB5172831FA30EE4000433E7 /* RxSwiftTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftTestViewController.swift; sourceTree = "<group>"; };
 		CB51728A1FA313EC000433E7 /* SwiftFormTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftFormTestViewController.swift; sourceTree = "<group>"; };
+		CB587D4F2056199400AA4ADB /* RefreshFooterViewDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshFooterViewDefault.swift; sourceTree = "<group>"; };
 		CB67FB3A1FBA7D2200B5DD0A /* StepByStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepByStepViewController.swift; sourceTree = "<group>"; };
 		CB67FB3C1FBA95F900B5DD0A /* StepByStepViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StepByStepViewController.xib; sourceTree = "<group>"; };
 		CB67FB3E1FBAC28D00B5DD0A /* TodoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailViewController.swift; sourceTree = "<group>"; };
@@ -718,6 +720,7 @@
 				CBAF92A3204E6E0C001C1E69 /* ScrollView+Refresh.swift */,
 				CBAF92A5204E6E26001C1E69 /* RefreshBaseView.swift */,
 				CBAF92A9204E82A6001C1E69 /* RefreshHeaderViewDefault.swift */,
+				CB587D4F2056199400AA4ADB /* RefreshFooterViewDefault.swift */,
 				CBAF92A7204E6FA7001C1E69 /* RefreshHeaderViewRotate.swift */,
 				CBAF92AB204E8551001C1E69 /* ArrowView.swift */,
 			);
@@ -1015,6 +1018,7 @@
 				CB1E41BE200F308000F80BD1 /* JSViewController.swift in Sources */,
 				CB1B1A2A1FF61D7B00BEF65B /* KeyframeAnimationViewController.swift in Sources */,
 				CBAF92A8204E6FA7001C1E69 /* RefreshHeaderViewRotate.swift in Sources */,
+				CB587D502056199400AA4ADB /* RefreshFooterViewDefault.swift in Sources */,
 				CB0F3C311FB539ED00333FEF /* SetTestViewController.swift in Sources */,
 				CBAF92A6204E6E26001C1E69 /* RefreshBaseView.swift in Sources */,
 				CB0F3C381FB5A29800333FEF /* ChangeNickNameViewController.swift in Sources */,

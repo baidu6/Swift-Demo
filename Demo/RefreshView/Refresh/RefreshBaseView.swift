@@ -55,6 +55,12 @@ class RefreshBaseView: UIView {
         return header
     }
     
+    static func createFooterView(frame: CGRect = CGRect(x: 0, y: 0, width: ScreenWidth, height: 64), callBack: SimpleCallBack? = nil) -> RefreshFooterViewBase {
+        let footer = RefreshFooterViewDefault(frame: frame, viewType: .footer)
+        footer.callBack = callBack
+        return footer
+    }
+    
     var viewTypeRawvalue: Int = 1
     var animationDuration = 0.4
     var animationDelay = 0.0
@@ -120,21 +126,16 @@ class RefreshBaseView: UIView {
     func beginRefresh() {
         self.state = RefreshState.refreshing
     }
+    
     func endRefresh() {
         var contentInset = self.scrollView.contentInset
-        var offsetY: CGFloat = 0
         if viewType == .header {
             contentInset.top = self.scrollViewOriginalInset.top
         }else {
             contentInset.bottom = self.scrollViewOriginalInset.bottom
-            let maxOffsetY = computeMaxOffsetY()
-            if maxOffsetY > 0 {
-                offsetY = maxOffsetY
-            }
         }
         UIView.animate(withDuration: animationDuration, animations: { [weak self] () -> Void in
             self?.scrollView.contentInset = contentInset
-//            self?.scrollView.contentOffset = CGPoint(x: 0, y: offsetY)
         },completion: { [weak self](flag: Bool) -> Void in
             self?.state = RefreshState.none
         })
@@ -227,7 +228,6 @@ class RefreshHeaderViewBase: RefreshBaseView {
     
     fileprivate func changeStateWithOffset() {
         let offsetY = self.scrollView.contentOffset.y + originalHeight
-        print(self.scrollView.contentOffset.y)
         let threshold = -scrollViewOriginalInset.top
         if offsetY >= threshold {
             if self.state == .normal {
@@ -289,7 +289,7 @@ class RefreshFooterViewBase: RefreshBaseView {
                     onNormalFromRelease()
                 }
             case .releaseToRefresh:
-                onNormalFromRelease()
+                onReleaseFromNormal()
             case .refreshing:
                 if shouldRefresh {
                     onRefreshing()
@@ -312,19 +312,14 @@ class RefreshFooterViewBase: RefreshBaseView {
     override init(frame: CGRect, viewType: RefreshViewType) {
         super.init(frame: frame, viewType: .footer)
     }
-    
+  
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
     override func willMove(toSuperview newSuperview: UIView?) {
         super.willMove(toSuperview: newSuperview)
-        if self.superview != nil {
-            self.superview?.removeObserver(self, forKeyPath: ContentOffset)
-        }
-        if newSuperview != nil {
-            newSuperview?.addObserver(self, forKeyPath: ContentOffset, options: .new, context: nil)
-        }
+        adjustFrame()
     }
     
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
@@ -335,6 +330,59 @@ class RefreshFooterViewBase: RefreshBaseView {
     }
 
     func onContentSizeChanged() {
-        
+        adjustFrame()
+    }
+    
+    //MARK:- 根据tableView的contentSize和frame改变refreshView的位置
+    func adjustFrame() {
+        let y = max(self.scrollView.contentSize.height, self.scrollView.frame.size.height) + scrollViewOriginalInset.bottom
+        var rect = self.frame
+        rect.origin.y = y
+        self.frame = rect
+    }
+    
+    override func onContentOffsetChanged() {
+        super.onContentOffsetChanged()
+        if self.isHidden { return }
+        if shouldRefresh && isRefreshing { return }
+        changeStateWithOffset()
+    }
+    
+    func changeStateWithOffset() {
+        let offsetY = self.scrollView.contentOffset.y
+        let maxOffsetY = computeMaxOffsetY()
+        var threshold: CGFloat = 0 //标识是否显示出
+        if maxOffsetY > 0 {
+            threshold = maxOffsetY
+        }
+        if offsetY <= threshold {
+            if self.state == .normal {
+                self.state = .none
+            }else if self.state == .refreshing && !shouldRefresh {
+                self.state = .none
+            }
+            return
+        }
+        if self.scrollView.isDragging {
+            if self.state == .none {
+                if offsetY <= threshold + originalHeight {
+                    self.state = .normal
+                }
+            }else if self.state == .normal {
+                if offsetY > threshold + originalHeight {
+                    self.state = .releaseToRefresh
+                }
+            }else if self.state == .releaseToRefresh {
+                if offsetY <= threshold + originalHeight {
+                    self.state = .normal
+                }
+            }
+        }else {
+            if self.state == .releaseToRefresh {
+                if offsetY <= threshold + originalHeight + 4 {
+                    self.state = .refreshing
+                }
+            }
+        }
     }
 }

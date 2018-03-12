@@ -30,6 +30,13 @@ class RefreshViewController: UIViewController {
                 self?.tableView.endRefresh()
             })
         }
+        
+        tableView.addRefreshFooter { [weak self] in 
+            print("上拉加载更多")
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2.0, execute: {
+                self?.tableView.endRefreshFooter()
+            })
+        }
     }
 
 }

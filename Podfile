@@ -14,6 +14,7 @@ use_frameworks!
     pod 'JXPhotoBrowser', '~> 0.4.1'
     pod 'SwipeCellKit'
     pod 'RAMAnimatedTabBarController'
+    pod 'IQKeyboardManagerSwift', '~> 5.0.6'
 
     
     post_install do |installer|

@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftForms
+import IQKeyboardManagerSwift
 
 struct Static {
     
@@ -36,8 +37,16 @@ class SwiftFormTestViewController: FormViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Estimate", style: .plain, target: self, action: #selector(estimate))
+        let estimateItem = UIBarButtonItem(title: "Estimate", style: .plain, target: self, action: #selector(estimate))
+        let testItem = UIBarButtonItem(title: "TableTest", style: .plain, target: self, action: #selector(tableTest))
+        self.navigationItem.rightBarButtonItems = [testItem, estimateItem]
         setupForm()
+    }
+    
+    //MARK:- 测试TableView和IQKeyboardManager的影响关系
+    @objc func tableTest() {
+        let vc = IQKeyBoardViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @objc func estimate() {

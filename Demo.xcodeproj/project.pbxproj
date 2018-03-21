@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		3E789B5A286723032C301DC5 /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8D0367CB74A939EBACC8FE2 /* Pods_Demo.framework */; };
+		CB002A13205763F600E27C7F /* GradeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB002A12205763F600E27C7F /* GradeView.swift */; };
+		CB002A15205766DD00E27C7F /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB002A14205766DD00E27C7F /* UIColor+Extension.swift */; };
+		CB002A1720579C8100E27C7F /* CirclePercentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB002A1620579C8100E27C7F /* CirclePercentView.swift */; };
+		CB002A192057B8F100E27C7F /* PackageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB002A182057B8F100E27C7F /* PackageManager.swift */; };
+		CB002A1B2057BF4A00E27C7F /* CommonKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB002A1A2057BF4A00E27C7F /* CommonKey.swift */; };
+		CB002A1D2057BF7300E27C7F /* LayoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB002A1C2057BF7300E27C7F /* LayoutManager.swift */; };
 		CB016C241FF24B5A0004E571 /* UITableView+IndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB016C231FF24B5A0004E571 /* UITableView+IndexView.swift */; };
 		CB06C72D1FF098860028D999 /* SectionIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB06C72C1FF098860028D999 /* SectionIndexViewController.swift */; };
 		CB08B8FF1FFB29CF00F84209 /* BubbleMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB08B8FE1FFB29CF00F84209 /* BubbleMenuView.swift */; };
@@ -66,6 +72,12 @@
 		CB5172841FA30EE4000433E7 /* RxSwiftTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5172831FA30EE4000433E7 /* RxSwiftTestViewController.swift */; };
 		CB51728B1FA313EC000433E7 /* SwiftFormTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB51728A1FA313EC000433E7 /* SwiftFormTestViewController.swift */; };
 		CB587D502056199400AA4ADB /* RefreshFooterViewDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB587D4F2056199400AA4ADB /* RefreshFooterViewDefault.swift */; };
+		CB587D54205662FE00AA4ADB /* VentureAnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB587D53205662FE00AA4ADB /* VentureAnalysisViewController.swift */; };
+		CB587D562056635500AA4ADB /* VentureAnalysisTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB587D552056635500AA4ADB /* VentureAnalysisTableView.swift */; };
+		CB587D58205663BE00AA4ADB /* VentureAnalysisCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB587D57205663BE00AA4ADB /* VentureAnalysisCell.swift */; };
+		CB587D5A2056652700AA4ADB /* TopBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB587D592056652700AA4ADB /* TopBottomView.swift */; };
+		CB587D5C20566AE500AA4ADB /* AnalysisAnimateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB587D5B20566AE500AA4ADB /* AnalysisAnimateView.swift */; };
+		CB5B59EF2061116A00FAB04F /* FingerUnlockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5B59EE2061116A00FAB04F /* FingerUnlockViewController.swift */; };
 		CB67FB3B1FBA7D2200B5DD0A /* StepByStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB67FB3A1FBA7D2200B5DD0A /* StepByStepViewController.swift */; };
 		CB67FB3D1FBA95F900B5DD0A /* StepByStepViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB67FB3C1FBA95F900B5DD0A /* StepByStepViewController.xib */; };
 		CB67FB401FBAC28D00B5DD0A /* TodoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB67FB3E1FBAC28D00B5DD0A /* TodoDetailViewController.swift */; };
@@ -87,6 +99,7 @@
 		CBEF16711FD7ECA30073C1A6 /* EstimateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEF16701FD7ECA30073C1A6 /* EstimateCell.swift */; };
 		CBF1E3721FA85BB7006EA6DA /* AnimationNumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E3711FA85BB7006EA6DA /* AnimationNumbersViewController.swift */; };
 		CBF1E3741FA85BCD006EA6DA /* AnimationNumbersLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1E3731FA85BCD006EA6DA /* AnimationNumbersLabel.swift */; };
+		CBF3410E20609F8D00E7A90F /* IQKeyBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF3410D20609F8D00E7A90F /* IQKeyBoardViewController.swift */; };
 		CBF71A461FCE9CBE00052290 /* TouchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF71A451FCE9CBE00052290 /* TouchTableViewController.swift */; };
 		CBF71A481FCE9CCA00052290 /* TouchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF71A471FCE9CCA00052290 /* TouchDetailViewController.swift */; };
 /* End PBXBuildFile section */
@@ -112,6 +125,12 @@
 		814194BBC1CA0B32C59314A5 /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		A8D0367CB74A939EBACC8FE2 /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD51421C21D0665B7414AE60 /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
+		CB002A12205763F600E27C7F /* GradeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeView.swift; sourceTree = "<group>"; };
+		CB002A14205766DD00E27C7F /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		CB002A1620579C8100E27C7F /* CirclePercentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirclePercentView.swift; sourceTree = "<group>"; };
+		CB002A182057B8F100E27C7F /* PackageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PackageManager.swift; sourceTree = "<group>"; };
+		CB002A1A2057BF4A00E27C7F /* CommonKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonKey.swift; sourceTree = "<group>"; };
+		CB002A1C2057BF7300E27C7F /* LayoutManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutManager.swift; sourceTree = "<group>"; };
 		CB016C231FF24B5A0004E571 /* UITableView+IndexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+IndexView.swift"; sourceTree = "<group>"; };
 		CB06C72C1FF098860028D999 /* SectionIndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionIndexViewController.swift; sourceTree = "<group>"; };
 		CB08B8FE1FFB29CF00F84209 /* BubbleMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleMenuView.swift; sourceTree = "<group>"; };
@@ -176,6 +195,12 @@
 		CB5172831FA30EE4000433E7 /* RxSwiftTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftTestViewController.swift; sourceTree = "<group>"; };
 		CB51728A1FA313EC000433E7 /* SwiftFormTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftFormTestViewController.swift; sourceTree = "<group>"; };
 		CB587D4F2056199400AA4ADB /* RefreshFooterViewDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshFooterViewDefault.swift; sourceTree = "<group>"; };
+		CB587D53205662FE00AA4ADB /* VentureAnalysisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VentureAnalysisViewController.swift; sourceTree = "<group>"; };
+		CB587D552056635500AA4ADB /* VentureAnalysisTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VentureAnalysisTableView.swift; sourceTree = "<group>"; };
+		CB587D57205663BE00AA4ADB /* VentureAnalysisCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VentureAnalysisCell.swift; sourceTree = "<group>"; };
+		CB587D592056652700AA4ADB /* TopBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBottomView.swift; sourceTree = "<group>"; };
+		CB587D5B20566AE500AA4ADB /* AnalysisAnimateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisAnimateView.swift; sourceTree = "<group>"; };
+		CB5B59EE2061116A00FAB04F /* FingerUnlockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingerUnlockViewController.swift; sourceTree = "<group>"; };
 		CB67FB3A1FBA7D2200B5DD0A /* StepByStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepByStepViewController.swift; sourceTree = "<group>"; };
 		CB67FB3C1FBA95F900B5DD0A /* StepByStepViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StepByStepViewController.xib; sourceTree = "<group>"; };
 		CB67FB3E1FBAC28D00B5DD0A /* TodoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailViewController.swift; sourceTree = "<group>"; };
@@ -197,6 +222,7 @@
 		CBEF16701FD7ECA30073C1A6 /* EstimateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EstimateCell.swift; sourceTree = "<group>"; };
 		CBF1E3711FA85BB7006EA6DA /* AnimationNumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationNumbersViewController.swift; sourceTree = "<group>"; };
 		CBF1E3731FA85BCD006EA6DA /* AnimationNumbersLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationNumbersLabel.swift; sourceTree = "<group>"; };
+		CBF3410D20609F8D00E7A90F /* IQKeyBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IQKeyBoardViewController.swift; sourceTree = "<group>"; };
 		CBF71A451FCE9CBE00052290 /* TouchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchTableViewController.swift; sourceTree = "<group>"; };
 		CBF71A471FCE9CCA00052290 /* TouchDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -457,6 +483,8 @@
 		CB5172231FA2E143000433E7 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				CB5B59ED2061113D00FAB04F /* 指纹解锁 */,
+				CB587D52205662DA00AA4ADB /* 风险分析 */,
 				CBAF929F204E6CB7001C1E69 /* RefreshView */,
 				CB77D409204D2DC700DC7418 /* 函数式 */,
 				CB11EB142043A22600CD3839 /* CustomStringConvertible协议 */,
@@ -634,6 +662,7 @@
 			isa = PBXGroup;
 			children = (
 				CB51728A1FA313EC000433E7 /* SwiftFormTestViewController.swift */,
+				CBF3410D20609F8D00E7A90F /* IQKeyBoardViewController.swift */,
 				CBEF165C1FD7C0F70073C1A6 /* EstimateViewController.swift */,
 				CBEF16701FD7ECA30073C1A6 /* EstimateCell.swift */,
 				CB3748E91FDA59D800BE0418 /* EstimateDetailCell.swift */,
@@ -654,6 +683,32 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		CB587D52205662DA00AA4ADB /* 风险分析 */ = {
+			isa = PBXGroup;
+			children = (
+				CB587D53205662FE00AA4ADB /* VentureAnalysisViewController.swift */,
+				CB587D552056635500AA4ADB /* VentureAnalysisTableView.swift */,
+				CB587D57205663BE00AA4ADB /* VentureAnalysisCell.swift */,
+				CB587D592056652700AA4ADB /* TopBottomView.swift */,
+				CB587D5B20566AE500AA4ADB /* AnalysisAnimateView.swift */,
+				CB002A12205763F600E27C7F /* GradeView.swift */,
+				CB002A1620579C8100E27C7F /* CirclePercentView.swift */,
+				CB002A14205766DD00E27C7F /* UIColor+Extension.swift */,
+				CB002A182057B8F100E27C7F /* PackageManager.swift */,
+				CB002A1A2057BF4A00E27C7F /* CommonKey.swift */,
+				CB002A1C2057BF7300E27C7F /* LayoutManager.swift */,
+			);
+			path = "风险分析";
+			sourceTree = "<group>";
+		};
+		CB5B59ED2061113D00FAB04F /* 指纹解锁 */ = {
+			isa = PBXGroup;
+			children = (
+				CB5B59EE2061116A00FAB04F /* FingerUnlockViewController.swift */,
+			);
+			path = "指纹解锁";
 			sourceTree = "<group>";
 		};
 		CB77D409204D2DC700DC7418 /* 函数式 */ = {
@@ -952,6 +1007,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Demo/Pods-Demo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/JXPhotoBrowser/JXPhotoBrowser.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/RAMAnimatedTabBarController/RAMAnimatedTabBarController.framework",
@@ -965,6 +1021,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JXPhotoBrowser.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RAMAnimatedTabBarController.framework",
@@ -1005,6 +1062,7 @@
 			files = (
 				CB08B8FF1FFB29CF00F84209 /* BubbleMenuView.swift in Sources */,
 				CB11EB162043A23800CD3839 /* CustomStringConvertibleController.swift in Sources */,
+				CB587D54205662FE00AA4ADB /* VentureAnalysisViewController.swift in Sources */,
 				CB26775420200CD4007A0F21 /* CustomSheetViewController.swift in Sources */,
 				CB5172821FA30ED7000433E7 /* RealmTestViewController.swift in Sources */,
 				CBAF92A1204E6CC7001C1E69 /* RefreshViewController.swift in Sources */,
@@ -1019,13 +1077,19 @@
 				CB1B1A2A1FF61D7B00BEF65B /* KeyframeAnimationViewController.swift in Sources */,
 				CBAF92A8204E6FA7001C1E69 /* RefreshHeaderViewRotate.swift in Sources */,
 				CB587D502056199400AA4ADB /* RefreshFooterViewDefault.swift in Sources */,
+				CB002A13205763F600E27C7F /* GradeView.swift in Sources */,
 				CB0F3C311FB539ED00333FEF /* SetTestViewController.swift in Sources */,
 				CBAF92A6204E6E26001C1E69 /* RefreshBaseView.swift in Sources */,
 				CB0F3C381FB5A29800333FEF /* ChangeNickNameViewController.swift in Sources */,
+				CB587D5C20566AE500AA4ADB /* AnalysisAnimateView.swift in Sources */,
 				CBF1E3741FA85BCD006EA6DA /* AnimationNumbersLabel.swift in Sources */,
 				CB24E30320196910008A1857 /* CustomAlertViewController.swift in Sources */,
+				CB587D5A2056652700AA4ADB /* TopBottomView.swift in Sources */,
 				CB1E41C0200F314900F80BD1 /* WKWebViewController.swift in Sources */,
+				CB5B59EF2061116A00FAB04F /* FingerUnlockViewController.swift in Sources */,
 				CB10D5C41FF3996000BAC2DF /* KeyBoardViewController.swift in Sources */,
+				CB587D562056635500AA4ADB /* VentureAnalysisTableView.swift in Sources */,
+				CB002A192057B8F100E27C7F /* PackageManager.swift in Sources */,
 				CB1B1A301FF63FC700BEF65B /* CombineCaseViewController.swift in Sources */,
 				CBEF16711FD7ECA30073C1A6 /* EstimateCell.swift in Sources */,
 				CB06C72D1FF098860028D999 /* SectionIndexViewController.swift in Sources */,
@@ -1033,12 +1097,16 @@
 				CB3B627E20219EDE00D283B6 /* PresentTestViewController.swift in Sources */,
 				CB3B627C20219E9A00D283B6 /* CustomBasetAlertViewController.swift in Sources */,
 				CB67FB3B1FBA7D2200B5DD0A /* StepByStepViewController.swift in Sources */,
+				CB587D58205663BE00AA4ADB /* VentureAnalysisCell.swift in Sources */,
 				CB0D283F1FB96E68000D572A /* SimplePickerViewController.swift in Sources */,
 				CB1292E41FB03FA700FF26E1 /* MainTabBarViewController.swift in Sources */,
 				CB45F3FA20317451005D438F /* AnimationCellViewController.swift in Sources */,
+				CB002A15205766DD00E27C7F /* UIColor+Extension.swift in Sources */,
+				CBF3410E20609F8D00E7A90F /* IQKeyBoardViewController.swift in Sources */,
 				CB1292E61FB042D000FF26E1 /* BaseTableView.swift in Sources */,
 				CB3B62822021A83500D283B6 /* CustomSpreadViewController.swift in Sources */,
 				CB32786B20188F8D0013CDD2 /* CustomAlertView.swift in Sources */,
+				CB002A1B2057BF4A00E27C7F /* CommonKey.swift in Sources */,
 				CB686C59201F265300E23EA9 /* AnimationUtils.swift in Sources */,
 				CB3748EC1FDA7E4E00BE0418 /* ResultTableView.swift in Sources */,
 				CB24E307201984EF008A1857 /* UIView+Extension.swift in Sources */,
@@ -1049,6 +1117,7 @@
 				CB24E3092019BAB8008A1857 /* CommunityView.swift in Sources */,
 				CB5172251FA2E143000433E7 /* AppDelegate.swift in Sources */,
 				CB2C52241FB15064004F5408 /* ClassStructViewController.swift in Sources */,
+				CB002A1D2057BF7300E27C7F /* LayoutManager.swift in Sources */,
 				CB016C241FF24B5A0004E571 /* UITableView+IndexView.swift in Sources */,
 				CB4CA025201ECE4A0046B62F /* CustomPresentViewController.swift in Sources */,
 				CB1B1A2E1FF6338800BEF65B /* TransitionViewController.swift in Sources */,
@@ -1059,6 +1128,7 @@
 				CBE64A051FCF98F300986421 /* UIView+PreviewLoading.swift in Sources */,
 				CB29BE2E200D938200F8A78D /* UIWebViewController.swift in Sources */,
 				CB51728B1FA313EC000433E7 /* SwiftFormTestViewController.swift in Sources */,
+				CB002A1720579C8100E27C7F /* CirclePercentView.swift in Sources */,
 				CB0D28431FB98090000D572A /* APIWrapperViewController.swift in Sources */,
 				CB77D40B204D2E0500DC7418 /* SwiftTipsTestViewController.swift in Sources */,
 				CB1B1A281FF6157B00BEF65B /* BasicAnimationViewController.swift in Sources */,
@@ -1245,6 +1315,7 @@
 					"$(PROJECT_DIR)/Demo/RxSwift",
 				);
 				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangyun.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1265,6 +1336,7 @@
 					"$(PROJECT_DIR)/Demo/RxSwift",
 				);
 				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangyun.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -55,11 +55,20 @@
 		CB3B627C20219E9A00D283B6 /* CustomBasetAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3B627B20219E9A00D283B6 /* CustomBasetAlertViewController.swift */; };
 		CB3B627E20219EDE00D283B6 /* PresentTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3B627D20219EDE00D283B6 /* PresentTestViewController.swift */; };
 		CB3B62822021A83500D283B6 /* CustomSpreadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3B62812021A83500D283B6 /* CustomSpreadViewController.swift */; };
+		CB3C2E91206DD1FD00A820DD /* Swift4TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3C2E90206DD1FD00A820DD /* Swift4TestViewController.swift */; };
+		CB42D3C9206B2D9F006DF832 /* MaterialToolBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB42D3C8206B2D9F006DF832 /* MaterialToolBarViewController.swift */; };
+		CB42D3CB206B3513006DF832 /* MaterialSearchBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB42D3CA206B3513006DF832 /* MaterialSearchBarViewController.swift */; };
+		CB42D4AD206B8772006DF832 /* SwiftTipsTest4.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB42D4AC206B8772006DF832 /* SwiftTipsTest4.swift */; };
 		CB45F3FA20317451005D438F /* AnimationCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB45F3F920317451005D438F /* AnimationCellViewController.swift */; };
 		CB4CA01E201EB9BB0046B62F /* GifTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4CA01D201EB9BB0046B62F /* GifTestViewController.swift */; };
 		CB4CA020201EBA2F0046B62F /* gif01.gif in Resources */ = {isa = PBXBuildFile; fileRef = CB4CA01F201EBA2F0046B62F /* gif01.gif */; };
 		CB4CA025201ECE4A0046B62F /* CustomPresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4CA024201ECE4A0046B62F /* CustomPresentViewController.swift */; };
 		CB4CA027201EF26C0046B62F /* BaseViewControllerAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4CA026201EF26C0046B62F /* BaseViewControllerAnimatedTransitioning.swift */; };
+		CB4CD6702068C07F00A981C2 /* MaterialTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4CD66F2068C07F00A981C2 /* MaterialTestViewController.swift */; };
+		CB4CD6722068C31000A981C2 /* MaterialColorTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4CD6712068C31000A981C2 /* MaterialColorTestViewController.swift */; };
+		CB4CD6742068CA1D00A981C2 /* MaterialTextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4CD6732068CA1D00A981C2 /* MaterialTextFieldViewController.swift */; };
+		CB4CD6762068F49B00A981C2 /* MaterialButtonTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4CD6752068F49B00A981C2 /* MaterialButtonTestViewController.swift */; };
+		CB4D6580207464D300CE8268 /* SwiftForwardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4D657F207464D300CE8268 /* SwiftForwardViewController.swift */; };
 		CB5172251FA2E143000433E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5172241FA2E143000433E7 /* AppDelegate.swift */; };
 		CB5172271FA2E143000433E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5172261FA2E143000433E7 /* ViewController.swift */; };
 		CB51722A1FA2E143000433E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5172281FA2E143000433E7 /* Main.storyboard */; };
@@ -78,11 +87,19 @@
 		CB587D5A2056652700AA4ADB /* TopBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB587D592056652700AA4ADB /* TopBottomView.swift */; };
 		CB587D5C20566AE500AA4ADB /* AnalysisAnimateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB587D5B20566AE500AA4ADB /* AnalysisAnimateView.swift */; };
 		CB5B59EF2061116A00FAB04F /* FingerUnlockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5B59EE2061116A00FAB04F /* FingerUnlockViewController.swift */; };
+		CB65CC012069DA4300AA5435 /* MaterialSwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB65CC002069DA4300AA5435 /* MaterialSwitchViewController.swift */; };
+		CB65CC032069DE1600AA5435 /* MaterialCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB65CC022069DE1600AA5435 /* MaterialCardViewController.swift */; };
+		CB65CC052069ECE400AA5435 /* MaterialFABMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB65CC042069ECE400AA5435 /* MaterialFABMenuViewController.swift */; };
 		CB67FB3B1FBA7D2200B5DD0A /* StepByStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB67FB3A1FBA7D2200B5DD0A /* StepByStepViewController.swift */; };
 		CB67FB3D1FBA95F900B5DD0A /* StepByStepViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB67FB3C1FBA95F900B5DD0A /* StepByStepViewController.xib */; };
 		CB67FB401FBAC28D00B5DD0A /* TodoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB67FB3E1FBAC28D00B5DD0A /* TodoDetailViewController.swift */; };
 		CB67FB411FBAC28D00B5DD0A /* TodoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB67FB3F1FBAC28D00B5DD0A /* TodoDetailViewController.xib */; };
 		CB686C59201F265300E23EA9 /* AnimationUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB686C58201F265300E23EA9 /* AnimationUtils.swift */; };
+		CB6C9C8B2073152A00AE56F8 /* SwiftTipsTest5.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6C9C8A2073152A00AE56F8 /* SwiftTipsTest5.swift */; };
+		CB6C9CF020732E6D00AE56F8 /* HelloKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB6C9CEF20732E6D00AE56F8 /* HelloKit.framework */; };
+		CB6C9CF120732E8100AE56F8 /* HelloKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB6C9CEF20732E6D00AE56F8 /* HelloKit.framework */; };
+		CB6C9CF220732E8100AE56F8 /* HelloKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB6C9CEF20732E6D00AE56F8 /* HelloKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CB6C9CF5207354F700AE56F8 /* SwiftTipsTest6.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6C9CF4207354F700AE56F8 /* SwiftTipsTest6.swift */; };
 		CB77D40B204D2E0500DC7418 /* SwiftTipsTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB77D40A204D2E0500DC7418 /* SwiftTipsTestViewController.swift */; };
 		CB7C1B8B1FB42CE90034FCD6 /* GCDTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7C1B8A1FB42CE90034FCD6 /* GCDTestViewController.swift */; };
 		CBA0849820171F14004CC1FE /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA0849720171F14004CC1FE /* String+Extension.swift */; };
@@ -92,6 +109,9 @@
 		CBAF92A8204E6FA7001C1E69 /* RefreshHeaderViewRotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAF92A7204E6FA7001C1E69 /* RefreshHeaderViewRotate.swift */; };
 		CBAF92AA204E82A6001C1E69 /* RefreshHeaderViewDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAF92A9204E82A6001C1E69 /* RefreshHeaderViewDefault.swift */; };
 		CBAF92AC204E8551001C1E69 /* ArrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAF92AB204E8551001C1E69 /* ArrowView.swift */; };
+		CBC35DE1206499480028F168 /* InitTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC35DE0206499480028F168 /* InitTestViewController.swift */; };
+		CBC35DE32064ADFE0028F168 /* StaticAndClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC35DE22064ADFE0028F168 /* StaticAndClassViewController.swift */; };
+		CBC35DE52064D2EF0028F168 /* SwiftTipsTest3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC35DE42064D2EF0028F168 /* SwiftTipsTest3.swift */; };
 		CBE64A031FCF98A000986421 /* PreviewLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE64A021FCF98A000986421 /* PreviewLoadingViewController.swift */; };
 		CBE64A051FCF98F300986421 /* UIView+PreviewLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE64A041FCF98F300986421 /* UIView+PreviewLoading.swift */; };
 		CBE64A071FCF99FC00986421 /* PreviewLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE64A061FCF99FC00986421 /* PreviewLoadingView.swift */; };
@@ -120,6 +140,20 @@
 			remoteInfo = Demo;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CB6C9CF320732E8200AE56F8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CB6C9CF220732E8100AE56F8 /* HelloKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		814194BBC1CA0B32C59314A5 /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -172,11 +206,30 @@
 		CB3B627B20219E9A00D283B6 /* CustomBasetAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBasetAlertViewController.swift; sourceTree = "<group>"; };
 		CB3B627D20219EDE00D283B6 /* PresentTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentTestViewController.swift; sourceTree = "<group>"; };
 		CB3B62812021A83500D283B6 /* CustomSpreadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSpreadViewController.swift; sourceTree = "<group>"; };
+		CB3C2E90206DD1FD00A820DD /* Swift4TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift4TestViewController.swift; sourceTree = "<group>"; };
+		CB42D3C8206B2D9F006DF832 /* MaterialToolBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialToolBarViewController.swift; sourceTree = "<group>"; };
+		CB42D3CA206B3513006DF832 /* MaterialSearchBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialSearchBarViewController.swift; sourceTree = "<group>"; };
+		CB42D480206B6E65006DF832 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CB42D482206B6E65006DF832 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CB42D485206B6E65006DF832 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB42D487206B6E65006DF832 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB42D48A206B6E65006DF832 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB42D48C206B6E65006DF832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB42D495206B6E65006DF832 /* DemoTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTestTests.swift; sourceTree = "<group>"; };
+		CB42D497206B6E65006DF832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB42D4A0206B6E66006DF832 /* DemoTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTestUITests.swift; sourceTree = "<group>"; };
+		CB42D4A2206B6E66006DF832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB42D4AC206B8772006DF832 /* SwiftTipsTest4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTipsTest4.swift; sourceTree = "<group>"; };
 		CB45F3F920317451005D438F /* AnimationCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationCellViewController.swift; sourceTree = "<group>"; };
 		CB4CA01D201EB9BB0046B62F /* GifTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifTestViewController.swift; sourceTree = "<group>"; };
 		CB4CA01F201EBA2F0046B62F /* gif01.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif01.gif; sourceTree = "<group>"; };
 		CB4CA024201ECE4A0046B62F /* CustomPresentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPresentViewController.swift; sourceTree = "<group>"; };
 		CB4CA026201EF26C0046B62F /* BaseViewControllerAnimatedTransitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewControllerAnimatedTransitioning.swift; sourceTree = "<group>"; };
+		CB4CD66F2068C07F00A981C2 /* MaterialTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialTestViewController.swift; sourceTree = "<group>"; };
+		CB4CD6712068C31000A981C2 /* MaterialColorTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialColorTestViewController.swift; sourceTree = "<group>"; };
+		CB4CD6732068CA1D00A981C2 /* MaterialTextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialTextFieldViewController.swift; sourceTree = "<group>"; };
+		CB4CD6752068F49B00A981C2 /* MaterialButtonTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialButtonTestViewController.swift; sourceTree = "<group>"; };
+		CB4D657F207464D300CE8268 /* SwiftForwardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftForwardViewController.swift; sourceTree = "<group>"; };
 		CB5172211FA2E143000433E7 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5172241FA2E143000433E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB5172261FA2E143000433E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -201,11 +254,17 @@
 		CB587D592056652700AA4ADB /* TopBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBottomView.swift; sourceTree = "<group>"; };
 		CB587D5B20566AE500AA4ADB /* AnalysisAnimateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisAnimateView.swift; sourceTree = "<group>"; };
 		CB5B59EE2061116A00FAB04F /* FingerUnlockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingerUnlockViewController.swift; sourceTree = "<group>"; };
+		CB65CC002069DA4300AA5435 /* MaterialSwitchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialSwitchViewController.swift; sourceTree = "<group>"; };
+		CB65CC022069DE1600AA5435 /* MaterialCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialCardViewController.swift; sourceTree = "<group>"; };
+		CB65CC042069ECE400AA5435 /* MaterialFABMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialFABMenuViewController.swift; sourceTree = "<group>"; };
 		CB67FB3A1FBA7D2200B5DD0A /* StepByStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepByStepViewController.swift; sourceTree = "<group>"; };
 		CB67FB3C1FBA95F900B5DD0A /* StepByStepViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StepByStepViewController.xib; sourceTree = "<group>"; };
 		CB67FB3E1FBAC28D00B5DD0A /* TodoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailViewController.swift; sourceTree = "<group>"; };
 		CB67FB3F1FBAC28D00B5DD0A /* TodoDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodoDetailViewController.xib; sourceTree = "<group>"; };
 		CB686C58201F265300E23EA9 /* AnimationUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationUtils.swift; sourceTree = "<group>"; };
+		CB6C9C8A2073152A00AE56F8 /* SwiftTipsTest5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTipsTest5.swift; sourceTree = "<group>"; };
+		CB6C9CEF20732E6D00AE56F8 /* HelloKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HelloKit.framework; sourceTree = "<group>"; };
+		CB6C9CF4207354F700AE56F8 /* SwiftTipsTest6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTipsTest6.swift; sourceTree = "<group>"; };
 		CB77D40A204D2E0500DC7418 /* SwiftTipsTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTipsTestViewController.swift; sourceTree = "<group>"; };
 		CB7C1B8A1FB42CE90034FCD6 /* GCDTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDTestViewController.swift; sourceTree = "<group>"; };
 		CBA0849720171F14004CC1FE /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
@@ -215,6 +274,9 @@
 		CBAF92A7204E6FA7001C1E69 /* RefreshHeaderViewRotate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshHeaderViewRotate.swift; sourceTree = "<group>"; };
 		CBAF92A9204E82A6001C1E69 /* RefreshHeaderViewDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshHeaderViewDefault.swift; sourceTree = "<group>"; };
 		CBAF92AB204E8551001C1E69 /* ArrowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowView.swift; sourceTree = "<group>"; };
+		CBC35DE0206499480028F168 /* InitTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitTestViewController.swift; sourceTree = "<group>"; };
+		CBC35DE22064ADFE0028F168 /* StaticAndClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticAndClassViewController.swift; sourceTree = "<group>"; };
+		CBC35DE42064D2EF0028F168 /* SwiftTipsTest3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTipsTest3.swift; sourceTree = "<group>"; };
 		CBE64A021FCF98A000986421 /* PreviewLoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewLoadingViewController.swift; sourceTree = "<group>"; };
 		CBE64A041FCF98F300986421 /* UIView+PreviewLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+PreviewLoading.swift"; sourceTree = "<group>"; };
 		CBE64A061FCF99FC00986421 /* PreviewLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewLoadingView.swift; sourceTree = "<group>"; };
@@ -232,6 +294,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB6C9CF020732E6D00AE56F8 /* HelloKit.framework in Frameworks */,
+				CB6C9CF120732E8100AE56F8 /* HelloKit.framework in Frameworks */,
 				3E789B5A286723032C301DC5 /* Pods_Demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,6 +491,45 @@
 			path = DownMenuView;
 			sourceTree = "<group>";
 		};
+		CB3C2E8F206DD1F500A820DD /* Swift4.0 */ = {
+			isa = PBXGroup;
+			children = (
+				CB3C2E90206DD1FD00A820DD /* Swift4TestViewController.swift */,
+			);
+			path = Swift4.0;
+			sourceTree = "<group>";
+		};
+		CB42D47F206B6E65006DF832 /* DemoTest */ = {
+			isa = PBXGroup;
+			children = (
+				CB42D480206B6E65006DF832 /* AppDelegate.swift */,
+				CB42D482206B6E65006DF832 /* ViewController.swift */,
+				CB42D484206B6E65006DF832 /* Main.storyboard */,
+				CB42D487206B6E65006DF832 /* Assets.xcassets */,
+				CB42D489206B6E65006DF832 /* LaunchScreen.storyboard */,
+				CB42D48C206B6E65006DF832 /* Info.plist */,
+			);
+			path = DemoTest;
+			sourceTree = "<group>";
+		};
+		CB42D494206B6E65006DF832 /* DemoTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB42D495206B6E65006DF832 /* DemoTestTests.swift */,
+				CB42D497206B6E65006DF832 /* Info.plist */,
+			);
+			path = DemoTestTests;
+			sourceTree = "<group>";
+		};
+		CB42D49F206B6E65006DF832 /* DemoTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CB42D4A0206B6E66006DF832 /* DemoTestUITests.swift */,
+				CB42D4A2206B6E66006DF832 /* Info.plist */,
+			);
+			path = DemoTestUITests;
+			sourceTree = "<group>";
+		};
 		CB45F3F820317440005D438F /* AnimationCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -458,12 +561,40 @@
 			path = Present;
 			sourceTree = "<group>";
 		};
+		CB4CD66E2068C07000A981C2 /* Material */ = {
+			isa = PBXGroup;
+			children = (
+				CB4CD66F2068C07F00A981C2 /* MaterialTestViewController.swift */,
+				CB4CD6712068C31000A981C2 /* MaterialColorTestViewController.swift */,
+				CB4CD6732068CA1D00A981C2 /* MaterialTextFieldViewController.swift */,
+				CB4CD6752068F49B00A981C2 /* MaterialButtonTestViewController.swift */,
+				CB65CC002069DA4300AA5435 /* MaterialSwitchViewController.swift */,
+				CB65CC022069DE1600AA5435 /* MaterialCardViewController.swift */,
+				CB65CC042069ECE400AA5435 /* MaterialFABMenuViewController.swift */,
+				CB42D3C8206B2D9F006DF832 /* MaterialToolBarViewController.swift */,
+				CB42D3CA206B3513006DF832 /* MaterialSearchBarViewController.swift */,
+			);
+			path = Material;
+			sourceTree = "<group>";
+		};
+		CB4D657E207464BB00CE8268 /* Swift进阶 */ = {
+			isa = PBXGroup;
+			children = (
+				CB4D657F207464D300CE8268 /* SwiftForwardViewController.swift */,
+			);
+			path = "Swift进阶";
+			sourceTree = "<group>";
+		};
 		CB5172181FA2E143000433E7 = {
 			isa = PBXGroup;
 			children = (
+				CB6C9CEF20732E6D00AE56F8 /* HelloKit.framework */,
 				CB5172231FA2E143000433E7 /* Demo */,
 				CB5172381FA2E143000433E7 /* DemoTests */,
 				CB5172431FA2E143000433E7 /* DemoUITests */,
+				CB42D47F206B6E65006DF832 /* DemoTest */,
+				CB42D494206B6E65006DF832 /* DemoTestTests */,
+				CB42D49F206B6E65006DF832 /* DemoTestUITests */,
 				CB5172221FA2E143000433E7 /* Products */,
 				2188021E149651DA0AC213EE /* Pods */,
 				DC4596C386DC10353EE30A4F /* Frameworks */,
@@ -483,10 +614,13 @@
 		CB5172231FA2E143000433E7 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				CB4D657E207464BB00CE8268 /* Swift进阶 */,
+				CB3C2E8F206DD1F500A820DD /* Swift4.0 */,
+				CB4CD66E2068C07000A981C2 /* Material */,
 				CB5B59ED2061113D00FAB04F /* 指纹解锁 */,
 				CB587D52205662DA00AA4ADB /* 风险分析 */,
 				CBAF929F204E6CB7001C1E69 /* RefreshView */,
-				CB77D409204D2DC700DC7418 /* 函数式 */,
+				CB77D409204D2DC700DC7418 /* SwiftTips */,
 				CB11EB142043A22600CD3839 /* CustomStringConvertible协议 */,
 				CB45F3F820317440005D438F /* AnimationCell */,
 				CB4CA021201ECCDB0046B62F /* Present */,
@@ -711,12 +845,18 @@
 			path = "指纹解锁";
 			sourceTree = "<group>";
 		};
-		CB77D409204D2DC700DC7418 /* 函数式 */ = {
+		CB77D409204D2DC700DC7418 /* SwiftTips */ = {
 			isa = PBXGroup;
 			children = (
 				CB77D40A204D2E0500DC7418 /* SwiftTipsTestViewController.swift */,
+				CBC35DE0206499480028F168 /* InitTestViewController.swift */,
+				CBC35DE22064ADFE0028F168 /* StaticAndClassViewController.swift */,
+				CBC35DE42064D2EF0028F168 /* SwiftTipsTest3.swift */,
+				CB42D4AC206B8772006DF832 /* SwiftTipsTest4.swift */,
+				CB6C9C8A2073152A00AE56F8 /* SwiftTipsTest5.swift */,
+				CB6C9CF4207354F700AE56F8 /* SwiftTipsTest6.swift */,
 			);
-			path = "函数式";
+			path = SwiftTips;
 			sourceTree = "<group>";
 		};
 		CB7C1B861FB42CD20034FCD6 /* GCD */ = {
@@ -855,6 +995,7 @@
 				CB51721F1FA2E143000433E7 /* Resources */,
 				EACA2001D02F57782FBCB94C /* [CP] Embed Pods Frameworks */,
 				F958D34D3F1AE14C62B6B663 /* [CP] Copy Pods Resources */,
+				CB6C9CF320732E8200AE56F8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -907,7 +1048,7 @@
 		CB5172191FA2E143000433E7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0900;
+				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "王云";
 				TargetAttributes = {
@@ -1010,6 +1151,8 @@
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/JXPhotoBrowser/JXPhotoBrowser.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Material/Material.framework",
+				"${BUILT_PRODUCTS_DIR}/Motion/Motion.framework",
 				"${BUILT_PRODUCTS_DIR}/RAMAnimatedTabBarController/RAMAnimatedTabBarController.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
@@ -1024,6 +1167,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JXPhotoBrowser.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Material.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Motion.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RAMAnimatedTabBarController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
@@ -1061,17 +1206,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB08B8FF1FFB29CF00F84209 /* BubbleMenuView.swift in Sources */,
+				CB6C9C8B2073152A00AE56F8 /* SwiftTipsTest5.swift in Sources */,
 				CB11EB162043A23800CD3839 /* CustomStringConvertibleController.swift in Sources */,
 				CB587D54205662FE00AA4ADB /* VentureAnalysisViewController.swift in Sources */,
 				CB26775420200CD4007A0F21 /* CustomSheetViewController.swift in Sources */,
 				CB5172821FA30ED7000433E7 /* RealmTestViewController.swift in Sources */,
 				CBAF92A1204E6CC7001C1E69 /* RefreshViewController.swift in Sources */,
 				CB67FB401FBAC28D00B5DD0A /* TodoDetailViewController.swift in Sources */,
+				CB42D3CB206B3513006DF832 /* MaterialSearchBarViewController.swift in Sources */,
 				CBAF92AA204E82A6001C1E69 /* RefreshHeaderViewDefault.swift in Sources */,
 				CB4CA027201EF26C0046B62F /* BaseViewControllerAnimatedTransitioning.swift in Sources */,
 				CBAF92AC204E8551001C1E69 /* ArrowView.swift in Sources */,
 				CB1B1A261FF614B800BEF65B /* AnimationViewController.swift in Sources */,
 				CB0CD8641FB2B2EB00901C0F /* Consts.swift in Sources */,
+				CB6C9CF5207354F700AE56F8 /* SwiftTipsTest6.swift in Sources */,
 				CB5172801FA30EC9000433E7 /* CoreDataTestViewController.swift in Sources */,
 				CB1E41BE200F308000F80BD1 /* JSViewController.swift in Sources */,
 				CB1B1A2A1FF61D7B00BEF65B /* KeyframeAnimationViewController.swift in Sources */,
@@ -1080,8 +1228,11 @@
 				CB002A13205763F600E27C7F /* GradeView.swift in Sources */,
 				CB0F3C311FB539ED00333FEF /* SetTestViewController.swift in Sources */,
 				CBAF92A6204E6E26001C1E69 /* RefreshBaseView.swift in Sources */,
+				CB4CD6762068F49B00A981C2 /* MaterialButtonTestViewController.swift in Sources */,
 				CB0F3C381FB5A29800333FEF /* ChangeNickNameViewController.swift in Sources */,
+				CBC35DE32064ADFE0028F168 /* StaticAndClassViewController.swift in Sources */,
 				CB587D5C20566AE500AA4ADB /* AnalysisAnimateView.swift in Sources */,
+				CB3C2E91206DD1FD00A820DD /* Swift4TestViewController.swift in Sources */,
 				CBF1E3741FA85BCD006EA6DA /* AnimationNumbersLabel.swift in Sources */,
 				CB24E30320196910008A1857 /* CustomAlertViewController.swift in Sources */,
 				CB587D5A2056652700AA4ADB /* TopBottomView.swift in Sources */,
@@ -1096,6 +1247,7 @@
 				CBF71A461FCE9CBE00052290 /* TouchTableViewController.swift in Sources */,
 				CB3B627E20219EDE00D283B6 /* PresentTestViewController.swift in Sources */,
 				CB3B627C20219E9A00D283B6 /* CustomBasetAlertViewController.swift in Sources */,
+				CB42D4AD206B8772006DF832 /* SwiftTipsTest4.swift in Sources */,
 				CB67FB3B1FBA7D2200B5DD0A /* StepByStepViewController.swift in Sources */,
 				CB587D58205663BE00AA4ADB /* VentureAnalysisCell.swift in Sources */,
 				CB0D283F1FB96E68000D572A /* SimplePickerViewController.swift in Sources */,
@@ -1103,6 +1255,8 @@
 				CB45F3FA20317451005D438F /* AnimationCellViewController.swift in Sources */,
 				CB002A15205766DD00E27C7F /* UIColor+Extension.swift in Sources */,
 				CBF3410E20609F8D00E7A90F /* IQKeyBoardViewController.swift in Sources */,
+				CB4CD6702068C07F00A981C2 /* MaterialTestViewController.swift in Sources */,
+				CB4CD6722068C31000A981C2 /* MaterialColorTestViewController.swift in Sources */,
 				CB1292E61FB042D000FF26E1 /* BaseTableView.swift in Sources */,
 				CB3B62822021A83500D283B6 /* CustomSpreadViewController.swift in Sources */,
 				CB32786B20188F8D0013CDD2 /* CustomAlertView.swift in Sources */,
@@ -1111,6 +1265,7 @@
 				CB3748EC1FDA7E4E00BE0418 /* ResultTableView.swift in Sources */,
 				CB24E307201984EF008A1857 /* UIView+Extension.swift in Sources */,
 				CBE64A071FCF99FC00986421 /* PreviewLoadingView.swift in Sources */,
+				CB65CC012069DA4300AA5435 /* MaterialSwitchViewController.swift in Sources */,
 				CBF1E3721FA85BB7006EA6DA /* AnimationNumbersViewController.swift in Sources */,
 				CB5172271FA2E143000433E7 /* ViewController.swift in Sources */,
 				CB1B1A2C1FF6239600BEF65B /* GroupAnimationViewController.swift in Sources */,
@@ -1118,8 +1273,10 @@
 				CB5172251FA2E143000433E7 /* AppDelegate.swift in Sources */,
 				CB2C52241FB15064004F5408 /* ClassStructViewController.swift in Sources */,
 				CB002A1D2057BF7300E27C7F /* LayoutManager.swift in Sources */,
+				CBC35DE1206499480028F168 /* InitTestViewController.swift in Sources */,
 				CB016C241FF24B5A0004E571 /* UITableView+IndexView.swift in Sources */,
 				CB4CA025201ECE4A0046B62F /* CustomPresentViewController.swift in Sources */,
+				CB42D3C9206B2D9F006DF832 /* MaterialToolBarViewController.swift in Sources */,
 				CB1B1A2E1FF6338800BEF65B /* TransitionViewController.swift in Sources */,
 				CB3748EA1FDA59D800BE0418 /* EstimateDetailCell.swift in Sources */,
 				CB1092661FF483FF00DC6961 /* GradientViewController.swift in Sources */,
@@ -1128,6 +1285,7 @@
 				CBE64A051FCF98F300986421 /* UIView+PreviewLoading.swift in Sources */,
 				CB29BE2E200D938200F8A78D /* UIWebViewController.swift in Sources */,
 				CB51728B1FA313EC000433E7 /* SwiftFormTestViewController.swift in Sources */,
+				CB65CC052069ECE400AA5435 /* MaterialFABMenuViewController.swift in Sources */,
 				CB002A1720579C8100E27C7F /* CirclePercentView.swift in Sources */,
 				CB0D28431FB98090000D572A /* APIWrapperViewController.swift in Sources */,
 				CB77D40B204D2E0500DC7418 /* SwiftTipsTestViewController.swift in Sources */,
@@ -1135,13 +1293,17 @@
 				CBA0849820171F14004CC1FE /* String+Extension.swift in Sources */,
 				CBAF92A4204E6E0C001C1E69 /* ScrollView+Refresh.swift in Sources */,
 				CBF71A481FCE9CCA00052290 /* TouchDetailViewController.swift in Sources */,
+				CB4CD6742068CA1D00A981C2 /* MaterialTextFieldViewController.swift in Sources */,
+				CB4D6580207464D300CE8268 /* SwiftForwardViewController.swift in Sources */,
 				CB36C62E20089B5F00FE6CAA /* ExpandMenuView.swift in Sources */,
 				CB0D283B1FB9394F000D572A /* FunTestViewController.swift in Sources */,
 				CB4CA01E201EB9BB0046B62F /* GifTestViewController.swift in Sources */,
 				CBEF165D1FD7C0F70073C1A6 /* EstimateViewController.swift in Sources */,
+				CB65CC032069DE1600AA5435 /* MaterialCardViewController.swift in Sources */,
 				CB1B1A231FF5E94900BEF65B /* TableViewEditViewController.swift in Sources */,
 				CB5172841FA30EE4000433E7 /* RxSwiftTestViewController.swift in Sources */,
 				CB393454200C85C6000FB67E /* MainNavigationController.swift in Sources */,
+				CBC35DE52064D2EF0028F168 /* SwiftTipsTest3.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1177,6 +1339,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		CB42D484206B6E65006DF832 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB42D485206B6E65006DF832 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CB42D489206B6E65006DF832 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB42D48A206B6E65006DF832 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		CB5172281FA2E143000433E7 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1313,9 +1491,11 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Demo/RxSwift",
+					"$(PROJECT_DIR)/Demo",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Demo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangyun.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1334,9 +1514,11 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Demo/RxSwift",
+					"$(PROJECT_DIR)/Demo",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Demo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangyun.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

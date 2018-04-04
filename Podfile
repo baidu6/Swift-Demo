@@ -15,6 +15,8 @@ use_frameworks!
     pod 'SwipeCellKit'
     pod 'RAMAnimatedTabBarController'
     pod 'IQKeyboardManagerSwift', '~> 5.0.6'
+    pod 'Material', '~> 2.12.18'
+    
 
     
     post_install do |installer|

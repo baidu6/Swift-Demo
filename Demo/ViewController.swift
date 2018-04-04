@@ -17,7 +17,7 @@ typealias  DictionaryDefault = Dictionary<String, Any>
 class ViewController: UIViewController {
     
     var tableView: BaseTableView!
-    var namesArray = ["CoreData", "Realm", "RxSwift", "SwiftForms", "AnimationNumbers", "引用类型和值类型","GCDTest", "Set(集合)Test", "函数闭包练习", "3DTouch(UITableView)", "UI预加载动画", "自定义TableView索引", "KeyBoard", "Gradient(渐变)", "TableView左边滑动", "动画", "JS交互", "下拉菜单", "加载gif动画", "Presented", "给Cell添加动画", "CustomStringConvertible协议", "Swift必备tips", "下拉刷新", "风险测评报告", "指纹解锁"]
+    var namesArray = ["CoreData", "Realm", "RxSwift", "SwiftForms", "AnimationNumbers", "引用类型和值类型","GCDTest", "Set(集合)Test", "函数闭包练习", "3DTouch(UITableView)", "UI预加载动画", "自定义TableView索引", "KeyBoard", "Gradient(渐变)", "TableView左边滑动", "动画", "JS交互", "下拉菜单", "加载gif动画", "Presented", "给Cell添加动画", "CustomStringConvertible协议", "Swift必备tips", "下拉刷新", "风险测评报告", "指纹解锁", "Material", "swift4.0", "swift进阶"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -170,6 +170,15 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             self.navigationController?.pushViewController(vc, animated: true)
         }else if indexPath.row == 25 {
             let vc = FingerUnlockViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        }else if indexPath.row == 26 {
+            let vc = MaterialTestViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        }else if indexPath.row == 27 {
+            let vc = Swift4TestViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        }else if indexPath.row == 28 {
+            let vc = SwiftForwardViewController()
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }

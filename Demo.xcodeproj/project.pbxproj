@@ -47,6 +47,9 @@
 		CB29BE2E200D938200F8A78D /* UIWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB29BE2D200D938200F8A78D /* UIWebViewController.swift */; };
 		CB29BE30200D9E9300F8A78D /* demo.html in Resources */ = {isa = PBXBuildFile; fileRef = CB29BE2F200D9E9300F8A78D /* demo.html */; };
 		CB2C52241FB15064004F5408 /* ClassStructViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2C52231FB15064004F5408 /* ClassStructViewController.swift */; };
+		CB2C99DE207C517C001C266B /* SwiftForward05.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2C99DD207C517C001C266B /* SwiftForward05.swift */; };
+		CB2C99E0207C5D2D001C266B /* SwiftForward06.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2C99DF207C5D2D001C266B /* SwiftForward06.swift */; };
+		CB31E0F42079AB2600E6ADEC /* SwiftForward03.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31E0F32079AB2600E6ADEC /* SwiftForward03.swift */; };
 		CB32786B20188F8D0013CDD2 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB32786A20188F8D0013CDD2 /* CustomAlertView.swift */; };
 		CB36C62E20089B5F00FE6CAA /* ExpandMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB36C62D20089B5F00FE6CAA /* ExpandMenuView.swift */; };
 		CB3748EA1FDA59D800BE0418 /* EstimateDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3748E91FDA59D800BE0418 /* EstimateDetailCell.swift */; };
@@ -56,6 +59,7 @@
 		CB3B627E20219EDE00D283B6 /* PresentTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3B627D20219EDE00D283B6 /* PresentTestViewController.swift */; };
 		CB3B62822021A83500D283B6 /* CustomSpreadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3B62812021A83500D283B6 /* CustomSpreadViewController.swift */; };
 		CB3C2E91206DD1FD00A820DD /* Swift4TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3C2E90206DD1FD00A820DD /* Swift4TestViewController.swift */; };
+		CB3CE0A7207B43B5000F152A /* SwiftForward04.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3CE0A6207B43B5000F152A /* SwiftForward04.swift */; };
 		CB42D3C9206B2D9F006DF832 /* MaterialToolBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB42D3C8206B2D9F006DF832 /* MaterialToolBarViewController.swift */; };
 		CB42D3CB206B3513006DF832 /* MaterialSearchBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB42D3CA206B3513006DF832 /* MaterialSearchBarViewController.swift */; };
 		CB42D4AD206B8772006DF832 /* SwiftTipsTest4.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB42D4AC206B8772006DF832 /* SwiftTipsTest4.swift */; };
@@ -69,6 +73,9 @@
 		CB4CD6742068CA1D00A981C2 /* MaterialTextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4CD6732068CA1D00A981C2 /* MaterialTextFieldViewController.swift */; };
 		CB4CD6762068F49B00A981C2 /* MaterialButtonTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4CD6752068F49B00A981C2 /* MaterialButtonTestViewController.swift */; };
 		CB4D6580207464D300CE8268 /* SwiftForwardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4D657F207464D300CE8268 /* SwiftForwardViewController.swift */; };
+		CB4D658220746C1400CE8268 /* SwiftForward01.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4D658120746C1400CE8268 /* SwiftForward01.swift */; };
+		CB4D65842074B4E900CE8268 /* test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB4D65832074B4E900CE8268 /* test.storyboard */; };
+		CB4D65862074B51800CE8268 /* SwiftForward02.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4D65852074B51800CE8268 /* SwiftForward02.swift */; };
 		CB5172251FA2E143000433E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5172241FA2E143000433E7 /* AppDelegate.swift */; };
 		CB5172271FA2E143000433E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5172261FA2E143000433E7 /* ViewController.swift */; };
 		CB51722A1FA2E143000433E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5172281FA2E143000433E7 /* Main.storyboard */; };
@@ -198,6 +205,9 @@
 		CB29BE2D200D938200F8A78D /* UIWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWebViewController.swift; sourceTree = "<group>"; };
 		CB29BE2F200D9E9300F8A78D /* demo.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = demo.html; sourceTree = "<group>"; };
 		CB2C52231FB15064004F5408 /* ClassStructViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassStructViewController.swift; sourceTree = "<group>"; };
+		CB2C99DD207C517C001C266B /* SwiftForward05.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftForward05.swift; sourceTree = "<group>"; };
+		CB2C99DF207C5D2D001C266B /* SwiftForward06.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftForward06.swift; sourceTree = "<group>"; };
+		CB31E0F32079AB2600E6ADEC /* SwiftForward03.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftForward03.swift; sourceTree = "<group>"; };
 		CB32786A20188F8D0013CDD2 /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
 		CB36C62D20089B5F00FE6CAA /* ExpandMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandMenuView.swift; sourceTree = "<group>"; };
 		CB3748E91FDA59D800BE0418 /* EstimateDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimateDetailCell.swift; sourceTree = "<group>"; };
@@ -207,6 +217,7 @@
 		CB3B627D20219EDE00D283B6 /* PresentTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentTestViewController.swift; sourceTree = "<group>"; };
 		CB3B62812021A83500D283B6 /* CustomSpreadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSpreadViewController.swift; sourceTree = "<group>"; };
 		CB3C2E90206DD1FD00A820DD /* Swift4TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift4TestViewController.swift; sourceTree = "<group>"; };
+		CB3CE0A6207B43B5000F152A /* SwiftForward04.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftForward04.swift; sourceTree = "<group>"; };
 		CB42D3C8206B2D9F006DF832 /* MaterialToolBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialToolBarViewController.swift; sourceTree = "<group>"; };
 		CB42D3CA206B3513006DF832 /* MaterialSearchBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialSearchBarViewController.swift; sourceTree = "<group>"; };
 		CB42D480206B6E65006DF832 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -230,6 +241,9 @@
 		CB4CD6732068CA1D00A981C2 /* MaterialTextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialTextFieldViewController.swift; sourceTree = "<group>"; };
 		CB4CD6752068F49B00A981C2 /* MaterialButtonTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialButtonTestViewController.swift; sourceTree = "<group>"; };
 		CB4D657F207464D300CE8268 /* SwiftForwardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftForwardViewController.swift; sourceTree = "<group>"; };
+		CB4D658120746C1400CE8268 /* SwiftForward01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftForward01.swift; sourceTree = "<group>"; };
+		CB4D65832074B4E900CE8268 /* test.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = test.storyboard; sourceTree = "<group>"; };
+		CB4D65852074B51800CE8268 /* SwiftForward02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftForward02.swift; sourceTree = "<group>"; };
 		CB5172211FA2E143000433E7 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5172241FA2E143000433E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB5172261FA2E143000433E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -581,6 +595,13 @@
 			isa = PBXGroup;
 			children = (
 				CB4D657F207464D300CE8268 /* SwiftForwardViewController.swift */,
+				CB4D658120746C1400CE8268 /* SwiftForward01.swift */,
+				CB4D65852074B51800CE8268 /* SwiftForward02.swift */,
+				CB31E0F32079AB2600E6ADEC /* SwiftForward03.swift */,
+				CB3CE0A6207B43B5000F152A /* SwiftForward04.swift */,
+				CB2C99DD207C517C001C266B /* SwiftForward05.swift */,
+				CB2C99DF207C5D2D001C266B /* SwiftForward06.swift */,
+				CB4D65832074B4E900CE8268 /* test.storyboard */,
 			);
 			path = "Swift进阶";
 			sourceTree = "<group>";
@@ -1098,6 +1119,7 @@
 				CB51722F1FA2E143000433E7 /* LaunchScreen.storyboard in Resources */,
 				CB0D28441FB98090000D572A /* APIWrapperViewController.xib in Resources */,
 				CB4CA020201EBA2F0046B62F /* gif01.gif in Resources */,
+				CB4D65842074B4E900CE8268 /* test.storyboard in Resources */,
 				CB51722C1FA2E143000433E7 /* Assets.xcassets in Resources */,
 				CB67FB411FBAC28D00B5DD0A /* TodoDetailViewController.xib in Resources */,
 				CB67FB3D1FBA95F900B5DD0A /* StepByStepViewController.xib in Resources */,
@@ -1153,6 +1175,7 @@
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Material/Material.framework",
 				"${BUILT_PRODUCTS_DIR}/Motion/Motion.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/RAMAnimatedTabBarController/RAMAnimatedTabBarController.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
@@ -1160,6 +1183,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftForms/SwiftForms.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyAttributes/SwiftyAttributes.framework",
 				"${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -1169,6 +1193,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Material.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Motion.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RAMAnimatedTabBarController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
@@ -1176,6 +1201,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftForms.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyAttributes.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeCellKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1215,6 +1241,7 @@
 				CB67FB401FBAC28D00B5DD0A /* TodoDetailViewController.swift in Sources */,
 				CB42D3CB206B3513006DF832 /* MaterialSearchBarViewController.swift in Sources */,
 				CBAF92AA204E82A6001C1E69 /* RefreshHeaderViewDefault.swift in Sources */,
+				CB4D65862074B51800CE8268 /* SwiftForward02.swift in Sources */,
 				CB4CA027201EF26C0046B62F /* BaseViewControllerAnimatedTransitioning.swift in Sources */,
 				CBAF92AC204E8551001C1E69 /* ArrowView.swift in Sources */,
 				CB1B1A261FF614B800BEF65B /* AnimationViewController.swift in Sources */,
@@ -1226,6 +1253,7 @@
 				CBAF92A8204E6FA7001C1E69 /* RefreshHeaderViewRotate.swift in Sources */,
 				CB587D502056199400AA4ADB /* RefreshFooterViewDefault.swift in Sources */,
 				CB002A13205763F600E27C7F /* GradeView.swift in Sources */,
+				CB2C99DE207C517C001C266B /* SwiftForward05.swift in Sources */,
 				CB0F3C311FB539ED00333FEF /* SetTestViewController.swift in Sources */,
 				CBAF92A6204E6E26001C1E69 /* RefreshBaseView.swift in Sources */,
 				CB4CD6762068F49B00A981C2 /* MaterialButtonTestViewController.swift in Sources */,
@@ -1260,6 +1288,7 @@
 				CB1292E61FB042D000FF26E1 /* BaseTableView.swift in Sources */,
 				CB3B62822021A83500D283B6 /* CustomSpreadViewController.swift in Sources */,
 				CB32786B20188F8D0013CDD2 /* CustomAlertView.swift in Sources */,
+				CB31E0F42079AB2600E6ADEC /* SwiftForward03.swift in Sources */,
 				CB002A1B2057BF4A00E27C7F /* CommonKey.swift in Sources */,
 				CB686C59201F265300E23EA9 /* AnimationUtils.swift in Sources */,
 				CB3748EC1FDA7E4E00BE0418 /* ResultTableView.swift in Sources */,
@@ -1275,6 +1304,7 @@
 				CB002A1D2057BF7300E27C7F /* LayoutManager.swift in Sources */,
 				CBC35DE1206499480028F168 /* InitTestViewController.swift in Sources */,
 				CB016C241FF24B5A0004E571 /* UITableView+IndexView.swift in Sources */,
+				CB4D658220746C1400CE8268 /* SwiftForward01.swift in Sources */,
 				CB4CA025201ECE4A0046B62F /* CustomPresentViewController.swift in Sources */,
 				CB42D3C9206B2D9F006DF832 /* MaterialToolBarViewController.swift in Sources */,
 				CB1B1A2E1FF6338800BEF65B /* TransitionViewController.swift in Sources */,
@@ -1283,6 +1313,7 @@
 				CBE64A031FCF98A000986421 /* PreviewLoadingViewController.swift in Sources */,
 				CB7C1B8B1FB42CE90034FCD6 /* GCDTestViewController.swift in Sources */,
 				CBE64A051FCF98F300986421 /* UIView+PreviewLoading.swift in Sources */,
+				CB3CE0A7207B43B5000F152A /* SwiftForward04.swift in Sources */,
 				CB29BE2E200D938200F8A78D /* UIWebViewController.swift in Sources */,
 				CB51728B1FA313EC000433E7 /* SwiftFormTestViewController.swift in Sources */,
 				CB65CC052069ECE400AA5435 /* MaterialFABMenuViewController.swift in Sources */,
@@ -1303,6 +1334,7 @@
 				CB1B1A231FF5E94900BEF65B /* TableViewEditViewController.swift in Sources */,
 				CB5172841FA30EE4000433E7 /* RxSwiftTestViewController.swift in Sources */,
 				CB393454200C85C6000FB67E /* MainNavigationController.swift in Sources */,
+				CB2C99E0207C5D2D001C266B /* SwiftForward06.swift in Sources */,
 				CBC35DE52064D2EF0028F168 /* SwiftTipsTest3.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1495,7 +1527,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Demo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangyun.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1518,7 +1550,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Demo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangyun.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

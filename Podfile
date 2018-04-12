@@ -16,7 +16,8 @@ use_frameworks!
     pod 'RAMAnimatedTabBarController'
     pod 'IQKeyboardManagerSwift', '~> 5.0.6'
     pod 'Material', '~> 2.12.18'
-    
+    pod 'ObjectMapper'
+    pod 'SwiftyAttributes'
 
     
     post_install do |installer|

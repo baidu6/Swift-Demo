@@ -8,63 +8,7 @@
 
 import UIKit
 
-class BackReasonView: UIView {
-    
-    var errorsArray = [BackErrorType.houseInfo.rawValue, BackErrorType.obligee.rawValue, BackErrorType.other.rawValue]
-    var lastBtnTag: Int = 0
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        
-        createBtns()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    func createBtns() {
-        let totalCol = 3
-        let gap: CGFloat = 5
-        let btnW: CGFloat = (SCREEN_WIDTH - 20 - CGFloat((totalCol - 1)) * gap) / 3
-        let btnH: CGFloat = 40
-        for i in 0..<errorsArray.count {
-            let btn = UIButton(type: .custom)
-            let col = i % totalCol
-            let row = i / totalCol
-            btn.frame = CGRect(x: (btnW + gap) * CGFloat(col), y: (btnH + gap) * CGFloat(row), width: btnW, height: btnH)
-            btn.setTitle(errorsArray[i], for: UIControlState.normal)
-            btn.setTitleColor(UIColor.darkGray, for: UIControlState.normal)
-            btn.setTitleColor(UIColor.orange, for: UIControlState.selected)
-            btn.backgroundColor = UIColor.lightGray
-            btn.tag = 10000 + i
-            btn.addTarget(self, action: #selector(btnDidClick(btn:)), for: UIControlEvents.touchUpInside)
-            addSubview(btn)
-            
-            lastBtnTag = 10000
-        }
-    }
-    
-    @objc func btnDidClick(btn: UIButton) {
-        
-        if btn.isSelected == true {
-            return
-        }
-        
-        let lastBtn = self.viewWithTag(lastBtnTag) as? UIButton
-        lastBtn?.isSelected = false
-        
-        btn.isSelected = !btn.isSelected
-        
-        lastBtnTag = btn.tag
-    }
-}
 
-enum BackErrorType: String {
-    case houseInfo = "房产信息错误"
-    case obligee = "权利人错误"
-    case other = "其它"
-}
 
 class Swift4TestViewController: UIViewController {
     

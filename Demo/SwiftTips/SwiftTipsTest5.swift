@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import HelloKit
+
 
 enum Result {
     case Success(String)
@@ -31,7 +31,7 @@ class SwiftTipsTest5: UIViewController {
             print(error)
         }
         
-       Hello.sayHello()
+//       Hello.sayHello()
     }
     
     func doSomethingParam(param: AnyObject) -> Result {

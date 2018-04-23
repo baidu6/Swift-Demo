@@ -64,6 +64,8 @@
 		CB42D3CB206B3513006DF832 /* MaterialSearchBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB42D3CA206B3513006DF832 /* MaterialSearchBarViewController.swift */; };
 		CB42D4AD206B8772006DF832 /* SwiftTipsTest4.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB42D4AC206B8772006DF832 /* SwiftTipsTest4.swift */; };
 		CB45F3FA20317451005D438F /* AnimationCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB45F3F920317451005D438F /* AnimationCellViewController.swift */; };
+		CB4912AD20888BE0009F59AB /* BottomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4912AC20888BE0009F59AB /* BottomAlertViewController.swift */; };
+		CB4912AF20888C0C009F59AB /* CustomAlertTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4912AE20888C0C009F59AB /* CustomAlertTool.swift */; };
 		CB4CA01E201EB9BB0046B62F /* GifTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4CA01D201EB9BB0046B62F /* GifTestViewController.swift */; };
 		CB4CA020201EBA2F0046B62F /* gif01.gif in Resources */ = {isa = PBXBuildFile; fileRef = CB4CA01F201EBA2F0046B62F /* gif01.gif */; };
 		CB4CA025201ECE4A0046B62F /* CustomPresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4CA024201ECE4A0046B62F /* CustomPresentViewController.swift */; };
@@ -232,6 +234,8 @@
 		CB42D4A2206B6E66006DF832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB42D4AC206B8772006DF832 /* SwiftTipsTest4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTipsTest4.swift; sourceTree = "<group>"; };
 		CB45F3F920317451005D438F /* AnimationCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationCellViewController.swift; sourceTree = "<group>"; };
+		CB4912AC20888BE0009F59AB /* BottomAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomAlertViewController.swift; sourceTree = "<group>"; };
+		CB4912AE20888C0C009F59AB /* CustomAlertTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertTool.swift; sourceTree = "<group>"; };
 		CB4CA01D201EB9BB0046B62F /* GifTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifTestViewController.swift; sourceTree = "<group>"; };
 		CB4CA01F201EBA2F0046B62F /* gif01.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif01.gif; sourceTree = "<group>"; };
 		CB4CA024201ECE4A0046B62F /* CustomPresentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPresentViewController.swift; sourceTree = "<group>"; };
@@ -635,6 +639,7 @@
 		CB5172231FA2E143000433E7 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				CBAAB0CC207F2E1000F3F6A5 /* AlertTool */,
 				CB4D657E207464BB00CE8268 /* Swift进阶 */,
 				CB3C2E8F206DD1F500A820DD /* Swift4.0 */,
 				CB4CD66E2068C07000A981C2 /* Material */,
@@ -919,6 +924,15 @@
 				CB24E306201984EF008A1857 /* UIView+Extension.swift */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		CBAAB0CC207F2E1000F3F6A5 /* AlertTool */ = {
+			isa = PBXGroup;
+			children = (
+				CB4912AC20888BE0009F59AB /* BottomAlertViewController.swift */,
+				CB4912AE20888C0C009F59AB /* CustomAlertTool.swift */,
+			);
+			path = AlertTool;
 			sourceTree = "<group>";
 		};
 		CBAF929F204E6CB7001C1E69 /* RefreshView */ = {
@@ -1322,6 +1336,7 @@
 				CB77D40B204D2E0500DC7418 /* SwiftTipsTestViewController.swift in Sources */,
 				CB1B1A281FF6157B00BEF65B /* BasicAnimationViewController.swift in Sources */,
 				CBA0849820171F14004CC1FE /* String+Extension.swift in Sources */,
+				CB4912AF20888C0C009F59AB /* CustomAlertTool.swift in Sources */,
 				CBAF92A4204E6E0C001C1E69 /* ScrollView+Refresh.swift in Sources */,
 				CBF71A481FCE9CCA00052290 /* TouchDetailViewController.swift in Sources */,
 				CB4CD6742068CA1D00A981C2 /* MaterialTextFieldViewController.swift in Sources */,
@@ -1333,6 +1348,7 @@
 				CB65CC032069DE1600AA5435 /* MaterialCardViewController.swift in Sources */,
 				CB1B1A231FF5E94900BEF65B /* TableViewEditViewController.swift in Sources */,
 				CB5172841FA30EE4000433E7 /* RxSwiftTestViewController.swift in Sources */,
+				CB4912AD20888BE0009F59AB /* BottomAlertViewController.swift in Sources */,
 				CB393454200C85C6000FB67E /* MainNavigationController.swift in Sources */,
 				CB2C99E0207C5D2D001C266B /* SwiftForward06.swift in Sources */,
 				CBC35DE52064D2EF0028F168 /* SwiftTipsTest3.swift in Sources */,

@@ -8,6 +8,8 @@
 
 import UIKit
 
+typealias Filter = (CIImage) -> CIImage
+
 class SwiftForward06: UIViewController {
     
     private var password: CustomPassword!
@@ -24,12 +26,60 @@ class SwiftForward06: UIViewController {
         password.snp.makeConstraints { (make) in
             make.center.equalToSuperview()
         }
+        
+        print(incrementArray(xs: [1, 2, 3], transform: {$0 * 2}))
+        print(incrementArray(xs: [1, 2, 3], transform: {$0 % 2 == 0}))
+        print(incrementArray(xs: [1, 2, 3], transform: {$0 * 2}))
+        
+        print(getSwiftFiles(files: ["Ahgoagh", "gahgoa", "haogh"]))
+       
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         print(password.value)
     }
-
+    
+    func incrementArray(xs: [Int], transform: (Int) -> (Int)) -> [Int] {
+        var result: [Int] = []
+        for i in xs {
+            result.append(transform(i))
+        }
+        return result
+    }
+    
+    func incrementArray(xs: [Int], transform: (Int) -> Bool) -> [Bool] {
+        var result: [Bool] = []
+        for i in xs {
+            result.append(transform(i))
+        }
+        return result
+    }
+    
+    func incrementArray<T>(xs: [Int], transform: (Int) -> T) -> [T] {
+        var result: [T] = []
+        for i in xs {
+            result.append(transform(i))
+        }
+        return result
+    }
+    
+    func map<Element, T>(xs: [Element], transform: (Element) -> T) -> [T] {
+        var result: [T] = []
+        for i in xs {
+            result.append(transform(i))
+        }
+        return result
+    }
+    
+    func getSwiftFiles(files: [String]) -> [String] {
+        var result: [String] = []
+        for file in files {
+            if file.hasPrefix("A") {
+                result.append(file)
+            }
+        }
+        return result
+    }
 }
 
 class CustomPassword: UIView {

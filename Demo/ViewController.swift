@@ -17,7 +17,7 @@ typealias  DictionaryDefault = Dictionary<String, Any>
 class ViewController: UIViewController {
     
     var tableView: BaseTableView!
-    var namesArray = ["CoreData", "Realm", "RxSwift", "SwiftForms", "AnimationNumbers", "引用类型和值类型","GCDTest", "Set(集合)Test", "函数闭包练习", "3DTouch(UITableView)", "UI预加载动画", "自定义TableView索引", "KeyBoard", "Gradient(渐变)", "TableView左边滑动", "动画", "JS交互", "下拉菜单", "加载gif动画", "Presented", "给Cell添加动画", "CustomStringConvertible协议", "Swift必备tips", "下拉刷新", "风险测评报告", "指纹解锁", "Material", "swift4.0", "swift进阶"]
+    var namesArray = ["CoreData", "Realm", "RxSwift", "SwiftForms", "AnimationNumbers", "引用类型和值类型","GCDTest", "Set(集合)Test", "函数闭包练习", "3DTouch(UITableView)", "UI预加载动画", "自定义TableView索引", "KeyBoard", "Gradient(渐变)", "TableView左边滑动", "动画", "JS交互", "下拉菜单", "加载gif动画", "Presented", "给Cell添加动画", "CustomStringConvertible协议", "Swift必备tips", "下拉刷新", "风险测评报告", "指纹解锁", "Material", "swift4.0", "swift进阶", "自定义弹窗"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +38,7 @@ class ViewController: UIViewController {
         tableView.estimatedRowHeight = ScreenHeight
 //        tableView.register(UITableViewCellText.self, forCellReuseIdentifier: "DemoCellID")
         tableView.register(UITableViewCellDetail.self, forCellReuseIdentifier: "DemoCellID")
+        tableView.register(BackReasonCell.self, forCellReuseIdentifier: "BackReasonCellID")
         tableView.delegate = self
         tableView.dataSource = self
         view.addSubview(tableView)
@@ -87,7 +88,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DemoCellID") as! UITableViewCellDetail
         cell.displayData(dict: ["title": namesArray[indexPath.row], "detail": "点击查看详情----"])
-//        cell.displayData(title: namesArray[indexPath.row])
+
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -179,6 +180,9 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             self.navigationController?.pushViewController(vc, animated: true)
         }else if indexPath.row == 28 {
             let vc = SwiftForwardViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        } else if indexPath.row == 29 {
+            let vc = BottomAlertViewController()
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }
@@ -526,6 +530,129 @@ struct B1: A1 {
         return "H"
     }
 }
+
+import UIKit
+
+enum ApplyBackReason: String {
+    case houseInfoError = "houseInfoError"
+    case obligeeError = "obligeeError"
+    case otherError = "otherError"
+}
+
+class BackReasonCell: UITableViewCell {
+    
+    var value: String? {
+        if houseErrorBtn.isSelected {
+            return "房产信息错误"
+        } else if obligeeErrorBtn.isSelected {
+            return "权利人错误"
+        } else if otherErrorBtn.isSelected {
+            return "其它错误"
+        } else {
+            return ""
+        }
+    }
+    
+    private var titleLabel: UILabel!
+    private var houseErrorBtn: UIButton!
+    private var obligeeErrorBtn: UIButton!
+    private var otherErrorBtn: UIButton!
+    
+    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        
+        selectionStyle = .none
+        backgroundColor = UIColor.red
+        
+        setupUI()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    @objc func houseErrorBtnDidClick() {
+        houseErrorBtn.isSelected = !houseErrorBtn.isSelected
+        
+        if houseErrorBtn.isSelected {
+            obligeeErrorBtn.isSelected = false
+            otherErrorBtn.isSelected = false
+        }
+    }
+    
+    @objc func obligeeErrorBtnDidClick() {
+        obligeeErrorBtn.isSelected = !obligeeErrorBtn.isSelected
+        
+        if obligeeErrorBtn.isSelected {
+            houseErrorBtn.isSelected = false
+            otherErrorBtn.isSelected = false
+        }
+    }
+    
+    @objc func otherErrorBtnDidClick() {
+        otherErrorBtn.isSelected = !otherErrorBtn.isSelected
+        
+        if otherErrorBtn.isSelected {
+            houseErrorBtn.isSelected = false
+            obligeeErrorBtn.isSelected = false
+        }
+    }
+    
+    func setupUI() {
+        titleLabel = UILabel()
+        titleLabel.text = "退回原因"
+        titleLabel.font = UIFont.systemFont(ofSize: autoFont(size: 30))
+        titleLabel.textColor = UIColor.black
+        contentView.addSubview(titleLabel)
+        
+        houseErrorBtn = UIButton(type: .custom)
+        houseErrorBtn.setImage(UIImage(named: ApplyBackReason.houseInfoError.rawValue), for: .normal)
+        houseErrorBtn.setImage(UIImage(named: ApplyBackReason.houseInfoError.rawValue + "_selected"), for: .selected)
+        houseErrorBtn.backgroundColor = UIColor.orange
+        houseErrorBtn.addTarget(self, action: #selector(houseErrorBtnDidClick), for: .touchUpInside)
+        contentView.addSubview(houseErrorBtn)
+        
+        obligeeErrorBtn = UIButton(type: .custom)
+        obligeeErrorBtn.setImage(UIImage(named: ApplyBackReason.obligeeError.rawValue), for: .normal)
+        obligeeErrorBtn.setImage(UIImage(named: ApplyBackReason.obligeeError.rawValue + "_selected"), for: .selected)
+        obligeeErrorBtn.backgroundColor = UIColor.orange
+
+        obligeeErrorBtn.addTarget(self, action: #selector(obligeeErrorBtnDidClick), for: .touchUpInside)
+        contentView.addSubview(obligeeErrorBtn)
+        
+        otherErrorBtn = UIButton(type: .custom)
+        otherErrorBtn.setImage(UIImage(named: ApplyBackReason.otherError.rawValue), for: .normal)
+        otherErrorBtn.setImage(UIImage(named: ApplyBackReason.otherError.rawValue + "_selected"), for: .selected)
+        otherErrorBtn.backgroundColor = UIColor.orange
+
+        otherErrorBtn.addTarget(self, action: #selector(otherErrorBtnDidClick), for: .touchUpInside)
+        contentView.addSubview(otherErrorBtn)
+        
+        titleLabel.snp.makeConstraints { (make) in
+            make.top.equalToSuperview().offset(autoHeight(height: 40))
+            make.left.equalToSuperview().offset(autoWidth(width: 30))
+        }
+        
+        houseErrorBtn.snp.makeConstraints { (make) in
+            make.top.equalTo(titleLabel.snp.bottom).offset(autoHeight(height: 20))
+            make.left.equalTo(titleLabel)
+            make.width.equalTo(autoWidth(width: 190))
+            make.height.equalTo(autoHeight(height: 65))
+        }
+        
+        obligeeErrorBtn.snp.makeConstraints { (make) in
+            make.top.width.height.equalTo(houseErrorBtn)
+            make.left.equalTo(houseErrorBtn.snp.right).offset(autoWidth(width: 60))
+        }
+        
+        otherErrorBtn.snp.makeConstraints { (make) in
+            make.top.width.height.equalTo(houseErrorBtn)
+            make.left.equalTo(obligeeErrorBtn.snp.right).offset(autoWidth(width: 60))
+        }
+    }
+    
+}
+
 
 
 

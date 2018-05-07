@@ -18,6 +18,8 @@ use_frameworks!
     pod 'Material', '~> 2.12.18'
     pod 'ObjectMapper'
     pod 'SwiftyAttributes'
+    pod 'Player', '~> 0.8.4'
+    pod 'Kingfisher'
 
     
     post_install do |installer|

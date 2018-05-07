@@ -180,9 +180,9 @@ class StepByStepViewController: UIViewController {
 //            }
 //            .disposed(by: bag)
         
-        let a = Player(score: Variable(90))
-        let b = Player(score: Variable(50))
-        let players = PublishSubject<Player>()
+        let a = Players(score: Variable(90))
+        let b = Players(score: Variable(50))
+        let players = PublishSubject<Players>()
         players.asObservable()
             .flatMapLatest{
                 $0.score.asObservable()
@@ -201,7 +201,7 @@ class StepByStepViewController: UIViewController {
     }
 }
 
-struct Player {
+struct Players {
     var score: Variable<Int>
 }
 

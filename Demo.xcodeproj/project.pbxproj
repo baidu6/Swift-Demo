@@ -86,6 +86,11 @@
 		CB4D658220746C1400CE8268 /* SwiftForward01.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4D658120746C1400CE8268 /* SwiftForward01.swift */; };
 		CB4D65842074B4E900CE8268 /* test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB4D65832074B4E900CE8268 /* test.storyboard */; };
 		CB4D65862074B51800CE8268 /* SwiftForward02.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4D65852074B51800CE8268 /* SwiftForward02.swift */; };
+		CB50238620A02FFD00589BB5 /* PageTestViewCcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50238520A02FFD00589BB5 /* PageTestViewCcontroller.swift */; };
+		CB50238820A033C100589BB5 /* ATestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50238720A033C100589BB5 /* ATestViewController.swift */; };
+		CB50238A20A033C800589BB5 /* BTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50238920A033C800589BB5 /* BTestViewController.swift */; };
+		CB50238C20A033CF00589BB5 /* CTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50238B20A033CF00589BB5 /* CTestViewController.swift */; };
+		CB50238E20A033D600589BB5 /* DTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50238D20A033D600589BB5 /* DTestViewController.swift */; };
 		CB5172251FA2E143000433E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5172241FA2E143000433E7 /* AppDelegate.swift */; };
 		CB5172271FA2E143000433E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5172261FA2E143000433E7 /* ViewController.swift */; };
 		CB51722A1FA2E143000433E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5172281FA2E143000433E7 /* Main.storyboard */; };
@@ -268,6 +273,11 @@
 		CB4D658120746C1400CE8268 /* SwiftForward01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftForward01.swift; sourceTree = "<group>"; };
 		CB4D65832074B4E900CE8268 /* test.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = test.storyboard; sourceTree = "<group>"; };
 		CB4D65852074B51800CE8268 /* SwiftForward02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftForward02.swift; sourceTree = "<group>"; };
+		CB50238520A02FFD00589BB5 /* PageTestViewCcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTestViewCcontroller.swift; sourceTree = "<group>"; };
+		CB50238720A033C100589BB5 /* ATestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATestViewController.swift; sourceTree = "<group>"; };
+		CB50238920A033C800589BB5 /* BTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTestViewController.swift; sourceTree = "<group>"; };
+		CB50238B20A033CF00589BB5 /* CTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTestViewController.swift; sourceTree = "<group>"; };
+		CB50238D20A033D600589BB5 /* DTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTestViewController.swift; sourceTree = "<group>"; };
 		CB5172211FA2E143000433E7 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5172241FA2E143000433E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB5172261FA2E143000433E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -657,6 +667,18 @@
 			path = "Swift进阶";
 			sourceTree = "<group>";
 		};
+		CB50238420A02FE200589BB5 /* 分页(pageVC) */ = {
+			isa = PBXGroup;
+			children = (
+				CB50238520A02FFD00589BB5 /* PageTestViewCcontroller.swift */,
+				CB50238720A033C100589BB5 /* ATestViewController.swift */,
+				CB50238920A033C800589BB5 /* BTestViewController.swift */,
+				CB50238B20A033CF00589BB5 /* CTestViewController.swift */,
+				CB50238D20A033D600589BB5 /* DTestViewController.swift */,
+			);
+			path = "分页(pageVC)";
+			sourceTree = "<group>";
+		};
 		CB5172181FA2E143000433E7 = {
 			isa = PBXGroup;
 			children = (
@@ -686,6 +708,7 @@
 		CB5172231FA2E143000433E7 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				CB50238420A02FE200589BB5 /* 分页(pageVC) */,
 				CB2B8EDD209ADC4C00DB823A /* Swift图片浏览器 */,
 				CB9E17ED2092C5D800ACEC6B /* Player */,
 				CB49CA8A2091ACA300929CE1 /* Swift-Master */,
@@ -1334,6 +1357,7 @@
 				CBAF92A8204E6FA7001C1E69 /* RefreshHeaderViewRotate.swift in Sources */,
 				CB587D502056199400AA4ADB /* RefreshFooterViewDefault.swift in Sources */,
 				CB002A13205763F600E27C7F /* GradeView.swift in Sources */,
+				CB50238C20A033CF00589BB5 /* CTestViewController.swift in Sources */,
 				CB9E17EF2092C5E100ACEC6B /* PlayerTestViewController.swift in Sources */,
 				CB2C99DE207C517C001C266B /* SwiftForward05.swift in Sources */,
 				CB0F3C311FB539ED00333FEF /* SetTestViewController.swift in Sources */,
@@ -1363,6 +1387,7 @@
 				CB587D58205663BE00AA4ADB /* VentureAnalysisCell.swift in Sources */,
 				CB0D283F1FB96E68000D572A /* SimplePickerViewController.swift in Sources */,
 				CB1292E41FB03FA700FF26E1 /* MainTabBarViewController.swift in Sources */,
+				CB50238620A02FFD00589BB5 /* PageTestViewCcontroller.swift in Sources */,
 				CB45F3FA20317451005D438F /* AnimationCellViewController.swift in Sources */,
 				CB002A15205766DD00E27C7F /* UIColor+Extension.swift in Sources */,
 				CBF3410E20609F8D00E7A90F /* IQKeyBoardViewController.swift in Sources */,
@@ -1372,6 +1397,7 @@
 				CB3B62822021A83500D283B6 /* CustomSpreadViewController.swift in Sources */,
 				CB9E17F72093156600ACEC6B /* QueueTestViewController.swift in Sources */,
 				CB32786B20188F8D0013CDD2 /* CustomAlertView.swift in Sources */,
+				CB50238E20A033D600589BB5 /* DTestViewController.swift in Sources */,
 				CB31E0F42079AB2600E6ADEC /* SwiftForward03.swift in Sources */,
 				CB002A1B2057BF4A00E27C7F /* CommonKey.swift in Sources */,
 				CB686C59201F265300E23EA9 /* AnimationUtils.swift in Sources */,
@@ -1399,6 +1425,7 @@
 				CB1092661FF483FF00DC6961 /* GradientViewController.swift in Sources */,
 				CBE64A031FCF98A000986421 /* PreviewLoadingViewController.swift in Sources */,
 				CB7C1B8B1FB42CE90034FCD6 /* GCDTestViewController.swift in Sources */,
+				CB50238820A033C100589BB5 /* ATestViewController.swift in Sources */,
 				CBE64A051FCF98F300986421 /* UIView+PreviewLoading.swift in Sources */,
 				CB3CE0A7207B43B5000F152A /* SwiftForward04.swift in Sources */,
 				CB29BE2E200D938200F8A78D /* UIWebViewController.swift in Sources */,
@@ -1425,6 +1452,7 @@
 				CB4912AD20888BE0009F59AB /* BottomAlertViewController.swift in Sources */,
 				CB393454200C85C6000FB67E /* MainNavigationController.swift in Sources */,
 				CB2C99E0207C5D2D001C266B /* SwiftForward06.swift in Sources */,
+				CB50238A20A033C800589BB5 /* BTestViewController.swift in Sources */,
 				CBC35DE52064D2EF0028F168 /* SwiftTipsTest3.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

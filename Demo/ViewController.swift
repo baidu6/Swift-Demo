@@ -17,7 +17,7 @@ typealias  DictionaryDefault = Dictionary<String, Any>
 class ViewController: UIViewController {
     
     var tableView: BaseTableView!
-    var namesArray = ["CoreData", "Realm", "RxSwift", "SwiftForms", "AnimationNumbers", "引用类型和值类型","GCDTest", "Set(集合)Test", "函数闭包练习", "3DTouch(UITableView)", "UI预加载动画", "自定义TableView索引", "KeyBoard", "Gradient(渐变)", "TableView左边滑动", "动画", "JS交互", "下拉菜单", "加载gif动画", "Presented", "给Cell添加动画", "CustomStringConvertible协议", "Swift必备tips", "下拉刷新", "风险测评报告", "指纹解锁", "Material", "swift4.0", "swift进阶", "自定义弹窗", "Swift-Master", "Player", "图片浏览器"]
+    var namesArray = ["CoreData", "Realm", "RxSwift", "SwiftForms", "AnimationNumbers", "引用类型和值类型","GCDTest", "Set(集合)Test", "函数闭包练习", "3DTouch(UITableView)", "UI预加载动画", "自定义TableView索引", "KeyBoard", "Gradient(渐变)", "TableView左边滑动", "动画", "JS交互", "下拉菜单", "加载gif动画", "Presented", "给Cell添加动画", "CustomStringConvertible协议", "Swift必备tips", "下拉刷新", "风险测评报告", "指纹解锁", "Material", "swift4.0", "swift进阶", "自定义弹窗", "Swift-Master", "Player", "图片浏览器", "UIPageViewController"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -192,6 +192,9 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             self.navigationController?.pushViewController(vc, animated: true)
         } else if indexPath.row == 32 {
             let vc = PhotoBrowerViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        } else if indexPath.row == 33 {
+            let vc = PageTestViewCcontroller()
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }

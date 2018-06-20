@@ -1,0 +1,30 @@
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <title>Hello</title>
+    </head>
+    <body>
+        <p>Hello World!</p>
+        <input style = "display:none" name = "input" value = "I am input" / >
+        <button type="button" onclick="alertAction()">alert</button>
+        <button type="button" onclick="confirmAction()">confirm</button>
+        <button type="button" onclick="promptAction()">prompt</button>
+        <script type="text/javascript">
+            function alertAction() {
+                window.alert("click me alert!");
+                window.webkit.messageHandlers.ClickMe.postMessage({"name": "wangyun", "age": 35})
+            }
+        
+            function confirmAction() {
+                confirm("你确定要喝水吗？")
+            }
+        
+            function promptAction() {
+                prompt("请输入您的名字", "jack.")
+            }
+        </script>
+    </body>
+</html>

@@ -20,6 +20,7 @@ use_frameworks!
     pod 'SwiftyAttributes'
     pod 'Player', '~> 0.8.4'
     pod 'Kingfisher'
+    pod 'Alamofire', '~> 4.7.2'
 
     
     post_install do |installer|

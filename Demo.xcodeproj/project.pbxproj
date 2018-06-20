@@ -32,6 +32,8 @@
 		CB1292E41FB03FA700FF26E1 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1292E31FB03FA700FF26E1 /* MainTabBarViewController.swift */; };
 		CB1292E61FB042D000FF26E1 /* BaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1292E51FB042D000FF26E1 /* BaseTableView.swift */; };
 		CB15F515209C2BF60034E836 /* PhotoBrowserScaleAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB15F514209C2BF60034E836 /* PhotoBrowserScaleAnimator.swift */; };
+		CB1A4CB820BE410B00E816D2 /* CustomCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1A4CB720BE410B00E816D2 /* CustomCameraViewController.swift */; };
+		CB1A4CBA20BE4E7200E816D2 /* CameraTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1A4CB920BE4E7200E816D2 /* CameraTestViewController.swift */; };
 		CB1B1A231FF5E94900BEF65B /* TableViewEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1B1A221FF5E94900BEF65B /* TableViewEditViewController.swift */; };
 		CB1B1A261FF614B800BEF65B /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1B1A251FF614B800BEF65B /* AnimationViewController.swift */; };
 		CB1B1A281FF6157B00BEF65B /* BasicAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1B1A271FF6157B00BEF65B /* BasicAnimationViewController.swift */; };
@@ -57,6 +59,7 @@
 		CB31E0F42079AB2600E6ADEC /* SwiftForward03.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31E0F32079AB2600E6ADEC /* SwiftForward03.swift */; };
 		CB32786B20188F8D0013CDD2 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB32786A20188F8D0013CDD2 /* CustomAlertView.swift */; };
 		CB3566E420944F3300725F4C /* AnimationTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3566E320944F3300725F4C /* AnimationTestViewController.swift */; };
+		CB36632E20CE08AD00E617DD /* WKWebViewTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB36632D20CE08AD00E617DD /* WKWebViewTestViewController.swift */; };
 		CB36C62E20089B5F00FE6CAA /* ExpandMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB36C62D20089B5F00FE6CAA /* ExpandMenuView.swift */; };
 		CB3748EA1FDA59D800BE0418 /* EstimateDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3748E91FDA59D800BE0418 /* EstimateDetailCell.swift */; };
 		CB3748EC1FDA7E4E00BE0418 /* ResultTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3748EB1FDA7E4E00BE0418 /* ResultTableView.swift */; };
@@ -86,6 +89,8 @@
 		CB4D658220746C1400CE8268 /* SwiftForward01.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4D658120746C1400CE8268 /* SwiftForward01.swift */; };
 		CB4D65842074B4E900CE8268 /* test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB4D65832074B4E900CE8268 /* test.storyboard */; };
 		CB4D65862074B51800CE8268 /* SwiftForward02.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4D65852074B51800CE8268 /* SwiftForward02.swift */; };
+		CB4F292E20A29BE80054EFA6 /* NetWorkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4F292D20A29BE80054EFA6 /* NetWorkTool.swift */; };
+		CB4F293020A29C6A0054EFA6 /* Public.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4F292F20A29C6A0054EFA6 /* Public.swift */; };
 		CB50238620A02FFD00589BB5 /* PageTestViewCcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50238520A02FFD00589BB5 /* PageTestViewCcontroller.swift */; };
 		CB50238820A033C100589BB5 /* ATestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50238720A033C100589BB5 /* ATestViewController.swift */; };
 		CB50238A20A033C800589BB5 /* BTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB50238920A033C800589BB5 /* BTestViewController.swift */; };
@@ -109,6 +114,7 @@
 		CB587D5A2056652700AA4ADB /* TopBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB587D592056652700AA4ADB /* TopBottomView.swift */; };
 		CB587D5C20566AE500AA4ADB /* AnalysisAnimateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB587D5B20566AE500AA4ADB /* AnalysisAnimateView.swift */; };
 		CB5B59EF2061116A00FAB04F /* FingerUnlockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5B59EE2061116A00FAB04F /* FingerUnlockViewController.swift */; };
+		CB62334320A177F800D6336F /* AlamofireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB62334220A177F800D6336F /* AlamofireViewController.swift */; };
 		CB65CC012069DA4300AA5435 /* MaterialSwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB65CC002069DA4300AA5435 /* MaterialSwitchViewController.swift */; };
 		CB65CC032069DE1600AA5435 /* MaterialCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB65CC022069DE1600AA5435 /* MaterialCardViewController.swift */; };
 		CB65CC052069ECE400AA5435 /* MaterialFABMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB65CC042069ECE400AA5435 /* MaterialFABMenuViewController.swift */; };
@@ -118,12 +124,10 @@
 		CB67FB411FBAC28D00B5DD0A /* TodoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB67FB3F1FBAC28D00B5DD0A /* TodoDetailViewController.xib */; };
 		CB686C59201F265300E23EA9 /* AnimationUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB686C58201F265300E23EA9 /* AnimationUtils.swift */; };
 		CB6C9C8B2073152A00AE56F8 /* SwiftTipsTest5.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6C9C8A2073152A00AE56F8 /* SwiftTipsTest5.swift */; };
-		CB6C9CF020732E6D00AE56F8 /* HelloKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB6C9CEF20732E6D00AE56F8 /* HelloKit.framework */; };
-		CB6C9CF120732E8100AE56F8 /* HelloKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB6C9CEF20732E6D00AE56F8 /* HelloKit.framework */; };
-		CB6C9CF220732E8100AE56F8 /* HelloKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB6C9CEF20732E6D00AE56F8 /* HelloKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CB6C9CF5207354F700AE56F8 /* SwiftTipsTest6.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6C9CF4207354F700AE56F8 /* SwiftTipsTest6.swift */; };
 		CB77D40B204D2E0500DC7418 /* SwiftTipsTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB77D40A204D2E0500DC7418 /* SwiftTipsTestViewController.swift */; };
 		CB7C1B8B1FB42CE90034FCD6 /* GCDTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7C1B8A1FB42CE90034FCD6 /* GCDTestViewController.swift */; };
+		CB7FC2B620CE575700679C55 /* hello.html in Resources */ = {isa = PBXBuildFile; fileRef = CB7FC2B520CE575700679C55 /* hello.html */; };
 		CB9E17EF2092C5E100ACEC6B /* PlayerTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9E17EE2092C5E100ACEC6B /* PlayerTestViewController.swift */; };
 		CB9E17F12092C92100ACEC6B /* colgate.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CB9E17F02092C92000ACEC6B /* colgate.mp4 */; };
 		CB9E17F52092FECE00ACEC6B /* PathTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9E17F42092FECE00ACEC6B /* PathTestViewController.swift */; };
@@ -174,7 +178,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CB6C9CF220732E8100AE56F8 /* HelloKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,6 +212,8 @@
 		CB1292E31FB03FA700FF26E1 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		CB1292E51FB042D000FF26E1 /* BaseTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableView.swift; sourceTree = "<group>"; };
 		CB15F514209C2BF60034E836 /* PhotoBrowserScaleAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoBrowserScaleAnimator.swift; sourceTree = "<group>"; };
+		CB1A4CB720BE410B00E816D2 /* CustomCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraViewController.swift; sourceTree = "<group>"; };
+		CB1A4CB920BE4E7200E816D2 /* CameraTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraTestViewController.swift; sourceTree = "<group>"; };
 		CB1B1A221FF5E94900BEF65B /* TableViewEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewEditViewController.swift; sourceTree = "<group>"; };
 		CB1B1A251FF614B800BEF65B /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
 		CB1B1A271FF6157B00BEF65B /* BasicAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicAnimationViewController.swift; sourceTree = "<group>"; };
@@ -234,6 +239,7 @@
 		CB31E0F32079AB2600E6ADEC /* SwiftForward03.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftForward03.swift; sourceTree = "<group>"; };
 		CB32786A20188F8D0013CDD2 /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
 		CB3566E320944F3300725F4C /* AnimationTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationTestViewController.swift; sourceTree = "<group>"; };
+		CB36632D20CE08AD00E617DD /* WKWebViewTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewTestViewController.swift; sourceTree = "<group>"; };
 		CB36C62D20089B5F00FE6CAA /* ExpandMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandMenuView.swift; sourceTree = "<group>"; };
 		CB3748E91FDA59D800BE0418 /* EstimateDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimateDetailCell.swift; sourceTree = "<group>"; };
 		CB3748EB1FDA7E4E00BE0418 /* ResultTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTableView.swift; sourceTree = "<group>"; };
@@ -273,6 +279,8 @@
 		CB4D658120746C1400CE8268 /* SwiftForward01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftForward01.swift; sourceTree = "<group>"; };
 		CB4D65832074B4E900CE8268 /* test.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = test.storyboard; sourceTree = "<group>"; };
 		CB4D65852074B51800CE8268 /* SwiftForward02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftForward02.swift; sourceTree = "<group>"; };
+		CB4F292D20A29BE80054EFA6 /* NetWorkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkTool.swift; sourceTree = "<group>"; };
+		CB4F292F20A29C6A0054EFA6 /* Public.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Public.swift; sourceTree = "<group>"; };
 		CB50238520A02FFD00589BB5 /* PageTestViewCcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTestViewCcontroller.swift; sourceTree = "<group>"; };
 		CB50238720A033C100589BB5 /* ATestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATestViewController.swift; sourceTree = "<group>"; };
 		CB50238920A033C800589BB5 /* BTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTestViewController.swift; sourceTree = "<group>"; };
@@ -302,6 +310,7 @@
 		CB587D592056652700AA4ADB /* TopBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBottomView.swift; sourceTree = "<group>"; };
 		CB587D5B20566AE500AA4ADB /* AnalysisAnimateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisAnimateView.swift; sourceTree = "<group>"; };
 		CB5B59EE2061116A00FAB04F /* FingerUnlockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingerUnlockViewController.swift; sourceTree = "<group>"; };
+		CB62334220A177F800D6336F /* AlamofireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireViewController.swift; sourceTree = "<group>"; };
 		CB65CC002069DA4300AA5435 /* MaterialSwitchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialSwitchViewController.swift; sourceTree = "<group>"; };
 		CB65CC022069DE1600AA5435 /* MaterialCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialCardViewController.swift; sourceTree = "<group>"; };
 		CB65CC042069ECE400AA5435 /* MaterialFABMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialFABMenuViewController.swift; sourceTree = "<group>"; };
@@ -311,10 +320,10 @@
 		CB67FB3F1FBAC28D00B5DD0A /* TodoDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodoDetailViewController.xib; sourceTree = "<group>"; };
 		CB686C58201F265300E23EA9 /* AnimationUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationUtils.swift; sourceTree = "<group>"; };
 		CB6C9C8A2073152A00AE56F8 /* SwiftTipsTest5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTipsTest5.swift; sourceTree = "<group>"; };
-		CB6C9CEF20732E6D00AE56F8 /* HelloKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HelloKit.framework; sourceTree = "<group>"; };
 		CB6C9CF4207354F700AE56F8 /* SwiftTipsTest6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTipsTest6.swift; sourceTree = "<group>"; };
 		CB77D40A204D2E0500DC7418 /* SwiftTipsTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTipsTestViewController.swift; sourceTree = "<group>"; };
 		CB7C1B8A1FB42CE90034FCD6 /* GCDTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDTestViewController.swift; sourceTree = "<group>"; };
+		CB7FC2B520CE575700679C55 /* hello.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = hello.html; sourceTree = "<group>"; };
 		CB9E17EE2092C5E100ACEC6B /* PlayerTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTestViewController.swift; sourceTree = "<group>"; };
 		CB9E17F02092C92000ACEC6B /* colgate.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = colgate.mp4; sourceTree = "<group>"; };
 		CB9E17F42092FECE00ACEC6B /* PathTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathTestViewController.swift; sourceTree = "<group>"; };
@@ -346,8 +355,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB6C9CF020732E6D00AE56F8 /* HelloKit.framework in Frameworks */,
-				CB6C9CF120732E8100AE56F8 /* HelloKit.framework in Frameworks */,
 				3E789B5A286723032C301DC5 /* Pods_Demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,6 +474,15 @@
 			path = "CustomStringConvertible协议";
 			sourceTree = "<group>";
 		};
+		CB1A4CB620BE40EE00E816D2 /* 自定义相机 */ = {
+			isa = PBXGroup;
+			children = (
+				CB1A4CB720BE410B00E816D2 /* CustomCameraViewController.swift */,
+				CB1A4CB920BE4E7200E816D2 /* CameraTestViewController.swift */,
+			);
+			path = "自定义相机";
+			sourceTree = "<group>";
+		};
 		CB1B1A211FF5E93700BEF65B /* TableViewCell左滑 */ = {
 			isa = PBXGroup;
 			children = (
@@ -553,6 +569,15 @@
 				CB24E3082019BAB8008A1857 /* CommunityView.swift */,
 			);
 			path = DownMenuView;
+			sourceTree = "<group>";
+		};
+		CB36632C20CE089900E617DD /* WKWebView */ = {
+			isa = PBXGroup;
+			children = (
+				CB36632D20CE08AD00E617DD /* WKWebViewTestViewController.swift */,
+				CB7FC2B520CE575700679C55 /* hello.html */,
+			);
+			path = WKWebView;
 			sourceTree = "<group>";
 		};
 		CB3C2E8F206DD1F500A820DD /* Swift4.0 */ = {
@@ -682,7 +707,6 @@
 		CB5172181FA2E143000433E7 = {
 			isa = PBXGroup;
 			children = (
-				CB6C9CEF20732E6D00AE56F8 /* HelloKit.framework */,
 				CB5172231FA2E143000433E7 /* Demo */,
 				CB5172381FA2E143000433E7 /* DemoTests */,
 				CB5172431FA2E143000433E7 /* DemoUITests */,
@@ -708,6 +732,9 @@
 		CB5172231FA2E143000433E7 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				CB36632C20CE089900E617DD /* WKWebView */,
+				CB1A4CB620BE40EE00E816D2 /* 自定义相机 */,
+				CB62334120A177E900D6336F /* 网络Alamofire */,
 				CB50238420A02FE200589BB5 /* 分页(pageVC) */,
 				CB2B8EDD209ADC4C00DB823A /* Swift图片浏览器 */,
 				CB9E17ED2092C5D800ACEC6B /* Player */,
@@ -943,6 +970,16 @@
 				CB5B59EE2061116A00FAB04F /* FingerUnlockViewController.swift */,
 			);
 			path = "指纹解锁";
+			sourceTree = "<group>";
+		};
+		CB62334120A177E900D6336F /* 网络Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				CB62334220A177F800D6336F /* AlamofireViewController.swift */,
+				CB4F292D20A29BE80054EFA6 /* NetWorkTool.swift */,
+				CB4F292F20A29C6A0054EFA6 /* Public.swift */,
+			);
+			path = "网络Alamofire";
 			sourceTree = "<group>";
 		};
 		CB77D409204D2DC700DC7418 /* SwiftTips */ = {
@@ -1214,6 +1251,7 @@
 				CB0F3C391FB5A29800333FEF /* ChangeNickNameViewController.xib in Resources */,
 				CB9E17F12092C92100ACEC6B /* colgate.mp4 in Resources */,
 				CB0D28401FB96E68000D572A /* SimplePickerViewController.xib in Resources */,
+				CB7FC2B620CE575700679C55 /* hello.html in Resources */,
 				CB51722F1FA2E143000433E7 /* LaunchScreen.storyboard in Resources */,
 				CB0D28441FB98090000D572A /* APIWrapperViewController.xib in Resources */,
 				CB4CA020201EBA2F0046B62F /* gif01.gif in Resources */,
@@ -1268,6 +1306,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Demo/Pods-Demo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/JXPhotoBrowser/JXPhotoBrowser.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
@@ -1287,6 +1326,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JXPhotoBrowser.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
@@ -1354,14 +1394,17 @@
 				CB5172801FA30EC9000433E7 /* CoreDataTestViewController.swift in Sources */,
 				CB1E41BE200F308000F80BD1 /* JSViewController.swift in Sources */,
 				CB1B1A2A1FF61D7B00BEF65B /* KeyframeAnimationViewController.swift in Sources */,
+				CB62334320A177F800D6336F /* AlamofireViewController.swift in Sources */,
 				CBAF92A8204E6FA7001C1E69 /* RefreshHeaderViewRotate.swift in Sources */,
 				CB587D502056199400AA4ADB /* RefreshFooterViewDefault.swift in Sources */,
 				CB002A13205763F600E27C7F /* GradeView.swift in Sources */,
 				CB50238C20A033CF00589BB5 /* CTestViewController.swift in Sources */,
+				CB1A4CB820BE410B00E816D2 /* CustomCameraViewController.swift in Sources */,
 				CB9E17EF2092C5E100ACEC6B /* PlayerTestViewController.swift in Sources */,
 				CB2C99DE207C517C001C266B /* SwiftForward05.swift in Sources */,
 				CB0F3C311FB539ED00333FEF /* SetTestViewController.swift in Sources */,
 				CBAF92A6204E6E26001C1E69 /* RefreshBaseView.swift in Sources */,
+				CB1A4CBA20BE4E7200E816D2 /* CameraTestViewController.swift in Sources */,
 				CB4CD6762068F49B00A981C2 /* MaterialButtonTestViewController.swift in Sources */,
 				CB0F3C381FB5A29800333FEF /* ChangeNickNameViewController.swift in Sources */,
 				CBC35DE32064ADFE0028F168 /* StaticAndClassViewController.swift in Sources */,
@@ -1375,6 +1418,7 @@
 				CB10D5C41FF3996000BAC2DF /* KeyBoardViewController.swift in Sources */,
 				CB587D562056635500AA4ADB /* VentureAnalysisTableView.swift in Sources */,
 				CB002A192057B8F100E27C7F /* PackageManager.swift in Sources */,
+				CB4F292E20A29BE80054EFA6 /* NetWorkTool.swift in Sources */,
 				CB1B1A301FF63FC700BEF65B /* CombineCaseViewController.swift in Sources */,
 				CB49CA8E2091ADB500929CE1 /* AlertTestViewController.swift in Sources */,
 				CBEF16711FD7ECA30073C1A6 /* EstimateCell.swift in Sources */,
@@ -1403,6 +1447,7 @@
 				CB686C59201F265300E23EA9 /* AnimationUtils.swift in Sources */,
 				CB3748EC1FDA7E4E00BE0418 /* ResultTableView.swift in Sources */,
 				CB24E307201984EF008A1857 /* UIView+Extension.swift in Sources */,
+				CB4F293020A29C6A0054EFA6 /* Public.swift in Sources */,
 				CBE64A071FCF99FC00986421 /* PreviewLoadingView.swift in Sources */,
 				CB65CC012069DA4300AA5435 /* MaterialSwitchViewController.swift in Sources */,
 				CBF1E3721FA85BB7006EA6DA /* AnimationNumbersViewController.swift in Sources */,
@@ -1425,6 +1470,7 @@
 				CB1092661FF483FF00DC6961 /* GradientViewController.swift in Sources */,
 				CBE64A031FCF98A000986421 /* PreviewLoadingViewController.swift in Sources */,
 				CB7C1B8B1FB42CE90034FCD6 /* GCDTestViewController.swift in Sources */,
+				CB36632E20CE08AD00E617DD /* WKWebViewTestViewController.swift in Sources */,
 				CB50238820A033C100589BB5 /* ATestViewController.swift in Sources */,
 				CBE64A051FCF98F300986421 /* UIView+PreviewLoading.swift in Sources */,
 				CB3CE0A7207B43B5000F152A /* SwiftForward04.swift in Sources */,

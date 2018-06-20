@@ -68,12 +68,18 @@ extension WKWebViewController: WKScriptMessageHandler {
 }
 
 extension WKWebViewController: WKUIDelegate {
+    //MARK:- webView中有警告框时候调用
     func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping () -> Void) {
         let alertVC = UIAlertController(title: "Alert", message: message, preferredStyle: .alert)
         alertVC.addAction(UIAlertAction(title: "确定", style: .default, handler: { (_) in
             completionHandler()
         }))
         self.present(alertVC, animated: true, completion: nil)
+    }
+    
+    //MARK:- webView关闭时候调用
+    func webViewDidClose(_ webView: WKWebView) {
+        print("webViewDidClose")
     }
 }
 

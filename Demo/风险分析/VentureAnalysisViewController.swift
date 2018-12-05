@@ -8,6 +8,8 @@
 
 import UIKit
 
+import StreamingKit
+
 class VentureAnalysisViewController: UIViewController {
     
     var tableView: VentureAnalysisTableView!
@@ -17,6 +19,9 @@ class VentureAnalysisViewController: UIViewController {
 
         view.backgroundColor = UIColor.white
         setupUI()
+        
+        let audioPlayer = STKAudioPlayer()
+        audioPlayer.play(URL(string: "https://api.book.lapuasi.com/attachments/25/27/1540170585_905256.mp3"))
     }
     
     func setupUI() {

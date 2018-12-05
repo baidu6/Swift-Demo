@@ -8,8 +8,6 @@
 
 import UIKit
 
-typealias Filter = (CIImage) -> CIImage
-
 class SwiftForward06: UIViewController {
     
     private var password: CustomPassword!

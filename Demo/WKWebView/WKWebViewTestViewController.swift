@@ -44,6 +44,22 @@ class WKWebViewTestViewController: UIViewController {
         
         //添加js的方法ClickMe
         webView.configuration.userContentController.add(self, name: "ClickMe")
+  
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "snapShot", style: .plain, target: self, action: #selector(snapShot))
+    }
+    
+    
+    @objc func snapShot () {
+        if #available(iOS 11.0, *) {
+            let config = WKSnapshotConfiguration()
+            webView.takeSnapshot(with: config) { (image, error) in
+                if let image = image {
+                    UIImageWriteToSavedPhotosAlbum(image, self, nil, nil)
+                }
+            }
+        } else {
+            print(" not is iOS 11.0")
+        }
         
     }
     
@@ -63,8 +79,6 @@ class WKWebViewTestViewController: UIViewController {
     }
 
 }
-
-
 
 extension WKWebViewTestViewController: WKScriptMessageHandler {
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {

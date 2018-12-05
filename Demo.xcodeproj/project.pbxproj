@@ -43,6 +43,9 @@
 		CB1B1A301FF63FC700BEF65B /* CombineCaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1B1A2F1FF63FC700BEF65B /* CombineCaseViewController.swift */; };
 		CB1E41BE200F308000F80BD1 /* JSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1E41BD200F308000F80BD1 /* JSViewController.swift */; };
 		CB1E41C0200F314900F80BD1 /* WKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1E41BF200F314900F80BD1 /* WKWebViewController.swift */; };
+		CB1FB66920E9BAD60007AD07 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1FB66820E9BAD60007AD07 /* SearchViewController.swift */; };
+		CB1FB66B20E9BC100007AD07 /* LineSerachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1FB66A20E9BC100007AD07 /* LineSerachViewController.swift */; };
+		CB1FB66D20EA0A330007AD07 /* SortedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1FB66C20EA0A330007AD07 /* SortedViewController.swift */; };
 		CB24E30320196910008A1857 /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB24E30220196910008A1857 /* CustomAlertViewController.swift */; };
 		CB24E307201984EF008A1857 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB24E306201984EF008A1857 /* UIView+Extension.swift */; };
 		CB24E3092019BAB8008A1857 /* CommunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB24E3082019BAB8008A1857 /* CommunityView.swift */; };
@@ -67,6 +70,7 @@
 		CB3B627C20219E9A00D283B6 /* CustomBasetAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3B627B20219E9A00D283B6 /* CustomBasetAlertViewController.swift */; };
 		CB3B627E20219EDE00D283B6 /* PresentTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3B627D20219EDE00D283B6 /* PresentTestViewController.swift */; };
 		CB3B62822021A83500D283B6 /* CustomSpreadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3B62812021A83500D283B6 /* CustomSpreadViewController.swift */; };
+		CB3BD84821241FD60061FF5C /* CoreTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3BD84721241FD60061FF5C /* CoreTextViewController.swift */; };
 		CB3C2E91206DD1FD00A820DD /* Swift4TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3C2E90206DD1FD00A820DD /* Swift4TestViewController.swift */; };
 		CB3CE0A7207B43B5000F152A /* SwiftForward04.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3CE0A6207B43B5000F152A /* SwiftForward04.swift */; };
 		CB42D3C9206B2D9F006DF832 /* MaterialToolBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB42D3C8206B2D9F006DF832 /* MaterialToolBarViewController.swift */; };
@@ -123,11 +127,18 @@
 		CB67FB401FBAC28D00B5DD0A /* TodoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB67FB3E1FBAC28D00B5DD0A /* TodoDetailViewController.swift */; };
 		CB67FB411FBAC28D00B5DD0A /* TodoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB67FB3F1FBAC28D00B5DD0A /* TodoDetailViewController.xib */; };
 		CB686C59201F265300E23EA9 /* AnimationUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB686C58201F265300E23EA9 /* AnimationUtils.swift */; };
+		CB6A54C720EDB622001B1B98 /* FiltrateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6A54C620EDB622001B1B98 /* FiltrateView.swift */; };
 		CB6C9C8B2073152A00AE56F8 /* SwiftTipsTest5.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6C9C8A2073152A00AE56F8 /* SwiftTipsTest5.swift */; };
 		CB6C9CF5207354F700AE56F8 /* SwiftTipsTest6.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6C9CF4207354F700AE56F8 /* SwiftTipsTest6.swift */; };
+		CB75347021103BDC0099E3A2 /* CoreImageTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB75346F21103BDC0099E3A2 /* CoreImageTestViewController.swift */; };
+		CB753472211040AC0099E3A2 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB753471211040AC0099E3A2 /* test.jpg */; };
 		CB77D40B204D2E0500DC7418 /* SwiftTipsTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB77D40A204D2E0500DC7418 /* SwiftTipsTestViewController.swift */; };
 		CB7C1B8B1FB42CE90034FCD6 /* GCDTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7C1B8A1FB42CE90034FCD6 /* GCDTestViewController.swift */; };
 		CB7FC2B620CE575700679C55 /* hello.html in Resources */ = {isa = PBXBuildFile; fileRef = CB7FC2B520CE575700679C55 /* hello.html */; };
+		CB84AF7C210EB6C6008479F0 /* ChartsTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB84AF7B210EB6C6008479F0 /* ChartsTestViewController.swift */; };
+		CB88BF7D20DA2B2100C7D212 /* DottedTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB88BF7C20DA2B2100C7D212 /* DottedTestViewController.swift */; };
+		CB96DF9F20EB176600F6E175 /* DropMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB96DF9E20EB176600F6E175 /* DropMenuViewController.swift */; };
+		CB96DFA120EB180900F6E175 /* DropMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB96DFA020EB180900F6E175 /* DropMenuView.swift */; };
 		CB9E17EF2092C5E100ACEC6B /* PlayerTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9E17EE2092C5E100ACEC6B /* PlayerTestViewController.swift */; };
 		CB9E17F12092C92100ACEC6B /* colgate.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CB9E17F02092C92000ACEC6B /* colgate.mp4 */; };
 		CB9E17F52092FECE00ACEC6B /* PathTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9E17F42092FECE00ACEC6B /* PathTestViewController.swift */; };
@@ -223,6 +234,9 @@
 		CB1B1A2F1FF63FC700BEF65B /* CombineCaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineCaseViewController.swift; sourceTree = "<group>"; };
 		CB1E41BD200F308000F80BD1 /* JSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSViewController.swift; sourceTree = "<group>"; };
 		CB1E41BF200F314900F80BD1 /* WKWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewController.swift; sourceTree = "<group>"; };
+		CB1FB66820E9BAD60007AD07 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		CB1FB66A20E9BC100007AD07 /* LineSerachViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineSerachViewController.swift; sourceTree = "<group>"; };
+		CB1FB66C20EA0A330007AD07 /* SortedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortedViewController.swift; sourceTree = "<group>"; };
 		CB24E30220196910008A1857 /* CustomAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertViewController.swift; sourceTree = "<group>"; };
 		CB24E306201984EF008A1857 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		CB24E3082019BAB8008A1857 /* CommunityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityView.swift; sourceTree = "<group>"; };
@@ -247,6 +261,7 @@
 		CB3B627B20219E9A00D283B6 /* CustomBasetAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBasetAlertViewController.swift; sourceTree = "<group>"; };
 		CB3B627D20219EDE00D283B6 /* PresentTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentTestViewController.swift; sourceTree = "<group>"; };
 		CB3B62812021A83500D283B6 /* CustomSpreadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSpreadViewController.swift; sourceTree = "<group>"; };
+		CB3BD84721241FD60061FF5C /* CoreTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreTextViewController.swift; sourceTree = "<group>"; };
 		CB3C2E90206DD1FD00A820DD /* Swift4TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift4TestViewController.swift; sourceTree = "<group>"; };
 		CB3CE0A6207B43B5000F152A /* SwiftForward04.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftForward04.swift; sourceTree = "<group>"; };
 		CB42D3C8206B2D9F006DF832 /* MaterialToolBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialToolBarViewController.swift; sourceTree = "<group>"; };
@@ -319,11 +334,18 @@
 		CB67FB3E1FBAC28D00B5DD0A /* TodoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailViewController.swift; sourceTree = "<group>"; };
 		CB67FB3F1FBAC28D00B5DD0A /* TodoDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodoDetailViewController.xib; sourceTree = "<group>"; };
 		CB686C58201F265300E23EA9 /* AnimationUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationUtils.swift; sourceTree = "<group>"; };
+		CB6A54C620EDB622001B1B98 /* FiltrateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltrateView.swift; sourceTree = "<group>"; };
 		CB6C9C8A2073152A00AE56F8 /* SwiftTipsTest5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTipsTest5.swift; sourceTree = "<group>"; };
 		CB6C9CF4207354F700AE56F8 /* SwiftTipsTest6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTipsTest6.swift; sourceTree = "<group>"; };
+		CB75346F21103BDC0099E3A2 /* CoreImageTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreImageTestViewController.swift; sourceTree = "<group>"; };
+		CB753471211040AC0099E3A2 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
 		CB77D40A204D2E0500DC7418 /* SwiftTipsTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTipsTestViewController.swift; sourceTree = "<group>"; };
 		CB7C1B8A1FB42CE90034FCD6 /* GCDTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDTestViewController.swift; sourceTree = "<group>"; };
 		CB7FC2B520CE575700679C55 /* hello.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = hello.html; sourceTree = "<group>"; };
+		CB84AF7B210EB6C6008479F0 /* ChartsTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsTestViewController.swift; sourceTree = "<group>"; };
+		CB88BF7C20DA2B2100C7D212 /* DottedTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DottedTestViewController.swift; sourceTree = "<group>"; };
+		CB96DF9E20EB176600F6E175 /* DropMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropMenuViewController.swift; sourceTree = "<group>"; };
+		CB96DFA020EB180900F6E175 /* DropMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropMenuView.swift; sourceTree = "<group>"; };
 		CB9E17EE2092C5E100ACEC6B /* PlayerTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTestViewController.swift; sourceTree = "<group>"; };
 		CB9E17F02092C92000ACEC6B /* colgate.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = colgate.mp4; sourceTree = "<group>"; };
 		CB9E17F42092FECE00ACEC6B /* PathTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathTestViewController.swift; sourceTree = "<group>"; };
@@ -506,6 +528,16 @@
 			path = "动画（Animation）";
 			sourceTree = "<group>";
 		};
+		CB1FB66720E9BAC20007AD07 /* 算法 */ = {
+			isa = PBXGroup;
+			children = (
+				CB1FB66820E9BAD60007AD07 /* SearchViewController.swift */,
+				CB1FB66A20E9BC100007AD07 /* LineSerachViewController.swift */,
+				CB1FB66C20EA0A330007AD07 /* SortedViewController.swift */,
+			);
+			path = "算法";
+			sourceTree = "<group>";
+		};
 		CB29BE2C200D937100F8A78D /* JS交互 */ = {
 			isa = PBXGroup;
 			children = (
@@ -578,6 +610,14 @@
 				CB7FC2B520CE575700679C55 /* hello.html */,
 			);
 			path = WKWebView;
+			sourceTree = "<group>";
+		};
+		CB3BD84621241FBF0061FF5C /* CoreText */ = {
+			isa = PBXGroup;
+			children = (
+				CB3BD84721241FD60061FF5C /* CoreTextViewController.swift */,
+			);
+			path = CoreText;
 			sourceTree = "<group>";
 		};
 		CB3C2E8F206DD1F500A820DD /* Swift4.0 */ = {
@@ -732,6 +772,12 @@
 		CB5172231FA2E143000433E7 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				CB3BD84621241FBF0061FF5C /* CoreText */,
+				CB75346E21103BD20099E3A2 /* CoreImage */,
+				CB84AF7A210EB6AF008479F0 /* Charts */,
+				CB96DF9D20EB175D00F6E175 /* 下拉菜单 */,
+				CB1FB66720E9BAC20007AD07 /* 算法 */,
+				CB88BF7B20DA2AF800C7D212 /* 绘制虚线 */,
 				CB36632C20CE089900E617DD /* WKWebView */,
 				CB1A4CB620BE40EE00E816D2 /* 自定义相机 */,
 				CB62334120A177E900D6336F /* 网络Alamofire */,
@@ -781,6 +827,7 @@
 				CB51722B1FA2E143000433E7 /* Assets.xcassets */,
 				CB51722D1FA2E143000433E7 /* LaunchScreen.storyboard */,
 				CB5172301FA2E143000433E7 /* Info.plist */,
+				CB753471211040AC0099E3A2 /* test.jpg */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -982,6 +1029,14 @@
 			path = "网络Alamofire";
 			sourceTree = "<group>";
 		};
+		CB75346E21103BD20099E3A2 /* CoreImage */ = {
+			isa = PBXGroup;
+			children = (
+				CB75346F21103BDC0099E3A2 /* CoreImageTestViewController.swift */,
+			);
+			path = CoreImage;
+			sourceTree = "<group>";
+		};
 		CB77D409204D2DC700DC7418 /* SwiftTips */ = {
 			isa = PBXGroup;
 			children = (
@@ -1026,6 +1081,32 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		CB84AF7A210EB6AF008479F0 /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				CB84AF7B210EB6C6008479F0 /* ChartsTestViewController.swift */,
+			);
+			path = Charts;
+			sourceTree = "<group>";
+		};
+		CB88BF7B20DA2AF800C7D212 /* 绘制虚线 */ = {
+			isa = PBXGroup;
+			children = (
+				CB88BF7C20DA2B2100C7D212 /* DottedTestViewController.swift */,
+			);
+			path = "绘制虚线";
+			sourceTree = "<group>";
+		};
+		CB96DF9D20EB175D00F6E175 /* 下拉菜单 */ = {
+			isa = PBXGroup;
+			children = (
+				CB96DF9E20EB176600F6E175 /* DropMenuViewController.swift */,
+				CB96DFA020EB180900F6E175 /* DropMenuView.swift */,
+				CB6A54C620EDB622001B1B98 /* FiltrateView.swift */,
+			);
+			path = "下拉菜单";
 			sourceTree = "<group>";
 		};
 		CB9E17ED2092C5D800ACEC6B /* Player */ = {
@@ -1149,7 +1230,6 @@
 				CB51721E1FA2E143000433E7 /* Frameworks */,
 				CB51721F1FA2E143000433E7 /* Resources */,
 				EACA2001D02F57782FBCB94C /* [CP] Embed Pods Frameworks */,
-				F958D34D3F1AE14C62B6B663 /* [CP] Copy Pods Resources */,
 				CB6C9CF320732E8200AE56F8 /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -1257,6 +1337,7 @@
 				CB4CA020201EBA2F0046B62F /* gif01.gif in Resources */,
 				CB4D65842074B4E900CE8268 /* test.storyboard in Resources */,
 				CB51722C1FA2E143000433E7 /* Assets.xcassets in Resources */,
+				CB753472211040AC0099E3A2 /* test.jpg in Resources */,
 				CB67FB411FBAC28D00B5DD0A /* TodoDetailViewController.xib in Resources */,
 				CB67FB3D1FBA95F900B5DD0A /* StepByStepViewController.xib in Resources */,
 				CB29BE30200D9E9300F8A78D /* demo.html in Resources */,
@@ -1307,6 +1388,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Demo/Pods-Demo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/JXPhotoBrowser/JXPhotoBrowser.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
@@ -1320,6 +1402,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/StreamingKit/StreamingKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftForms/SwiftForms.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyAttributes/SwiftyAttributes.framework",
 				"${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework",
@@ -1327,6 +1410,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JXPhotoBrowser.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
@@ -1340,6 +1424,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StreamingKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftForms.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyAttributes.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeCellKit.framework",
@@ -1347,21 +1432,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Demo/Pods-Demo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F958D34D3F1AE14C62B6B663 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Demo/Pods-Demo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1399,6 +1469,7 @@
 				CB587D502056199400AA4ADB /* RefreshFooterViewDefault.swift in Sources */,
 				CB002A13205763F600E27C7F /* GradeView.swift in Sources */,
 				CB50238C20A033CF00589BB5 /* CTestViewController.swift in Sources */,
+				CB96DFA120EB180900F6E175 /* DropMenuView.swift in Sources */,
 				CB1A4CB820BE410B00E816D2 /* CustomCameraViewController.swift in Sources */,
 				CB9E17EF2092C5E100ACEC6B /* PlayerTestViewController.swift in Sources */,
 				CB2C99DE207C517C001C266B /* SwiftForward05.swift in Sources */,
@@ -1420,9 +1491,11 @@
 				CB002A192057B8F100E27C7F /* PackageManager.swift in Sources */,
 				CB4F292E20A29BE80054EFA6 /* NetWorkTool.swift in Sources */,
 				CB1B1A301FF63FC700BEF65B /* CombineCaseViewController.swift in Sources */,
+				CB1FB66920E9BAD60007AD07 /* SearchViewController.swift in Sources */,
 				CB49CA8E2091ADB500929CE1 /* AlertTestViewController.swift in Sources */,
 				CBEF16711FD7ECA30073C1A6 /* EstimateCell.swift in Sources */,
 				CB06C72D1FF098860028D999 /* SectionIndexViewController.swift in Sources */,
+				CB3BD84821241FD60061FF5C /* CoreTextViewController.swift in Sources */,
 				CBF71A461FCE9CBE00052290 /* TouchTableViewController.swift in Sources */,
 				CB3B627E20219EDE00D283B6 /* PresentTestViewController.swift in Sources */,
 				CB3B627C20219E9A00D283B6 /* CustomBasetAlertViewController.swift in Sources */,
@@ -1440,6 +1513,7 @@
 				CB1292E61FB042D000FF26E1 /* BaseTableView.swift in Sources */,
 				CB3B62822021A83500D283B6 /* CustomSpreadViewController.swift in Sources */,
 				CB9E17F72093156600ACEC6B /* QueueTestViewController.swift in Sources */,
+				CB84AF7C210EB6C6008479F0 /* ChartsTestViewController.swift in Sources */,
 				CB32786B20188F8D0013CDD2 /* CustomAlertView.swift in Sources */,
 				CB50238E20A033D600589BB5 /* DTestViewController.swift in Sources */,
 				CB31E0F42079AB2600E6ADEC /* SwiftForward03.swift in Sources */,
@@ -1455,6 +1529,7 @@
 				CB5172271FA2E143000433E7 /* ViewController.swift in Sources */,
 				CB1B1A2C1FF6239600BEF65B /* GroupAnimationViewController.swift in Sources */,
 				CB24E3092019BAB8008A1857 /* CommunityView.swift in Sources */,
+				CB75347021103BDC0099E3A2 /* CoreImageTestViewController.swift in Sources */,
 				CB5172251FA2E143000433E7 /* AppDelegate.swift in Sources */,
 				CB2C52241FB15064004F5408 /* ClassStructViewController.swift in Sources */,
 				CB002A1D2057BF7300E27C7F /* LayoutManager.swift in Sources */,
@@ -1475,6 +1550,8 @@
 				CBE64A051FCF98F300986421 /* UIView+PreviewLoading.swift in Sources */,
 				CB3CE0A7207B43B5000F152A /* SwiftForward04.swift in Sources */,
 				CB29BE2E200D938200F8A78D /* UIWebViewController.swift in Sources */,
+				CB88BF7D20DA2B2100C7D212 /* DottedTestViewController.swift in Sources */,
+				CB6A54C720EDB622001B1B98 /* FiltrateView.swift in Sources */,
 				CB51728B1FA313EC000433E7 /* SwiftFormTestViewController.swift in Sources */,
 				CB65CC052069ECE400AA5435 /* MaterialFABMenuViewController.swift in Sources */,
 				CB002A1720579C8100E27C7F /* CirclePercentView.swift in Sources */,
@@ -1483,6 +1560,7 @@
 				CB1B1A281FF6157B00BEF65B /* BasicAnimationViewController.swift in Sources */,
 				CBA0849820171F14004CC1FE /* String+Extension.swift in Sources */,
 				CB4912AF20888C0C009F59AB /* CustomAlertTool.swift in Sources */,
+				CB1FB66B20E9BC100007AD07 /* LineSerachViewController.swift in Sources */,
 				CBAF92A4204E6E0C001C1E69 /* ScrollView+Refresh.swift in Sources */,
 				CBF71A481FCE9CCA00052290 /* TouchDetailViewController.swift in Sources */,
 				CB3566E420944F3300725F4C /* AnimationTestViewController.swift in Sources */,
@@ -1492,6 +1570,7 @@
 				CB0D283B1FB9394F000D572A /* FunTestViewController.swift in Sources */,
 				CB4CA01E201EB9BB0046B62F /* GifTestViewController.swift in Sources */,
 				CBEF165D1FD7C0F70073C1A6 /* EstimateViewController.swift in Sources */,
+				CB96DF9F20EB176600F6E175 /* DropMenuViewController.swift in Sources */,
 				CB65CC032069DE1600AA5435 /* MaterialCardViewController.swift in Sources */,
 				CB1B1A231FF5E94900BEF65B /* TableViewEditViewController.swift in Sources */,
 				CB5172841FA30EE4000433E7 /* RxSwiftTestViewController.swift in Sources */,
@@ -1499,6 +1578,7 @@
 				CB393454200C85C6000FB67E /* MainNavigationController.swift in Sources */,
 				CB2C99E0207C5D2D001C266B /* SwiftForward06.swift in Sources */,
 				CB50238A20A033C800589BB5 /* BTestViewController.swift in Sources */,
+				CB1FB66D20EA0A330007AD07 /* SortedViewController.swift in Sources */,
 				CBC35DE52064D2EF0028F168 /* SwiftTipsTest3.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1691,7 +1771,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Demo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangyun.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1714,7 +1794,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Demo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangyun.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

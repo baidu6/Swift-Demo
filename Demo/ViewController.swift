@@ -13,7 +13,7 @@ import SnapKit
 class ViewController: UIViewController {
     
     var tableView: BaseTableView!
-    var namesArray = ["CoreData", "Realm", "RxSwift", "SwiftForms", "AnimationNumbers", "引用类型和值类型","GCDTest", "Set(集合)Test", "函数闭包练习", "3DTouch(UITableView)", "UI预加载动画", "自定义TableView索引", "KeyBoard", "Gradient(渐变)", "TableView左边滑动", "动画", "JS交互", "下拉菜单", "加载gif动画", "Presented", "给Cell添加动画", "CustomStringConvertible协议", "Swift必备tips", "下拉刷新", "风险测评报告", "指纹解锁", "Material", "swift4.0", "swift进阶", "自定义弹窗", "Swift-Master", "Player", "图片浏览器", "UIPageViewController", "网络-Alamofire", "自定义相机", "认识WKWebView"]
+    var namesArray = ["CoreData", "Realm", "RxSwift", "SwiftForms", "AnimationNumbers", "引用类型和值类型","GCDTest", "Set(集合)Test", "函数闭包练习", "3DTouch(UITableView)", "UI预加载动画", "自定义TableView索引", "KeyBoard", "Gradient(渐变)", "TableView左边滑动", "动画", "JS交互", "下拉菜单", "加载gif动画", "Presented", "给Cell添加动画", "CustomStringConvertible协议", "Swift必备tips", "下拉刷新", "风险测评报告", "指纹解锁", "Material", "swift4.0", "swift进阶", "自定义弹窗", "Swift-Master", "Player", "图片浏览器", "UIPageViewController", "网络-Alamofire", "自定义相机", "认识WKWebView", "绘制虚线", "算法", "下拉菜单", "Charts", "CoreImage", "CoreText"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -201,6 +201,24 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         } else if indexPath.row == 36 {
             let vc = WKWebViewTestViewController()
             self.navigationController?.pushViewController(vc, animated: true)
+        } else if indexPath.row == 37 {
+            let vc = DottedTestViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        } else if indexPath.row == 38 {
+            let vc = SearchViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        } else if indexPath.row == 39 {
+            let vc = DropMenuViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        } else if indexPath.row == 40 {
+            let vc = ChartsTestViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        } else if indexPath.row == 41 {
+            let vc = CoreImageTestViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        } else if indexPath.row == 42 {
+            let vc = CoreTextViewController()
+            navigationController?.pushViewController(vc, animated: true)
         }
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

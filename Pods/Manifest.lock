@@ -1,5 +1,8 @@
 PODS:
   - Alamofire (4.7.2)
+  - Charts (3.1.1):
+    - Charts/Core (= 3.1.1)
+  - Charts/Core (3.1.1)
   - IQKeyboardManagerSwift (5.0.6)
   - JXPhotoBrowser (0.4.2):
     - Kingfisher
@@ -23,12 +26,14 @@ PODS:
     - RxSwift (~> 4.0)
   - RxSwift (4.0.0)
   - SnapKit (4.0.0)
+  - StreamingKit (0.1.30)
   - SwiftForms (1.8.1)
   - SwiftyAttributes (4.1.0)
   - SwipeCellKit (2.0.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.7.2)
+  - Charts (~> 3.1.1)
   - IQKeyboardManagerSwift (~> 5.0.6)
   - JXPhotoBrowser (~> 0.4.1)
   - Kingfisher
@@ -41,12 +46,36 @@ DEPENDENCIES:
   - RxCocoa
   - RxSwift
   - SnapKit
+  - StreamingKit (~> 0.1.30)
   - SwiftForms (~> 1.8.1)
   - SwiftyAttributes
   - SwipeCellKit
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Charts
+    - IQKeyboardManagerSwift
+    - JXPhotoBrowser
+    - Kingfisher
+    - Material
+    - Motion
+    - ObjectMapper
+    - Player
+    - RAMAnimatedTabBarController
+    - Realm
+    - RealmSwift
+    - RxCocoa
+    - RxSwift
+    - SnapKit
+    - StreamingKit
+    - SwiftForms
+    - SwiftyAttributes
+    - SwipeCellKit
+
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  Charts: 90a4d61da0f6e06684c591e3bcab11940fe61736
   IQKeyboardManagerSwift: 02bfbb0dff71c66d0ab77d80d25dfce0c3717735
   JXPhotoBrowser: a80cb58fb5f3a08018351bb6787f88dd26f5a02b
   Kingfisher: 26ae0473102b77b575da51960c932431e3745407
@@ -60,10 +89,11 @@ SPEC CHECKSUMS:
   RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
   RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  StreamingKit: 70ca8608c206864b4d54a577eacb3c8bf7c72209
   SwiftForms: 617d2944de278090331b1cce4f0fc93ddd2f2b3c
   SwiftyAttributes: cef9463f6e7da1ab393896ca036c9ac37d8a406b
   SwipeCellKit: 349c61ffde96ac3ae51c2691a03e421b5b29ee98
 
-PODFILE CHECKSUM: 1b776d5f06c1208d0202f191b9c1f7eaa1feab6b
+PODFILE CHECKSUM: 478c750c5b20d1467f3babc7f1ade366e19563c0
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.5.3

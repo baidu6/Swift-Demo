@@ -21,6 +21,8 @@ use_frameworks!
     pod 'Player', '~> 0.8.4'
     pod 'Kingfisher'
     pod 'Alamofire', '~> 4.7.2'
+    pod 'Charts', '~> 3.1.1'
+    pod 'StreamingKit', '~> 0.1.30'
 
     
     post_install do |installer|
